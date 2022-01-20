@@ -1,0 +1,135 @@
+//****************************Section Achetez-Vendez*************************//
+@media screen and (max-width: 1100px) {
+  .nav-top {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    font-size: 55px;
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+  .icon-nav {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main-pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  .main-pictures img:nth-child(2) {
+    display: none;
+  }
+  .achetez {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -18rem;
+    left: 0;
+    font-size: 30px;
+  }
+  .paragraphe-achetez {
+    top: -17rem;
+    left: 0%;
+    font-size: 30px;
+  }
+  .btn-acheter-vendre {
+    margin-top: -10rem;
+  }
+  .parallax-vedette {
+    margin: 70px auto 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  form input {
+    font-size: 12px;
+  }
+  .achetez {
+    text-align: center;
+    color: white;
+    position: relative;
+    top: -13rem;
+    left: 0;
+    font-size: 26px;
+  }
+  .paragraphe-achetez {
+    top: -13rem;
+    left: 0%;
+    font-size: 26px;
+  }
+  .btn-acheter-vendre {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .achetez {
+    top: -11rem;
+    font-size: 24px;
+  }
+  .paragraphe-achetez {
+    top: -11rem;
+    left: 0%;
+    font-size: 24px;
+  }
+  .btn-acheter-vendre {
+    font-size: 17px;
+    margin-top: -9rem;
+  }
+  .btn-acheter-vendre .link-acheter-vendre {
+    padding: 7px 40px;
+  }
+  .parallax-vedette .txt-par,
+  .parallax-femme .txt-par,
+  .parallax-homme .txt-par {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .carousel .changeHidden .element {
+    font-size: 16px;
+  }
+  .achetez {
+    top: -10rem;
+    font-size: 24px;
+  }
+  .paragraphe-achetez {
+    top: -10rem;
+    font-size: 24px;
+  }
+  .btn-acheter-vendre {
+    font-size: 16px;
+    margin-top: -9rem;
+  }
+  .btn-acheter-vendre .link-acheter-vendre {
+    padding: 7px 40px;
+  }
+  .txt-vedette,
+  .txt-femme,
+  .txt-homme {
+    margin: 30px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .carousel .changeHidden .element {
+    font-size: 14px;
+  }
+  .achetez {
+    top: -10rem;
+    font-size: 20px;
+  }
+  .paragraphe-achetez {
+    top: -10rem;
+    font-size: 20px;
+  }
+  .btn-acheter-vendre {
+    font-size: 14px;
+    margin-top: -8rem;
+  }
+  .btn-acheter-vendre .link-acheter-vendre {
+    padding: 5px 35px;
+  }
+}

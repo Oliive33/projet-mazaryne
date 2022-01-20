@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Caslon540";
+  src: url("../ressources/fonts/Caslon540/Caslon540-BT-Roman.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "GrouchBT";
+  src: url("../ressources/fonts/GrouchBT/Grouch-BT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../ressources/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+}
+
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/index";
+@import "./layout/footer";
+@import "./pages/responsive-index";
