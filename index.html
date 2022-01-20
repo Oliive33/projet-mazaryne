@@ -39,6 +39,8 @@
     />
     <meta name="msapplication-TileColor" content="#e44b55" />
     <meta name="theme-color" content="#e44b55" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <!-- style -->
     <link rel="stylesheet" href="./css/font-awesome.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -80,21 +82,6 @@
       </div>
       <div class="nav-top">
         <div class="search-box">
-          <!-- <div class="language-container">
-            <label for="language-selector">
-              <select
-                class="menu-language-selector"
-                name="language-selector"
-                id="language-selector"
-                aria-label="language-selector"
-              >
-                <option value="">FR</option>
-                <option value="">EN</option>
-                <option value="">ES</option>
-              </select>
-            </label>
-          </div> -->
-
           <div class="search">
             <form>
               <i class="fas fa-search"></i>
@@ -388,7 +375,7 @@
                   </div>
                 </li>
                 <li id="button" class="btn">
-                  <a class="nav-btn-link" href="#"></a> <span>VENDRE</span>
+                  <a class="nav-btn-link" href="#"> <span>VENDRE</span></a>
                 </li>
               </ul>
             </nav>
@@ -430,72 +417,135 @@
           enim laudantium modi aliquam cum, omnis quasi provident perferendis
           autem est suscipit iste. Quia ipsam saepe molestias pariatur.
         </p>
-        <div class="container-cards">
-          <div class="cartes">
-            <div class="partImg img1">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
+        <!-- Section Swiper cartes produits vedette -->
+        <div class="new section container-swiper" id="new">
+          <div class="new__container">
+            <div class="swiper new-swiper">
+              <div class="swiper-wrapper">
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette1.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette2.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette3.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette4.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
               </div>
-            </div>
 
-            <div class="itemsCard">
-              <div class="titrePrix">
-                <h2 class="titreCarte">Nike Air</h2>
-                <p class="prix">55€</p>
-              </div>
-
-              <div class="modeles">
-                <p class="modelesTxt">Chaussures homme</p>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-          </div>
-
-          <div class="cartes">
-            <div class="partImg img2">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">K-Swiss</h2>
-              <p class="prix">75€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Homme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img4">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">N-Sportwear</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img3">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">Vero Moda</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
+            <div id="btn-produit" class="btn-produits">
+              <a href="#" class="btn-voir-produits"
+                ><span>Voir tout les Produits</span></a
+              >
             </div>
           </div>
         </div>
@@ -513,72 +563,135 @@
           enim laudantium modi aliquam cum, omnis quasi provident perferendis
           autem est suscipit iste. Quia ipsam saepe molestias pariatur.
         </p>
-        <div class="container-cards">
-          <div class="cartes">
-            <div class="partImg img1">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
+        <!-- Section Swiper cartes produits femme -->
+        <div class="new section container-swiper" id="new">
+          <div class="new__container">
+            <div class="swiper new-swiper">
+              <div class="swiper-wrapper">
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette1.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette2.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette3.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette4.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Femme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
               </div>
-            </div>
 
-            <div class="itemsCard">
-              <div class="titrePrix">
-                <h2 class="titreCarte">Nike Air</h2>
-                <p class="prix">55€</p>
-              </div>
-
-              <div class="modeles">
-                <p class="modelesTxt">Chaussures homme</p>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-          </div>
-
-          <div class="cartes">
-            <div class="partImg img2">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">K-Swiss</h2>
-              <p class="prix">75€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Homme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img4">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">N-Sportwear</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img3">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">Vero Moda</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
+            <div id="btn-produit" class="btn-produits">
+              <a href="#" class="btn-voir-produits"
+                ><span>Voir tout les Produits</span></a
+              >
             </div>
           </div>
         </div>
@@ -596,72 +709,135 @@
           enim laudantium modi aliquam cum, omnis quasi provident perferendis
           autem est suscipit iste. Quia ipsam saepe molestias pariatur.
         </p>
-        <div class="container-cards">
-          <div class="cartes">
-            <div class="partImg img1">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
+        <!-- Section Swiper cartes produits homme -->
+        <div class="new section container-swiper" id="new">
+          <div class="new__container">
+            <div class="swiper new-swiper">
+              <div class="swiper-wrapper">
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette1.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Homme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="swiper-projet new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/image-vedette2.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Homme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/homme1.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Homme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
+                <article class="new__card swiper-slide">
+                  <div class="hearts" id="hearts">
+                    <a href="#">
+                      <i class="far fa-heart heart"></i>
+                    </a>
+                  </div>
+                  <div class="items-card-link">
+                    <a
+                      class="items-link"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le Produit
+                    </a>
+                  </div>
+                  <img
+                    class="new__img zoom-img"
+                    src="./ressources/images/homme2.png"
+                    alt="image chaussure femme"
+                  />
+                  <div class="items-card">
+                    <h3 class="items-card-title">Chaussure Homme</h3>
+                  </div>
+                  <div class="items-price-and-type">
+                    <div class="item-card-type">N-Sportwear</div>
+                    <span class="items-card-price">75€</span>
+                  </div>
+                </article>
               </div>
-            </div>
 
-            <div class="itemsCard">
-              <div class="titrePrix">
-                <h2 class="titreCarte">Nike Air</h2>
-                <p class="prix">55€</p>
-              </div>
-
-              <div class="modeles">
-                <p class="modelesTxt">Chaussures homme</p>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
-          </div>
-
-          <div class="cartes">
-            <div class="partImg img2">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">K-Swiss</h2>
-              <p class="prix">75€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Homme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img4">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">N-Sportwear</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
-            </div>
-          </div>
-          <div class="cartes">
-            <div class="partImg img3">
-              <div class="filtreBleu">
-                <div class="btnReveal">Acheter</div>
-              </div>
-            </div>
-
-            <div class="titrePrix">
-              <h2 class="titreCarte">Vero Moda</h2>
-              <p class="prix">65€</p>
-            </div>
-
-            <div class="modeles">
-              <p class="modelesTxt">Chaussures Femme</p>
+            <div id="btn-produit" class="btn-produits">
+              <a href="#" class="btn-voir-produits"
+                ><span>Voir tout les Produits</span></a
+              >
             </div>
           </div>
         </div>
@@ -723,6 +899,8 @@
         </div>
       </div>
     </footer>
+    <!--=============== SWIPER JS ===============-->
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <script src="./js/main.js"></script>
   </body>
