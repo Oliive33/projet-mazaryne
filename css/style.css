@@ -84,8 +84,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin: auto;
-  height: 8rem;
-  line-height: 8rem;
+  height: 4rem;
+  line-height: 4rem;
   width: 100%;
   overflow: hidden;
 }
@@ -99,7 +99,8 @@ body {
 .carousel .changeHidden .element {
   font-size: 20px;
   font-weight: 500;
-  color: #d6001c;
+  color: #fff;
+  background-color: #90111c;
   font-family: "Caslon540", sans-serif;
 }
 
@@ -111,22 +112,22 @@ body {
   }
   25%,
   45% {
-    -webkit-transform: translateY(-8rem);
-            transform: translateY(-8rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
   50%,
   70% {
-    -webkit-transform: translateY(-16rem);
-            transform: translateY(-16rem);
+    -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem);
   }
   75%,
   95% {
-    -webkit-transform: translateY(-24rem);
-            transform: translateY(-24rem);
+    -webkit-transform: translateY(-12rem);
+            transform: translateY(-12rem);
   }
   100% {
-    -webkit-transform: translateY(-32rem);
-            transform: translateY(-32rem);
+    -webkit-transform: translateY(-16rem);
+            transform: translateY(-16rem);
   }
 }
 
@@ -138,22 +139,22 @@ body {
   }
   25%,
   45% {
-    -webkit-transform: translateY(-8rem);
-            transform: translateY(-8rem);
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
   }
   50%,
   70% {
-    -webkit-transform: translateY(-16rem);
-            transform: translateY(-16rem);
+    -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem);
   }
   75%,
   95% {
-    -webkit-transform: translateY(-24rem);
-            transform: translateY(-24rem);
+    -webkit-transform: translateY(-12rem);
+            transform: translateY(-12rem);
   }
   100% {
-    -webkit-transform: translateY(-32rem);
-            transform: translateY(-32rem);
+    -webkit-transform: translateY(-16rem);
+            transform: translateY(-16rem);
   }
 }
 
@@ -167,7 +168,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(27deg, #d6424a 0%, #d6001c 80%);
+  background: #fff;
   padding: 15px 5px 45px 5px;
 }
 
@@ -199,7 +200,7 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
           box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 
 .search form {
@@ -228,7 +229,7 @@ h1 {
   font-family: "GrouchBT", sans-serif;
   font-size: 75px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
   margin-left: -35px;
 }
 
@@ -396,23 +397,22 @@ input {
 
 .btn,
 .nav-below-link {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #button {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
-  padding: 0px 20px;
+  background: #ffffff;
+  padding: 0px 10px;
   font-family: "Caslon540", sans-serif;
   font-weight: 600;
   color: #222222;
   cursor: pointer;
-  border-radius: 3px;
-  border: 1px solid #eabeb0;
+  border-radius: 2px;
+  border: 2px solid #90111c;
   outline: none;
-  border: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -423,27 +423,16 @@ input {
 }
 
 #button span {
-  position: relative;
-  pointer-events: none;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
-#button::before {
-  --size: 0;
-  content: "";
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  background: radial-gradient(circle closest-side, #cb333b, #eabeb0, transparent);
-  width: var(--size);
-  height: var(--size);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+#button span:hover {
+  font-weight: bolder;
 }
 
-#button:hover::before {
-  --size: 400px;
+.nav-btn-link {
+  text-transform: none !important;
 }
 
 .container {
@@ -496,7 +485,7 @@ input {
   font-weight: 500;
   color: #000000;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -511,6 +500,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 95%;
   margin: 5px auto;
@@ -1026,43 +1016,6 @@ li::marker {
   background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
 }
 
-.parallax-vedette {
-  background: url(../ressources/images/parallax-vedette.jpg) no-repeat top/cover fixed;
-  width: 100%;
-  height: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 1px solid #eabeb0;
-  border-bottom: 1px solid #eabeb0;
-  margin: 100px auto 50px;
-}
-
-.parallax-vedette .txt-par {
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  padding: 10px 25px;
-  background: rgba(234, 190, 176, 0.76);
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
-  font-family: "Caslon540", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 35px;
-}
-
-.txt-vedette {
-  margin: 60px;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-}
-
 /*=============== NEW ===============*/
 .container-swiper {
   max-width: 920px;
@@ -1083,7 +1036,9 @@ li::marker {
   }
 }
 
-.hearts {
+.hearts,
+.messages,
+.vues {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,7 +1049,7 @@ li::marker {
 
 .heart {
   position: relative;
-  top: 0.6rem;
+  top: 1rem;
   right: 1rem;
   font-size: x-large;
 }
@@ -1118,6 +1073,22 @@ li::marker {
 }
 
 .fa-heart {
+  color: #333;
+}
+
+.messages .fa-envelope {
+  position: relative;
+  top: 2rem;
+  right: 1rem;
+  font-size: x-large;
+  color: #333;
+}
+
+.vues .fa-eye {
+  position: relative;
+  top: 3rem;
+  right: 1rem;
+  font-size: x-large;
   color: #333;
 }
 
@@ -1156,7 +1127,11 @@ li::marker {
   overflow: hidden;
 }
 
-.items-card-link {
+.btn-card-link {
+  margin-top: -2.5rem;
+}
+
+.btn-card-link .items-card-link {
   border: none;
   padding: 15px 15px;
   margin: 0 auto;
@@ -1170,20 +1145,20 @@ li::marker {
   transition: all 0.2s ease-in;
 }
 
-.items-card-link:hover {
+.btn-card-link .items-card-link:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
   background-color: rgba(243, 61, 85, 0.952);
 }
 
-.items-link {
+.btn-card-link .items-link {
   text-decoration: none;
   color: #000000;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 
-.items-link:hover {
+.btn-card-link .items-link:hover {
   font-weight: 500;
 }
 
@@ -1271,18 +1246,18 @@ li::marker {
   }
 }
 
-#btn-produit {
+.btn-produits {
   position: relative;
   overflow: hidden;
   width: 30%;
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 15px 10px;
   text-align: center;
   background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
   color: #222222;
   font-family: "Caslon540", sans-serif;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 3px;
   border: 1px solid #eabeb0;
   outline: none;
@@ -1294,38 +1269,63 @@ li::marker {
   cursor: pointer;
 }
 
-#btn-produit:hover {
+.btn-produits:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-#btn-produit span {
-  position: relative;
-  pointer-events: none;
-}
-
-#btn-produit::before {
-  --size: 0;
-  content: "";
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  background: radial-gradient(circle closest-side, #cb333b, #eabeb0, transparent);
-  width: var(--size);
-  height: var(--size);
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-
-#button:hover::before {
-  --size: 400px;
 }
 
 .btn-voir-produits {
   text-decoration: none;
   color: #333;
+}
+
+.parallax-vedette {
+  background: url(../ressources/images/parallax-vedette.jpg) no-repeat top/cover fixed;
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #eabeb0;
+  border-bottom: 1px solid #eabeb0;
+  margin: 100px auto 50px;
+}
+
+.parallax-vedette .txt-par,
+.parallax-femme .txt-par,
+.parallax-homme .txt-par {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px 25px;
+  background: rgba(234, 190, 176, 0.76);
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
+  font-family: "Caslon540", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 35px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.parallax-vedette .txt-par:hover,
+.parallax-femme .txt-par:hover,
+.parallax-homme .txt-par:hover {
+  font-weight: bolder;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.txt-vedette {
+  margin: 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
 }
 
 .parallax-femme {
@@ -1344,19 +1344,6 @@ li::marker {
   border-top: 1px solid #eabeb0;
   border-bottom: 1px solid #eabeb0;
   margin: 100px auto 50px;
-}
-
-.parallax-femme .txt-par {
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  padding: 10px 25px;
-  background: rgba(234, 190, 176, 0.76);
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
-  font-family: "Caslon540", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 35px;
 }
 
 .txt-femme {
@@ -1381,19 +1368,6 @@ li::marker {
   border-top: 1px solid #eabeb0;
   border-bottom: 1px solid #eabeb0;
   margin: 100px auto 50px;
-}
-
-.parallax-homme .txt-par {
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  padding: 10px 25px;
-  background: rgba(234, 190, 176, 0.76);
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
-  font-family: "Caslon540", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 35px;
 }
 
 .txt-homme {

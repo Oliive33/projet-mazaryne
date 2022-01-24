@@ -65,8 +65,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
-  height: 8rem;
-  line-height: 8rem;
+  height: 4rem;
+  line-height: 4rem;
   width: 100%;
   overflow: hidden;
 }
@@ -78,7 +78,8 @@ body {
 .carousel .changeHidden .element {
   font-size: 20px;
   font-weight: 500;
-  color: $color-primary;
+  color: #fff;
+  background-color: $color-header;
   font-family: $font-secondary;
 }
 @keyframes carousel {
@@ -88,18 +89,18 @@ body {
   }
   25%,
   45% {
-    transform: translateY(-8rem);
+    transform: translateY(-4rem);
   }
   50%,
   70% {
-    transform: translateY(-16rem);
+    transform: translateY(-8rem);
   }
   75%,
   95% {
-    transform: translateY(-24rem);
+    transform: translateY(-12rem);
   }
   100% {
-    transform: translateY(-32rem);
+    transform: translateY(-16rem);
   }
 }
 // bandeau & phrases slide end
@@ -107,7 +108,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $background-header;
+  background: #fff;
   padding: 15px 5px 45px 5px;
 }
 
@@ -131,7 +132,7 @@ body {
   background: #fff;
   border-radius: 5px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 .search form {
   display: flex;
@@ -150,7 +151,7 @@ h1 {
   font-family: $font-primary;
   font-size: 75px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
   margin-left: -35px;
 }
 .nav-links {
@@ -272,52 +273,58 @@ input {
 }
 .btn,
 .nav-below-link {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #button {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
-  padding: 0px 20px;
+  // background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
+  background: #ffffff;
+  padding: 0px 10px;
   font-family: $font-secondary;
   font-weight: 600;
   color: rgb(34, 34, 34);
   cursor: pointer;
-  border-radius: 3px;
-  border: 1px solid $color-quaternary;
+  border-radius: 2px;
+  border: 2px solid $color-header;
   outline: none;
-  border: none;
+  // border: none;
   transition: all 0.2s ease-in-out;
 }
 #button:hover {
   transform: scale(1.05);
 }
 #button span {
-  position: relative;
-  pointer-events: none;
+  transition: color 0.2s ease-in-out;
+}
+#button span:hover {
+  font-weight: bolder;
+}
+.nav-btn-link {
+  text-transform: none !important;
 }
 
-#button::before {
-  --size: 0;
-  content: "";
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  background: radial-gradient(
-    circle closest-side,
-    rgb(203, 51, 59),
-    rgb(234, 190, 176),
-    transparent
-  );
-  width: var(--size);
-  height: var(--size);
-  transform: translate(-50%, -50%);
-  transition: 0.2s ease;
-}
-#button:hover::before {
-  --size: 400px;
-}
+// #button::before {
+//   --size: 0;
+//   content: "";
+//   position: absolute;
+//   left: var(--x);
+//   top: var(--y);
+//   background: radial-gradient(
+//     circle closest-side,
+//     rgb(203, 51, 59),
+//     rgb(234, 190, 176),
+//     transparent
+//   );
+//   width: var(--size);
+//   height: var(--size);
+//   transform: translate(-50%, -50%);
+//   transition: 0.2s ease;
+// }
+// #button:hover::before {
+//   --size: 400px;
+// }
 //****************************** mega-menu start**************************//
 .container {
   max-width: 1200px;
@@ -352,7 +359,7 @@ input {
   font-weight: 500;
   color: #000000;
   position: relative;
-  text-transform: uppercase;
+  text-transform: capitalize;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -360,6 +367,7 @@ input {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 95%;
   margin: 5px auto;
@@ -771,18 +779,7 @@ li::marker {
   background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
 }
 //****************************Section Produits-Vedettes*************************//
-.parallax-vedette {
-  background: url(../ressources/images/parallax-vedette.jpg) no-repeat top /
-    cover fixed;
-  @include parallax;
-}
-.parallax-vedette .txt-par {
-  @include title-parallax;
-  font-size: 35px;
-}
-.txt-vedette {
-  @include txt-produits-parallax;
-}
+
 /*=============== NEW ===============*/
 .container-swiper {
   max-width: 920px;
@@ -800,13 +797,15 @@ li::marker {
     margin-right: auto;
   }
 }
-.hearts {
+.hearts,
+.messages,
+.vues {
   display: flex;
   justify-content: flex-end;
 }
 .heart {
   position: relative;
-  top: 0.6rem;
+  top: 1rem;
   right: 1rem;
   font-size: x-large;
 }
@@ -829,6 +828,21 @@ li::marker {
   color: #333;
 }
 
+.messages .fa-envelope {
+  position: relative;
+  top: 2rem;
+  right: 1rem;
+  font-size: x-large;
+  color: #333;
+}
+.vues .fa-eye {
+  position: relative;
+  top: 3rem;
+  right: 1rem;
+  font-size: x-large;
+  color: #333;
+}
+
 .items-card {
   text-align: left;
   margin-left: 10px;
@@ -843,6 +857,7 @@ li::marker {
   font-weight: bold;
   font-size: 20px;
 }
+
 .new__card {
   position: relative;
   width: 300px;
@@ -855,28 +870,33 @@ li::marker {
   margin-bottom: 4.4rem;
   overflow: hidden;
 }
-.items-card-link {
-  border: none;
-  padding: 15px 15px;
-  margin: 0 auto;
-  color: #cb333b;
-  width: 60%;
-  border-radius: 4px;
-  font-family: "GrouchBT";
-  box-shadow: 1px 3px 5px rgba(139, 139, 139, 0.6);
-  transition: all 0.2s ease-in;
-}
-.items-card-link:hover {
-  transform: scale(0.95);
-  background-color: rgba(243, 61, 85, 0.952);
-}
-.items-link {
-  text-decoration: none;
-  color: #000000;
-  transition: all 0.2s ease-in;
-}
-.items-link:hover {
-  font-weight: 500;
+
+.btn-card-link {
+  margin-top: -2.5rem;
+
+  .items-card-link {
+    border: none;
+    padding: 15px 15px;
+    margin: 0 auto;
+    color: #cb333b;
+    width: 60%;
+    border-radius: 4px;
+    font-family: "GrouchBT";
+    box-shadow: 1px 3px 5px rgba(139, 139, 139, 0.6);
+    transition: all 0.2s ease-in;
+  }
+  .items-card-link:hover {
+    transform: scale(0.95);
+    background-color: rgba(243, 61, 85, 0.952);
+  }
+  .items-link {
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.2s ease-in;
+  }
+  .items-link:hover {
+    font-weight: 500;
+  }
 }
 
 .new__img {
@@ -947,18 +967,18 @@ li::marker {
   }
 }
 
-#btn-produit {
+.btn-produits {
   position: relative;
   overflow: hidden;
   width: 30%;
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 15px 10px;
   text-align: center;
   background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
   color: rgb(34, 34, 34);
   font-family: $font-secondary;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 3px;
   border: 1px solid $color-quaternary;
   outline: none;
@@ -967,37 +987,34 @@ li::marker {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-#btn-produit:hover {
+.btn-produits:hover {
   transform: scale(1.05);
 }
-#btn-produit span {
-  position: relative;
-  pointer-events: none;
-}
 
-#btn-produit::before {
-  --size: 0;
-  content: "";
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  background: radial-gradient(
-    circle closest-side,
-    rgb(203, 51, 59),
-    rgb(234, 190, 176),
-    transparent
-  );
-  width: var(--size);
-  height: var(--size);
-  transform: translate(-50%, -50%);
-  transition: 0.2s ease;
-}
-#button:hover::before {
-  --size: 400px;
-}
 .btn-voir-produits {
   text-decoration: none;
   color: #333;
+}
+.parallax-vedette {
+  background: url(../ressources/images/parallax-vedette.jpg) no-repeat top /
+    cover fixed;
+  @include parallax;
+}
+.parallax-vedette .txt-par,
+.parallax-femme .txt-par,
+.parallax-homme .txt-par {
+  @include title-parallax;
+  font-size: 35px;
+  transition: all 0.2s ease-in-out;
+}
+.parallax-vedette .txt-par:hover,
+.parallax-femme .txt-par:hover,
+.parallax-homme .txt-par:hover {
+  font-weight: bolder;
+  transform: scale(1.02);
+}
+.txt-vedette {
+  @include txt-produits-parallax;
 }
 //****************************Section Produits-femme*************************//
 .parallax-femme {
@@ -1005,10 +1022,7 @@ li::marker {
     fixed;
   @include parallax;
 }
-.parallax-femme .txt-par {
-  @include title-parallax;
-  font-size: 35px;
-}
+
 .txt-femme {
   @include txt-produits-parallax;
 }
@@ -1017,10 +1031,6 @@ li::marker {
   background: url(../ressources/images/parallax-homme.jpg) no-repeat top / cover
     fixed;
   @include parallax;
-}
-.parallax-homme .txt-par {
-  @include title-parallax;
-  font-size: 35px;
 }
 .txt-homme {
   @include txt-produits-parallax;
