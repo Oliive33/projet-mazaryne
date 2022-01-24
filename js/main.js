@@ -70,7 +70,7 @@ function UserPopUp() {
 }
 UserPopUp();
 // Btn vendre  effet hover nav below
-function btnHover() {
+function btnVendreHover() {
   document.getElementById("button").addEventListener("mousemove", (e) => {
     const x = e.pageX - e.target.offsetLeft;
     const y = e.pageY - e.target.offsetTop;
@@ -79,7 +79,8 @@ function btnHover() {
     e.target.style.setProperty("--y", `${y}px`);
   });
 }
-btnHover();
+btnVendreHover();
+
 /*=============== NEW SWIPER ===============*/
 let newSwiper = new Swiper(".new-swiper", {
   spaceBetween: 20,
