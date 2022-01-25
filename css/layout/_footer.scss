@@ -1,31 +1,85 @@
 .footer {
   margin-top: 150px;
-  background: $background-footer no-repeat top / cover fixed;
+  // background: $background-footer no-repeat top / cover fixed;
   width: 100%;
   min-height: 300px;
   text-align: center;
   line-height: 2.5;
 }
+.footer .footer-items {
+  background: #f2f2f2;
+}
 .footer h4 {
   font-family: $font-primary;
   font-size: 45px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
+}
+.footer-title {
+  line-height: 1.7;
+  // border-top: 2px solid $color-header;
+  border-bottom: 1px solid #333;
+  margin: 1px;
+  padding-bottom: 20px;
+}
+.footer-title span {
+  font-family: $font-secondary;
+  font-weight: 500;
+  color: #000;
+}
+
+.conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-right: 55px;
+}
+.icone-conditions h5 {
+  font-family: $font-tertiary;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.icone-conditions p {
+  font-family: $font-tertiary;
+}
+.icone-conditions .img-conditions {
+  width: 50px;
+  height: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.icone-conditions .img-conditions:hover {
+  transform: scale(1.1);
+}
+.condition-delivery,
+.condition-return {
+  line-height: 1.3;
+}
+.payment {
+  margin-left: -80px;
+}
+.reseaux-items {
+  background: $background-header;
+}
+
+.follow h6 {
+  font-family: $font-tertiary;
+  font-weight: 600;
+  font-size: 18px;
 }
 .reseaux {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
-  background: #fff;
   border-radius: 10px;
   height: 65px;
   margin: 0 auto;
   line-height: 0.7;
 }
 .logo-reseaux {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 20px;
   transition: transform 0.3s ease-in-out;
 }
@@ -43,7 +97,7 @@
   color: #000;
 }
 .items-footer ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }

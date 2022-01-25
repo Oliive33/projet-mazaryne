@@ -41,8 +41,41 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(27deg, rgba(214, 66, 73, 0.61) 0%, rgba(214, 0, 29, 0.473) 80%);
+  background: linear-gradient(43deg, #90111c 0%, #cb333b 80%);
   border-radius: 1rem;
+}
+
+/* ==================Scroll up ==================*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background: #e44b55;
+  border-radius: 100px;
+  padding: 0.49rem;
+  opacity: 9;
+  z-index: 10;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background: #d3d3d3;
+  opacity: 1;
+}
+
+.scrollup .fa-chevron-up {
+  color: whitesmoke;
+  font-size: 0.9rem;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 60px;
 }
 
 .phraseSlide {
@@ -222,7 +255,7 @@ form input {
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 h1 {
@@ -242,7 +275,7 @@ h1 {
 }
 
 .item-nav {
-  margin: 20px;
+  margin: 15px;
 }
 
 .icon-nav {
@@ -1254,7 +1287,7 @@ li::marker {
   padding: 15px 10px;
   text-align: center;
   background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
-  color: #222222;
+  color: #111111;
   font-family: "Caslon540", sans-serif;
   font-size: 25px;
   font-weight: 700;
@@ -1378,18 +1411,89 @@ li::marker {
 
 .footer {
   margin-top: 150px;
-  background: linear-gradient(45deg, #e44b55 0%, #cb333b 80%) no-repeat top/cover fixed;
   width: 100%;
   min-height: 300px;
   text-align: center;
   line-height: 2.5;
 }
 
+.footer .footer-items {
+  background: #f2f2f2;
+}
+
 .footer h4 {
   font-family: "GrouchBT", sans-serif;
   font-size: 45px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
+}
+
+.footer-title {
+  line-height: 1.7;
+  border-bottom: 1px solid #333;
+  margin: 1px;
+  padding-bottom: 20px;
+}
+
+.footer-title span {
+  font-family: "Caslon540", sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+.conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin-right: 55px;
+}
+
+.icone-conditions h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.icone-conditions p {
+  font-family: "Poppins", sans-serif;
+}
+
+.icone-conditions .img-conditions {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.icone-conditions .img-conditions:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.condition-delivery,
+.condition-return {
+  line-height: 1.3;
+}
+
+.payment {
+  margin-left: -80px;
+}
+
+.reseaux-items {
+  background: linear-gradient(27deg, #d6424a 0%, #d6001c 80%);
+}
+
+.follow h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .reseaux {
@@ -1403,7 +1507,6 @@ li::marker {
       -ms-flex-align: center;
           align-items: center;
   width: 20%;
-  background: #fff;
   border-radius: 10px;
   height: 65px;
   margin: 0 auto;
@@ -1411,8 +1514,8 @@ li::marker {
 }
 
 .logo-reseaux {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin: 20px;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
@@ -1444,7 +1547,7 @@ li::marker {
 }
 
 .items-footer ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
