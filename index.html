@@ -99,7 +99,7 @@
             <li class="item-nav">
               <a href="#" class="user-connection" title="Gérer mon compte">
                 <img
-                  src="./ressources/images/icones/user-circle-solid.svg"
+                  src="./ressources/images/icones/users.svg"
                   alt="logo user"
                   class="icon-nav"
                 />
@@ -108,17 +108,17 @@
             <li class="item-nav">
               <a href="#">
                 <img
-                  src="./ressources/images/icones/bell-solid.svg"
-                  alt="logo notification"
+                  src="./ressources/images/icones/like.svg"
+                  alt="logo likes"
                   class="icon-nav"
                 />
               </a>
             </li>
 
             <li class="item-nav">
-              <a href="#">
+              <a href="#" title="Mon Panier">
                 <img
-                  src="./ressources/images/icones/shopping-bag-solid.svg"
+                  src="./ressources/images/icones/logo-shopping-bag.svg"
                   alt="logo panier"
                   class="icon-nav"
                 />
@@ -1023,62 +1023,117 @@
         </div>
       </section>
     </main>
+    <!-- Section Footer -->
     <footer>
-      <div class="footer">
-        <h4>Mazaryne</h4>
-        <div class="reseaux">
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <img
-              class="logo-reseaux"
-              src="./ressources/images/icones/facebook.png"
-              alt="logo facebook"
-            />
-          </a>
+      <section class="footer">
+        <div class="footer-items">
+          <div class="footer-title">
+            <h4>Mazaryne</h4>
+            <span>S'exprimer avec Style!</span>
+          </div>
+          <div class="conditions">
+            <div class="delivery icone-conditions">
+              <img
+                src="./ressources/images/icones/box.svg"
+                alt="logo box"
+                class="img-conditions"
+              />
+              <h5 class="conditions-title">Livraison Offerte</h5>
+              <p class="condition-para condition-delivery">
+                À partir de 250€ en France via Colissimo<br />
+                Point retrait de Domicile avec ou sans signature
+              </p>
+            </div>
+            <div class="payment icone-conditions">
+              <img
+                src="./ressources/images/icones/credit-card.svg"
+                alt="logo credit card"
+                class="img-conditions"
+              />
+              <h5 class="conditions-title">Paiement Sécurisé</h5>
+              <p class="condition-para">
+                Carte bleue, Visa, Mastercard, Amex, Paypal
+              </p>
+            </div>
+            <div class="return icone-conditions">
+              <img
+                src="./ressources/images/icones/return.svg"
+                alt="logo retours"
+                class="img-conditions"
+              />
+              <h5 class="conditions-title">Retours</h5>
+              <p class="condition-para condition-return">
+                Vous disposez de 15jours<br />
+                pour changer d'avis
+              </p>
+            </div>
+          </div>
+          <div class="reseaux-items">
+            <div class="follow">
+              <h6>Suivez-nous</h6>
+              <div class="reseaux">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <img
+                    class="logo-reseaux"
+                    src="./ressources/images/icones/facebook.png"
+                    alt="logo facebook"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    class="logo-reseaux"
+                    src="./ressources/images/icones/instagram.png"
+                    alt="logo instagram"
+                  />
+                </a>
 
-          <a href="#">
-            <img
-              class="logo-reseaux"
-              src="./ressources/images/icones/instagram.png"
-              alt="logo instagram"
-            />
-          </a>
-
-          <a href="#">
-            <img
-              class="logo-reseaux"
-              src="./ressources/images/icones/pinterest.png"
-              alt="logo pinterest"
-            />
-          </a>
+                <a href="#">
+                  <img
+                    class="logo-reseaux"
+                    src="./ressources/images/icones/pinterest.png"
+                    alt="logo pinterest"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="items-footer">
+              <ul>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    CGV
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    CGU
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    À Propos
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Centre d'aides
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <div class="items-footer">
-          <ul>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"> CGV </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer"> CGU </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                À Propos
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                Centre d'aides
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </footer>
+    <!-- Scroll UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
     <!--=============== SWIPER JS ===============-->
     <script src="./js/swiper-bundle.min.js"></script>
 
