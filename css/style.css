@@ -1506,8 +1506,6 @@ li::marker {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
-  border-radius: 10px;
   height: 65px;
   margin: 0 auto;
   line-height: 0.7;
@@ -1560,32 +1558,29 @@ li::marker {
 }
 
 @media screen and (max-width: 1185px) {
-  .reseaux {
-    width: 27%;
+  .conditions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px;
+    padding: 0px;
+    margin-right: 0px;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .reseaux {
-    width: 31%;
+  .icone-conditions {
+    margin: 15px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .reseaux {
-    width: 36%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .reseaux {
-    width: 50%;
+  .payment {
+    margin-left: 0;
   }
 }
 
 @media screen and (max-width: 475px) {
-  .reseaux {
-    width: 60%;
+  .icone-conditions {
+    margin: 5px;
+  }
+  .condition-para {
+    font-size: 14px;
   }
   .items-footer ul {
     -ms-flex-wrap: wrap;

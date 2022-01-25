@@ -71,8 +71,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  border-radius: 10px;
   height: 65px;
   margin: 0 auto;
   line-height: 0.7;
@@ -107,28 +105,31 @@
 }
 // Responsive style footer
 @media screen and (max-width: 1185px) {
-  .reseaux {
-    width: 27%;
+  .conditions {
+    flex-direction: column;
+    margin: 20px;
+    padding: 0px;
+    margin-right: 0px;
+  }
+  .icone-conditions {
+    margin: 15px;
+  }
+  .payment {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 900px) {
-  .reseaux {
-    width: 31%;
-  }
 }
 @media screen and (max-width: 768px) {
-  .reseaux {
-    width: 36%;
-  }
 }
 @media screen and (max-width: 600px) {
-  .reseaux {
-    width: 50%;
-  }
 }
 @media screen and (max-width: 475px) {
-  .reseaux {
-    width: 60%;
+  .icone-conditions {
+    margin: 5px;
+  }
+  .condition-para {
+    font-size: 14px;
   }
   .items-footer ul {
     flex-wrap: wrap;
