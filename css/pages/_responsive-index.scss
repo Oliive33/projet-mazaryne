@@ -51,8 +51,8 @@
   .parallax-vedette {
     margin: 70px auto 50px;
   }
-  #btn-produit {
-    width: 40%;
+  .btn-produits {
+    width: 50%;
     font-size: 23px;
   }
 }
@@ -76,9 +76,8 @@
   .btn-acheter-vendre {
     font-size: 18px;
   }
-  #btn-produit {
-    width: 50%;
-    padding: 25px 10px;
+  .btn-produits {
+    width: 60%;
     font-size: 22px;
   }
 }
@@ -103,6 +102,10 @@
   .parallax-femme .txt-par,
   .parallax-homme .txt-par {
     font-size: 30px;
+  }
+  .btn-produits {
+    width: 70%;
+    font-size: 21px;
   }
 }
 @media screen and (max-width: 475px) {
@@ -146,6 +149,9 @@
   .btn-acheter-vendre {
     font-size: 14px;
     margin-top: -8rem;
+  }
+  .main-pictures img {
+    height: 285px;
   }
   .btn-acheter-vendre .link-acheter-vendre {
     padding: 5px 35px;
