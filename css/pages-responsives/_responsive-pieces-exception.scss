@@ -1,0 +1,75 @@
+@media screen and (max-width: 991px) {
+  .container-picture {
+    background-position: top;
+    width: 100%;
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-picture {
+    height: 65vh;
+  }
+  .container-title {
+    top: 60%;
+    left: 2%;
+  }
+  .container-title h2 {
+    font-size: 26px;
+  }
+  .btn {
+    font-size: 23px;
+  }
+  .produits-rares h3 {
+    font-size: 25px;
+  }
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-picture {
+    height: 55vh;
+  }
+  .container-title h2 {
+    font-size: 23px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .produits-rares h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .container-title {
+    margin: 10px;
+  }
+  .produits-rares h3 {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 380px) {
+  .container-picture {
+    height: 38vh;
+  }
+  .container-title {
+    margin: 15px;
+  }
+  .produits-rares h3 {
+    line-height: 1.5;
+    font-size: 19px;
+    margin-top: 0;
+  }
+}

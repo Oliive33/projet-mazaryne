@@ -226,8 +226,8 @@
   width: 280px;
   background: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.35);
+          box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.35);
   padding: 0px 5px;
 }
 
@@ -1454,6 +1454,68 @@ a {
   text-decoration: none;
 }
 
+.loading {
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.loading.show {
+  opacity: 1;
+}
+
+.ball {
+  background-color: #777;
+  border-radius: 50%;
+  margin: 5px;
+  height: 10px;
+  width: 10px;
+  -webkit-animation: jump 0.5s ease-in infinite;
+          animation: jump 0.5s ease-in infinite;
+}
+
+.ball:nth-of-type(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.ball:nth-of-type(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+@-webkit-keyframes jump {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
 .titre-produits-femme {
   margin: 80px;
 }
@@ -1474,7 +1536,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 10px;
 }
 
@@ -1518,9 +1580,9 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 17rem;
           flex: 1 1 17rem;
-  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.75);
-          box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
+  border-radius: 4px;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -1531,10 +1593,11 @@ a {
   left: 1rem;
   padding: 0.7rem 1rem;
   font-size: 1rem;
+  font-family: "Caslon540", sans-serif;
   color: #d6001c;
   background: rgba(255, 51, 153, 0.1);
   z-index: 1;
-  border-radius: 0.5rem;
+  border-radius: 4px;
 }
 
 .products .box-container .box .image {
@@ -1545,7 +1608,7 @@ a {
 }
 
 .products .box-container .box .image img {
-  height: 17rem;
+  height: 15rem;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   transition: -webkit-transform 0.1s ease-in-out;
   transition: transform 0.1s ease-in-out;
@@ -1586,6 +1649,7 @@ a {
   border-left: 0.1rem solid #fff7;
   border-right: 0.1rem solid #fff7;
   width: 100%;
+  font-family: "Caslon540", sans-serif;
 }
 
 .products .box-container .box .image .icons a:hover {
@@ -1598,11 +1662,13 @@ a {
 }
 
 .products .box-container .box .content h3 {
+  font-family: "Caslon540", sans-serif;
   font-size: 1rem;
   color: #333;
 }
 
 .products .box-container .box .content .price {
+  font-family: "Caslon540", sans-serif;
   font-size: 1rem;
   color: #90111c;
   font-weight: bolder;
@@ -1664,7 +1730,7 @@ body {
   display: inline-flex;
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: 1.6rem;
+  font-size: 25.6px;
   color: #333;
   font-weight: bold;
   gap: 1rem;
@@ -1686,6 +1752,44 @@ body {
 .fa-arrow-down:hover {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
+}
+
+.produits-rares {
+  margin: 50px;
+}
+
+.produits-rares h3 {
+  margin-top: 130px;
+  margin-bottom: 80px;
+  font-family: "GrouchBT", sans-serif;
+  font-size: 30px;
+}
+
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[4];
+      grid-template-columns: repeat(4, 0.5fr);
+}
+
+.card {
+  gap: 2rem;
+}
+
+.card img {
+  width: 80%;
+  border-radius: 4px;
+  margin: 0 auto;
+  -webkit-box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.35);
+          box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.35);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.card img:hover {
+  border: 2px solid #eabeb0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer {
@@ -2052,6 +2156,90 @@ body {
   }
   .btn-acheter-vendre .link-acheter-vendre {
     padding: 5px 35px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container-picture {
+    background-position: top;
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-picture {
+    height: 65vh;
+  }
+  .container-title {
+    top: 60%;
+    left: 2%;
+  }
+  .container-title h2 {
+    font-size: 26px;
+  }
+  .btn {
+    font-size: 23px;
+  }
+  .produits-rares h3 {
+    font-size: 25px;
+  }
+  .d-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-picture {
+    height: 55vh;
+  }
+  .container-title h2 {
+    font-size: 23px;
+  }
+  .btn {
+    font-size: 20px;
+  }
+  .produits-rares h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .container-title {
+    margin: 10px;
+  }
+  .produits-rares h3 {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .d-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container-picture {
+    height: 38vh;
+  }
+  .container-title {
+    margin: 15px;
+  }
+  .produits-rares h3 {
+    line-height: 1.5;
+    font-size: 19px;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
