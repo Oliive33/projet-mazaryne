@@ -1,0 +1,57 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.container-picture {
+  background: url("../ressources/images/images-pieces-exception/main-shoes.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+.container-title {
+  position: relative;
+  top: 50%;
+  left: 5%;
+}
+.container-title h2 {
+  font-family: $font-secondary;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.btn {
+  display: inline-flex;
+  align-self: center;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: bold;
+  gap: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn,
+.btn i {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.fa-arrow-down {
+  color: $color-header;
+}
+.fa-arrow-down:hover {
+  transform: scale(1.06);
+}

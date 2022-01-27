@@ -14,6 +14,13 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./layout/header";
 @import "./layout/index";
+@import "./layout/produits-femme";
+@import "./layout/produits-homme";
+@import "./layout/pieces-exception";
+@import "./layout/designers";
+@import "./layout/blog";
 @import "./layout/footer";
-@import "./pages/responsive-index";
+@import "./pages-responsives/responsive-index";
+@import "./pages-responsives/responsive-pieces-exception";
