@@ -55,24 +55,26 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- Bandeau & phrase slide -->
-      <div class="phraseSlide">
-        <div class="cadre">
-          <div class="centre">
-            <div class="carousel">
-              <div class="changeHidden">
-                <div class="contenant">
-                  <div class="element">
-                    "Rejoingnez notre communauté de Fashion Activists!"
-                  </div>
-                  <div class="element">"S'exprimer avec style !"</div>
-                  <div class="element">"Des produits de luxe"</div>
-                  <div class="element">
-                    "Appuyez-vous sur une grande communauté."
-                  </div>
-                  <div class="element">
-                    "Rejoingnez notre communauté de Fashion Activists!"
+      <div id="bandeau-slide">
+        <div class="phraseSlide" id="nav-elements">
+          <div class="cadre">
+            <div class="centre">
+              <div class="carousel">
+                <div class="changeHidden">
+                  <div class="contenant">
+                    <div class="element">
+                      "Rejoingnez notre communauté de Fashion Activists!"
+                    </div>
+                    <div class="element">"S'exprimer avec style !"</div>
+                    <div class="element">"Des produits de luxe"</div>
+                    <div class="element">
+                      "Appuyez-vous sur une grande communauté."
+                    </div>
+                    <div class="element">
+                      "Rejoingnez notre communauté de Fashion Activists!"
+                    </div>
                   </div>
                 </div>
               </div>
@@ -80,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="nav-top">
+      <div class="nav-top" id="nav-elements">
         <div class="search-box">
           <div class="search">
             <form>
@@ -93,7 +95,9 @@
             </form>
           </div>
         </div>
-        <h1>Mazaryne</h1>
+        <a href="./index.html">
+          <h1>Mazaryne</h1>
+        </a>
         <nav>
           <ul class="nav-links">
             <li class="item-nav">
@@ -127,28 +131,29 @@
           </ul>
         </nav>
       </div>
-      <!-- <form class="form-connection">
-        <h2>Mon Compte - Connexion</h2>
-        <label for="emailConnection">Votre e-mail</label>
-        <input type="email" class="email-connection" id="emailConnection" />
-
-        <label for="mdpConnection">Votre Mot de passe</label>
-        <input type="password" class="mdp-connection" id="mdpConnection" />
-
-        <div class="connection">
-          <div class="mdp-link-perdu">
-            <a class="mdp-link mdp-link-lost" href="#">Mot de passe perdu ?</a>
-          </div>
-
-          <button class="btn-connection" type="submit">Se connecter</button>
-
-          <div class="mdp-title-inscrire">
-            <span>Pour vous inscrire</span>
-            <a href="#" class="mdp-link">Créer un compte</a>
-          </div>
-        </div>
-      </form> -->
     </header>
+    <form class="form-connection">
+      <h2>Mon Compte - Connexion</h2>
+      <label for="emailConnection">Votre e-mail</label>
+      <input type="email" class="email-connection" id="emailConnection" />
+
+      <label for="mdpConnection">Votre Mot de passe</label>
+      <input type="password" class="mdp-connection" id="mdpConnection" />
+
+      <div class="connection">
+        <div class="mdp-link-perdu">
+          <a class="mdp-link mdp-link-lost" href="#">Mot de passe perdu ?</a>
+        </div>
+
+        <button class="btn-connection" type="submit">Se connecter</button>
+
+        <div class="mdp-title-inscrire">
+          <span>Pour vous inscrire</span>
+          <a href="#" class="mdp-link">Créer un compte</a>
+        </div>
+      </div>
+    </form>
+
     <div class="header">
       <div class="container">
         <div class="row v-center">
@@ -175,7 +180,7 @@
                   </select>
                 </label>
                 <li class="menu-item-has-children">
-                  <a href="#" class="nav-below-link"
+                  <a href="./Pages/Produits-Femme.html" class="nav-below-link"
                     >Femme<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
@@ -220,7 +225,7 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#" class="nav-below-link"
+                  <a href="./Pages/Produits-Homme.html" class="nav-below-link"
                     >Homme<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
@@ -259,7 +264,7 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#" class="nav-below-link"
+                  <a href="./Pages/pieces-exception.html" class="nav-below-link"
                     >Pièces d'Exception<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
@@ -302,7 +307,7 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#" class="nav-below-link"
+                  <a href="./Pages/Designers.html" class="nav-below-link"
                     >Designers<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
@@ -361,12 +366,14 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="#" class="nav-below-link"
+                  <a href="./Pages/Blog.html" class="nav-below-link"
                     >Blog<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu single-column-menu">
                     <ul>
-                      <li><a href="#">Jan22 - Notre collection Tendance</a></li>
+                      <li>
+                        <a href="#">Jan22 - Notre collection Tendance</a>
+                      </li>
                       <li><a href="#">Feb22 - Nos Nouveautés</a></li>
                       <li><a href="#">Mar22 - Les Designers de demain</a></li>
                     </ul>
@@ -1137,6 +1144,7 @@
     <!--=============== SWIPER JS ===============-->
     <script src="./js/swiper-bundle.min.js"></script>
 
+    <script src="./js/index.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
