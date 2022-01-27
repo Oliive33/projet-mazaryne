@@ -273,7 +273,7 @@
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item text-center">
-                      <a href="#">
+                      <a href="#product1">
                         <img
                           src="../ressources/images/p1.jpg"
                           alt="new Product"
@@ -282,7 +282,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#">
+                      <a href="#product2">
                         <img
                           src="../ressources/images/p2.jpg"
                           alt="new Product"
@@ -291,7 +291,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#">
+                      <a href="#product3">
                         <img
                           src="../ressources/images/p3.jpg"
                           alt="new Product"
@@ -300,7 +300,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#">
+                      <a href="#product4">
                         <img
                           src="../ressources/images/p4.jpg"
                           alt="new Product"
@@ -382,7 +382,7 @@
                   </div>
                 </li>
                 <li id="button" class="btn">
-                  <a class="nav-btn-link" href="#">
+                  <a id="btn" class="nav-btn-link" href="#">
                     <span>Vendre un article</span></a
                   >
                 </li>
@@ -401,12 +401,42 @@
     </div>
     <main>
       <!-- Section main picture -->
-      <section class="container-picture" id="">
+      <section class="container-picture" id="container-picture">
         <div class="container-title">
           <h2>Pièces en édition limitées ou pièces rares</h2>
-          <a href="#" class="btn btn-scroll-down">
+          <a href="#products" class="btn btn-scroll-down">
             Voir plus-bas <i class="fas fa-arrow-down"></i>
           </a>
+        </div>
+      </section>
+      <!-- Section produits d'exception -->
+      <section class="produits-rares" id="products">
+        <h3>Découvrez notre sélection de pièces rares</h3>
+        <div class="card d-grid" id="">
+          <img
+            src="../ressources/images/p1.jpg"
+            alt="image"
+            class="card-image img1"
+            id="product1"
+          />
+          <img
+            src="../ressources/images/p2.jpg"
+            alt="image"
+            class="card-image img2"
+            id="product2"
+          />
+          <img
+            src="../ressources/images/p3.jpg"
+            alt="image"
+            class="card-image img3"
+            id="product3"
+          />
+          <img
+            src="../ressources/images/p4.jpg"
+            alt="image"
+            class="card-image img4"
+            id="product4"
+          />
         </div>
       </section>
     </main>
@@ -524,6 +554,10 @@
     <!--=============== SWIPER JS ===============-->
     <script src="../js/swiper-bundle.min.js"></script>
 
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="../js/scrollreveal.min.js"></script>
+
+    <script src="../js/pieces-exception.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>
