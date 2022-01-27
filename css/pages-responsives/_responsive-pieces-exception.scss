@@ -57,14 +57,16 @@
   }
   .btn {
     font-size: 18px;
-
-    .d-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
+  }
+  .d-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 380px) {
+  .produits-rares {
+    margin: 30px;
+  }
   .container-picture {
     height: 52vh;
   }
@@ -75,10 +77,19 @@
   }
   .container-title h2 {
     width: 70%;
+    font-size: 18px;
   }
+
   .produits-rares h3 {
     line-height: 1.5;
     font-size: 19px;
-    margin-top: 0;
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .btn {
+    font-size: 17px;
+  }
+  .card img {
+    width: 90%;
   }
 }

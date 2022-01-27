@@ -1,0 +1,25 @@
+@media screen and (max-width: 991px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 575px) {
+}
+@media screen and (max-width: 475px) {
+  .titre-produits-femme {
+    margin: 60px;
+  }
+  .titre-produits-femme h2 {
+    font-size: 25px;
+  }
+  .products .box-container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .titre-produits-femme {
+    margin: 40px;
+  }
+  .titre-produits-femme h2 {
+    font-size: 21px;
+  }
+}
