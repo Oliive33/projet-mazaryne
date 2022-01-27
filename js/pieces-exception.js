@@ -8,8 +8,8 @@ const sr = ScrollReveal({
 });
 
 // sr.reveal(".logo-box");
-sr.reveal(".titles-products", { interval: 200 });
-// sr.reveal(".tagline-rando", { delay: 500 });
+sr.reveal(".title-picture, .btn-scroll-down", { delay: 200 });
+sr.reveal(".titles-products", { interval: 500 });
 // sr.reveal(".titles-products", {
 //   origin: "top",
 //   delay: 1000,
