@@ -8,9 +8,9 @@ const sr = ScrollReveal({
 });
 
 // sr.reveal(".logo-box");
-// sr.reveal(".nav-item, a", { interval: 200 });
+sr.reveal(".titles-products", { interval: 200 });
 // sr.reveal(".tagline-rando", { delay: 500 });
-// sr.reveal(".main-title, .btn-scroll-down", {
+// sr.reveal(".titles-products", {
 //   origin: "top",
 //   delay: 1000,
 // });
