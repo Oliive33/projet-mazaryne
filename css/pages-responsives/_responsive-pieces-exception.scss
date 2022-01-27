@@ -7,7 +7,7 @@
 }
 @media screen and (max-width: 768px) {
   .container-picture {
-    height: 65vh;
+    height: 70vh;
   }
   .container-title {
     top: 60%;
@@ -32,10 +32,10 @@
 }
 @media screen and (max-width: 550px) {
   .container-picture {
-    height: 55vh;
+    height: 67vh;
   }
   .container-title h2 {
-    font-size: 23px;
+    font-size: 21px;
   }
   .btn {
     font-size: 20px;
@@ -55,17 +55,26 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .d-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .btn {
+    font-size: 18px;
+
+    .d-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 @media screen and (max-width: 380px) {
   .container-picture {
-    height: 38vh;
+    height: 52vh;
   }
   .container-title {
     margin: 15px;
+    left: 0;
+    top: 60%;
+  }
+  .container-title h2 {
+    width: 70%;
   }
   .produits-rares h3 {
     line-height: 1.5;
