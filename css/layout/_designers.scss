@@ -1,3 +1,23 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0.1rem 0 0.1rem;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+
 .titre-principal-designer {
   margin: 80px 0px 50px 50px;
 }
@@ -5,87 +25,87 @@
   font-family: $font-primary;
   font-size: 40px;
 }
-.designers-luxe {
-  padding: 2rem;
+// Section designers
+.container-principal {
+  width: 675px;
+  height: 395px;
+  background: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
+  margin: 0 auto;
+}
+.container-onglets {
+  background: $color-quaternary;
+  width: 100%;
+  height: 25%;
   display: flex;
+  border-bottom: 1px solid #333;
+}
+.onglets {
+  width: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-secondary;
+  font-size: 21px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.onglets:not(:nth-child(3)) {
+  border-right: 1px solid #333;
+}
+.contenus {
+  height: 30%;
+  width: 60%;
+  position: absolute;
+  opacity: 0;
+}
+.contenus h3,
+.contenus {
+  padding: 15px;
+}
+.contenus hr {
+  width: 20%;
+  height: 2px;
+  margin-left: 20px;
+  background: #000;
+  border: none;
 }
 
-.designers-luxe .background-img-luxe {
-  position: absolute;
-  padding: 40px;
-  width: 322px;
-  height: 400px;
-  background: $color-quaternary;
-  z-index: -1;
-  box-shadow: 4px 4px 10px rgba(71, 71, 71, 0.35);
-  border-radius: 4px;
+/* anim */
+.active-onglets {
+  background: $color-header;
+  color: #f1f1f1;
+  transition: all 0.4s ease;
 }
-.designers-luxe img {
-  padding-top: 40px;
-  margin-left: 40px;
-  color: transparent;
-  box-shadow: 17px 15px 18px rgba(71, 71, 71, 0.01);
-  border-radius: 4px;
+.active-contenu {
+  animation: fade 0.5s forwards;
 }
-.designers-luxe {
-  margin-left: 40px;
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.designers-luxe h3,
-.designers-createurs h3 {
-  font-family: $font-secondary;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.designers-luxe ul {
+// liste designers
+.list-designers-luxe {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 10px;
-  margin-left: 100px;
+  width: 90%;
 }
-.designers-luxe ul li,
-.designers-createurs ul li {
-  font-size: 18px;
+.contenus .list-designers-luxe .list-item-luxe {
   list-style-type: none;
 }
-
-.designers-luxe ul li a,
-.designers-createurs ul li a {
+.contenus .list-designers-luxe .list-item-luxe .link-designer {
   font-family: $font-tertiary;
-  color: black;
-  transition: all 0.2s ease-in-out;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
 }
-.designers-luxe ul li a:hover,
-.designers-createurs ul li a:hover {
-  font-weight: bolder;
+.contenus .list-designers-luxe .list-item-luxe .link-designer:hover {
   color: $color-header;
-}
-// Designers createurs
-.designers-createurs {
-  padding: 2rem;
-  display: flex;
-  margin-right: 40px;
-  //   justify-content: end;
-}
-.designers-createurs .background-img-createurs {
-  position: absolute;
-  left: 60%;
-  padding: 40px;
-  width: 300px;
-  height: 320px;
-  background: $color-quaternary;
-  z-index: -1;
-  box-shadow: 4px 4px 10px rgba(71, 71, 71, 0.35);
-  border-radius: 4px;
-}
-.designers-createurs img {
-  padding-top: 40px;
-  margin-right: 40px;
-  box-shadow: 17px 15px 18px rgba(71, 71, 71, 0.01);
-  border-radius: 5px;
-}
-.designers-createurs ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 10px;
-  margin-right: 100px;
+  font-weight: bold;
 }
