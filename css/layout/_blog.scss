@@ -1,0 +1,135 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+  padding: 0 0.1rem 0 0.1rem;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+// Section Blog
+.blog {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.blog-title-principal {
+  font-family: $font-primary;
+  font-size: 45px;
+  margin: 100px 0 100px 0;
+}
+/*=============== NEW ===============*/
+.container-swiper-blog {
+  max-width: 920px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .container-swiper-blog {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.new__card-blog {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 16px hsla(355, 25%, 15%, 0.1);
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 4.4rem;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: $color-header;
+  opacity: 0.9;
+  overflow: hidden;
+  transition: 0.8s;
+}
+.overlay span {
+  color: white;
+  font-size: 19px;
+  letter-spacing: 1px;
+  position: absolute;
+  background: $color-quaternary;
+  border: 2px solid $color-quaternary;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+}
+.overlay .para-swiper {
+  color: white;
+  font-size: 18px;
+  font-family: $font-secondary;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.6;
+  width: 85%;
+}
+.swiper-blog:hover .overlay {
+  height: 100%;
+}
+
+.img-blog {
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+  transition: 0.3s;
+}
+.new__card-blog:hover .img-blog {
+  transform: scale(1.05);
+}
+
+/*Class Swiper*/
+
+.swiper-pagination {
+  margin-bottom: 15px;
+}
+.swiper-pagination-bullet {
+  background: rgba(234, 190, 176, 0.989);
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-quaternary;
+}
+@media screen and (max-width: 500px) {
+  .overlay .para-swiper {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-blog {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .overlay .para-swiper {
+    width: 70%;
+  }
+}
