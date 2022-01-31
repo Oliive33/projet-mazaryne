@@ -66,19 +66,26 @@ window.onresize = function () {
   }
 };
 //Apparition Pop up user
-const userConnection = document.querySelector(".user-connection");
-const formConnection = document.querySelector(".form-connection");
-function UserPopUp() {
-  userConnection.addEventListener("click", () => {
-    if (formConnection.classList.contains("apparition")) {
-      formConnection.classList.remove("apparition");
-    } else {
-      formConnection.classList.toggle("apparition");
-    }
-  });
-}
-UserPopUp();
+let formBtn = document.querySelector("#login-btn");
+let loginForm = document.querySelector(".login-form-container");
+let formClose = document.querySelector("#form-close");
 
+window.onscroll = () => {
+  menu.classList.remove("fa-times");
+  loginForm.classList.remove("active");
+};
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("fa-times");
+});
+
+formBtn.addEventListener("click", () => {
+  loginForm.classList.add("active");
+});
+
+formClose.addEventListener("click", () => {
+  loginForm.classList.remove("active");
+});
 // change height bandeau
 navbar = document.getElementById("bandeau-slide");
 navElements = document.getElementById("nav-elements");
