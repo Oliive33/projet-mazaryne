@@ -79,19 +79,42 @@ a {
   text-decoration: none;
 }
 .overlay .para-swiper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 18px;
   font-family: $font-secondary;
   letter-spacing: 1px;
   font-weight: bolder;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   text-decoration: none;
   line-height: 1.6;
   width: 85%;
+}
+.overlay a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  color: white;
+  font-size: 19px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  background: $color-quaternary;
+  font-family: $font-secondary;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.overlay a:hover {
+  color: #333;
+  background-color: #fff;
 }
 .swiper-blog:hover .overlay {
   height: 100%;

@@ -244,13 +244,13 @@
           align-items: center;
 }
 
-form input {
+.form-input .search-item {
   border: none;
   outline: none;
   width: 100%;
   font-size: 14px;
   font-weight: 600;
-  padding: 5px 5px;
+  padding: 15px 5px;
 }
 
 h1 {
@@ -870,133 +870,118 @@ a {
   text-decoration: none;
 }
 
-.form-connection {
-  width: 320px;
-  height: 320px;
-  background: #eabeb0;
-  border-radius: 5px;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  color: #f1f1f1;
-  position: absolute;
-  top: 53%;
-  left: 70%;
-  padding-top: 10px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-box-shadow: 3px 7px 6px 0px rgba(114, 114, 114, 0.75);
-          box-shadow: 3px 7px 6px 0px rgba(114, 114, 114, 0.75);
-  z-index: 100;
-}
-
-.form-connection h2 {
-  font-family: "Poppins", sans-serif;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  font-size: 19px;
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #90111c;
   color: #fff;
-}
-
-.form-connection label {
-  font-size: 17px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
-.connection {
-  width: 100%;
-}
-
-.connection .mdp-link-perdu {
-  border-bottom: 1px solid #fff;
-  width: 90%;
-  margin: 0 auto 10px;
-  padding-bottom: 10px;
-}
-
-.connection .mdp-link {
-  color: #e44b55;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-}
-
-.connection .mdp-link-lost {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-.btn-connection {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fff;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  margin: 0 auto;
-  padding: 8px 15px;
-  border: none;
+  padding: 0.8rem 3rem;
   border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  font-family: "Caslon540", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
-.btn-connection:hover {
-  font-weight: bold;
-  background-color: #e44b55;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.btn:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
-.mdp-title-inscrire {
+.login-form-container {
+  position: fixed;
+  top: -120%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form-container.active {
+  top: 0;
+}
+
+.login-form-container form {
+  margin: 4rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 35rem;
+}
+
+.login-form-container form h3 {
+  font-size: 25px;
+  font-family: "Caslon540", sans-serif;
+  color: #444;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.login-form-container form .box {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
 }
 
-.mdp-link:hover {
-  font-weight: bolder;
+.login-form-container form .box:focus {
+  border-color: #90111c;
 }
 
-input {
-  width: 80% !important;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 3px;
+.login-form-container form #remember {
+  margin: 2rem 0;
 }
 
-.apparition {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.login-form-container form label {
+  font-size: 16px;
+}
+
+.login-form-container form .btn {
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+.login-form-container form p {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.login-form-container form p a {
+  color: #90111c;
+}
+
+.login-form-container form p a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.login-form-container #form-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 
 .main-pictures {
@@ -1988,20 +1973,47 @@ a {
 }
 
 .overlay .para-swiper {
-  color: white;
-  font-size: 18px;
-  font-family: "Caslon540", sans-serif;
-  letter-spacing: 1px;
-  font-weight: bolder;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  font-family: "Caslon540", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bolder;
   text-align: center;
   text-decoration: none;
   line-height: 1.6;
   width: 85%;
+}
+
+.overlay a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  color: white;
+  font-size: 19px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  background: #eabeb0;
+  font-family: "Caslon540", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.overlay a:hover {
+  color: #333;
+  background-color: #fff;
 }
 
 .swiper-blog:hover .overlay {
@@ -2218,6 +2230,9 @@ a {
 }
 
 @media screen and (max-width: 475px) {
+  .conditions {
+    margin: 20px auto;
+  }
   .icone-conditions {
     margin: 5px;
   }
