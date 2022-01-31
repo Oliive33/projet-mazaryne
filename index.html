@@ -85,12 +85,13 @@
       <div class="nav-top" id="nav-elements">
         <div class="search-box">
           <div class="search">
-            <form>
+            <form class="form-input">
               <i class="fas fa-search"></i>
               <input
                 type="text"
                 id="search-item"
                 placeholder="Rechercher par marque, article..."
+                class="search-item"
               />
             </form>
           </div>
@@ -101,7 +102,12 @@
         <nav>
           <ul class="nav-links">
             <li class="item-nav">
-              <a href="#" class="user-connection" title="Gérer mon compte">
+              <a
+                href="#"
+                class="user-connection"
+                title="Gérer mon compte"
+                id="login-btn"
+              >
                 <img
                   src="./ressources/images/icones/users.svg"
                   alt="logo user"
@@ -132,28 +138,28 @@
         </nav>
       </div>
     </header>
-    <form class="form-connection">
-      <h2>Mon Compte - Connexion</h2>
-      <label for="emailConnection">Votre e-mail</label>
-      <input type="email" class="email-connection" id="emailConnection" />
+    <!-- login form container  -->
 
-      <label for="mdpConnection">Votre Mot de passe</label>
-      <input type="password" class="mdp-connection" id="mdpConnection" />
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
 
-      <div class="connection">
-        <div class="mdp-link-perdu">
-          <a class="mdp-link mdp-link-lost" href="#">Mot de passe perdu ?</a>
-        </div>
+      <form action="">
+        <h3>Connexion</h3>
+        <input type="email" class="box" placeholder="entrer votre email" />
+        <input
+          type="password"
+          class="box"
+          placeholder="entrer votre mot de passe"
+        />
+        <input type="submit" value="Se connecter maintenant" class="btn" />
 
-        <button class="btn-connection" type="submit">Se connecter</button>
+        <input type="checkbox" id="remember" />
+        <label for="remember">Se souvenir de moi</label>
 
-        <div class="mdp-title-inscrire">
-          <span>Pour vous inscrire</span>
-          <a href="#" class="mdp-link">Créer un compte</a>
-        </div>
-      </div>
-    </form>
-
+        <p>Mot de passe oublié? <a href="#">cliquer ici</a></p>
+        <p>Vous n'avez pas encore de compte? <a href="#">S'inscrire ici</a></p>
+      </form>
+    </div>
     <div class="header">
       <div class="container">
         <div class="row v-center">
