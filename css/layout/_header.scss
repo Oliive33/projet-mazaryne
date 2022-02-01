@@ -186,6 +186,54 @@ h1 {
   height: 35px;
   color: white;
 }
+
+//****************************Navbar below*************************//
+
+.nav-below-link {
+  transition: all 0.2s ease-in-out;
+}
+.nav-below-link:hover {
+  color: $color-secondary;
+}
+.nav-below-link,
+.nav-btn-link span {
+  text-decoration: none;
+  color: #333;
+  font-family: $font-secondary;
+  font-size: 20px;
+}
+.btn,
+.nav-below-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#button {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 0px 10px;
+  font-family: $font-secondary;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid $color-header;
+  outline: none;
+
+  transition: all 0.2s ease-in-out;
+}
+#button:hover {
+  transform: scale(1.05);
+}
+#button span {
+  transition: color 0.2s ease-in-out;
+}
+#button span:hover {
+  font-weight: bolder;
+}
+.nav-btn-link {
+  text-transform: none !important;
+}
 //****************************Popup user start*************************//
 .btn {
   display: inline-block;
@@ -271,6 +319,7 @@ h1 {
   padding: 0.5rem 0;
   font-size: 1rem;
   color: #666;
+  font-family: $font-tertiary;
 }
 
 .login-form-container form p a {
@@ -290,55 +339,58 @@ h1 {
   color: #fff;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .login-form-container form {
+    padding: 1rem 1.5rem;
+    width: 23rem;
+  }
+  .login-form-container form h3 {
+    font-size: 20px;
+  }
+  .login-form-container form .box {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: $font-tertiary;
+    color: #333;
+    margin: 0.6rem 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+  }
+  .login-form-container form .box {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+  }
+  .login-form-container form p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .login-form-container form {
+    width: 21rem;
+    padding: 1rem 1.2rem;
+  }
+  .login-form-container form h3 {
+    font-size: 19px;
+  }
+  .login-form-container form .box {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .login-form-container form p {
+    font-size: 12px;
+  }
+  .login-form-container #form-close {
+    font-size: 1.5rem;
+  }
+}
 // ****************************Popup user end***********************//
-
-//****************************Navbar below*************************//
-
-.nav-below-link {
-  transition: all 0.2s ease-in-out;
-}
-.nav-below-link:hover {
-  color: $color-secondary;
-}
-.nav-below-link,
-.nav-btn-link span {
-  text-decoration: none;
-  color: #333;
-  font-family: $font-secondary;
-  font-size: 20px;
-}
-.btn,
-.nav-below-link {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#button {
-  position: relative;
-  overflow: hidden;
-  background: #ffffff;
-  padding: 0px 10px;
-  font-family: $font-secondary;
-  font-weight: 600;
-  color: rgb(34, 34, 34);
-  cursor: pointer;
-  border-radius: 2px;
-  border: 2px solid $color-header;
-  outline: none;
-
-  transition: all 0.2s ease-in-out;
-}
-#button:hover {
-  transform: scale(1.05);
-}
-#button span {
-  transition: color 0.2s ease-in-out;
-}
-#button span:hover {
-  font-weight: bolder;
-}
-.nav-btn-link {
-  text-transform: none !important;
-}
 
 //****************************** mega-menu start**************************//
 .container {
@@ -440,11 +492,10 @@ li::marker {
   text-decoration: none;
 }
 .separation-designers {
-  border: 1.5px solid $color-secondary;
+  border: 1.4px solid $color-secondary;
   border-radius: 100px;
-  height: 300px;
-  margin-left: -75px;
-  margin-right: 10px;
+  height: 250px;
+  margin: 40px 40px 40px -70px;
 }
 .header .menu > ul > li .sub-menu.mega-menu {
   left: 50%;
@@ -498,6 +549,16 @@ li::marker {
 .mobile-menu-head,
 .mobile-menu-trigger {
   display: none;
+}
+.btn-all-brands {
+  background: #90111c;
+  padding: 10px 38px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: $font-secondary;
+  font-weight: 600;
+  text-align: center;
 }
 
 /*responsive*/

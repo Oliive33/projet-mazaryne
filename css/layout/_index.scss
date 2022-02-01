@@ -304,14 +304,16 @@ a {
 .parallax-femme .txt-par,
 .parallax-homme .txt-par {
   @include title-parallax;
-  font-size: 35px;
+  font-size: 30px;
   transition: all 0.2s ease-in-out;
 }
 .parallax-vedette .txt-par:hover,
 .parallax-femme .txt-par:hover,
 .parallax-homme .txt-par:hover {
-  font-weight: bolder;
+  font-weight: 600;
   transform: scale(1.02);
+  background-color: $color-header;
+  color: #fff;
 }
 .txt-vedette {
   @include txt-produits-parallax;
