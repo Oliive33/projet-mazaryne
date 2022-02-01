@@ -1,11 +1,11 @@
 // Scroll up
 /*=============== SHOW SCROLL UP ===============*/
-function scrollUp() {
-  const scrollUp = document.getElementById("scroll-up");
-  if (this.scrollY >= 400) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
-}
-window.addEventListener("scroll", scrollUp);
+// function scrollUp() {
+//   const scrollUp = document.getElementById("scroll-up");
+//   if (this.scrollY >= 400) scrollUp.classList.add("show-scroll");
+//   else scrollUp.classList.remove("show-scroll");
+// }
+// window.addEventListener("scroll", scrollUp);
 
 // Mega menu navbar below
 const menu = document.querySelector(".menu");
@@ -71,14 +71,8 @@ let loginForm = document.querySelector(".login-form-container");
 let formClose = document.querySelector("#form-close");
 
 window.onscroll = () => {
-  menu.classList.remove("fa-times");
   loginForm.classList.remove("active");
 };
-
-menu.addEventListener("click", () => {
-  menu.classList.toggle("fa-times");
-});
-
 formBtn.addEventListener("click", () => {
   loginForm.classList.add("active");
 });
@@ -86,6 +80,7 @@ formBtn.addEventListener("click", () => {
 formClose.addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
+
 // change height bandeau
 navbar = document.getElementById("bandeau-slide");
 navElements = document.getElementById("nav-elements");
