@@ -1,11 +1,11 @@
 // Scroll up
 /*=============== SHOW SCROLL UP ===============*/
-// function scrollUp() {
-//   const scrollUp = document.getElementById("scroll-up");
-//   if (this.scrollY >= 400) scrollUp.classList.add("show-scroll");
-//   else scrollUp.classList.remove("show-scroll");
-// }
-// window.addEventListener("scroll", scrollUp);
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  if (this.scrollY >= 400) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
 
 // Mega menu navbar below
 const menu = document.querySelector(".menu");
