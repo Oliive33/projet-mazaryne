@@ -18,102 +18,62 @@ a {
   text-decoration: none;
 }
 
+// Section designers
+.designers {
+  display: flex;
+}
 .titre-principal-designer {
-  margin: 80px 0px 50px 50px;
+  margin: 50px 0px 50px 50px;
 }
 .titre-principal-designer h2 {
   font-family: $font-primary;
   font-size: 40px;
 }
-// Section designers
-.container-principal {
-  width: 675px;
-  height: 520px;
-  background: #f1f1f1;
-  border-radius: 3px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
-  margin: 0 auto;
-}
-.container-onglets {
-  background: $color-quaternary;
-  width: 100%;
-  height: 25%;
-  display: flex;
-  border-bottom: 1px solid #333;
-}
-.onglets {
-  width: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: $font-secondary;
-  font-size: 21px;
-  font-weight: 700;
-  cursor: pointer;
-}
-// .onglets:not(:nth-child(3)) {
-//   border-right: 1px solid #333;
-// }
-.contenus {
-  height: 30%;
-  width: 60%;
-  position: absolute;
-  opacity: 0;
-}
-.contenus h3,
-.contenus {
-  padding: 15px;
-}
-.contenus hr {
-  width: 20%;
-  height: 2px;
-  margin-left: 20px;
-  background: #000;
-  border: none;
-}
-
-/* anim */
-.active-onglets {
-  background: $color-header;
-  color: #f1f1f1;
-  transition: all 0.4s ease;
-}
-.active-contenu {
-  animation: fade 0.5s forwards;
-}
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-// liste designers
-.list-designers-luxe,
-.list-designers-createur {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 15px;
-  width: 90%;
-  margin: 0px auto;
-}
-.contenus .list-designers-luxe .list-item-luxe,
-.list-designers-createur {
-  list-style-type: none;
-}
-.list-designers-luxe .list-item-luxe .link-designer,
-.list-designers-createur .list-item-createur .link-designer-createur {
+.titres-secondaire-designer {
+  margin-top: 20px;
   font-family: $font-tertiary;
-  color: #000;
 }
-.list-designers-luxe .list-item-luxe .link-designer,
-.list-designers-createur .list-item-createur .link-designer-createur {
+// test filter
+.designers-letters {
+  min-height: 100vh;
+}
+#buttons {
+  margin-bottom: 50px;
+}
+.box-brand {
+  float: left;
+  background-color: transparent;
+  font-family: $font-tertiary;
+  color: black;
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 5px rgba(156, 156, 156, 0.75);
+}
+.show {
+  display: block;
+}
+.btn-letter {
+  border: none;
+  outline: none;
+  margin: 10px;
+  /* background: #f1f1f1; */
+  background-color: transparent;
+  font-size: 20px;
+  font-family: $font-secondary;
   cursor: pointer;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.list-designers-luxe .list-item-luxe .link-designer:hover,
-.list-designers-createur .list-item-createur .link-designer-createur:hover {
-  color: $color-header !important;
+.btn-letter:first-child {
   font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-letter:not(:first-child):hover {
+  transform: scale(1.5);
+  font-weight: bold;
+  color: $color-header;
 }

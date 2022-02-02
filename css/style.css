@@ -359,7 +359,7 @@ h1 {
 
 .login-form-container {
   position: fixed;
-  top: -120%;
+  top: -130%;
   left: 0;
   z-index: 10000;
   min-height: 100vh;
@@ -675,7 +675,7 @@ li::marker {
 }
 
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
-  font-size: 16px;
+  font-size: 15px;
   color: #e44b55;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -714,11 +714,11 @@ li::marker {
 
 .btn-all-brands {
   background: #90111c;
-  padding: 10px 38px;
+  padding: 10px 40px;
   border: none;
   outline: none;
   color: #fff;
-  font-size: "Caslon540", sans-serif;
+  font-family: "Caslon540", sans-serif;
   font-weight: 600;
   text-align: center;
 }
@@ -1021,6 +1021,10 @@ li::marker {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .btn-all-brands {
+    margin: 10px -18px 5px 4px;
+    padding: 10px 62px;
   }
 }
 
@@ -1816,8 +1820,14 @@ a {
   text-decoration: none;
 }
 
+.designers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .titre-principal-designer {
-  margin: 80px 0px 50px 50px;
+  margin: 50px 0px 50px 50px;
 }
 
 .titre-principal-designer h2 {
@@ -1825,127 +1835,62 @@ a {
   font-size: 40px;
 }
 
-.container-principal {
-  width: 675px;
-  height: 520px;
-  background: #f1f1f1;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
-  margin: 0 auto;
-}
-
-.container-onglets {
-  background: #eabeb0;
-  width: 100%;
-  height: 25%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-bottom: 1px solid #333;
-}
-
-.onglets {
-  width: 350px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Caslon540", sans-serif;
-  font-size: 21px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.contenus {
-  height: 30%;
-  width: 60%;
-  position: absolute;
-  opacity: 0;
-}
-
-.contenus h3,
-.contenus {
-  padding: 15px;
-}
-
-.contenus hr {
-  width: 20%;
-  height: 2px;
-  margin-left: 20px;
-  background: #000;
-  border: none;
-}
-
-/* anim */
-.active-onglets {
-  background: #90111c;
-  color: #f1f1f1;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-.active-contenu {
-  -webkit-animation: fade 0.5s forwards;
-          animation: fade 0.5s forwards;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.list-designers-luxe,
-.list-designers-createur {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 15px;
-  width: 90%;
-  margin: 0px auto;
-}
-
-.contenus .list-designers-luxe .list-item-luxe,
-.list-designers-createur {
-  list-style-type: none;
-}
-
-.list-designers-luxe .list-item-luxe .link-designer,
-.list-designers-createur .list-item-createur .link-designer-createur {
+.titres-secondaire-designer {
+  margin-top: 20px;
   font-family: "Poppins", sans-serif;
-  color: #000;
 }
 
-.list-designers-luxe .list-item-luxe .link-designer,
-.list-designers-createur .list-item-createur .link-designer-createur {
+.designers-letters {
+  min-height: 100vh;
+}
+
+#buttons {
+  margin-bottom: 50px;
+}
+
+.box-brand {
+  float: left;
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 4px 5px rgba(156, 156, 156, 0.75);
+          box-shadow: 0px 2px 4px 5px rgba(156, 156, 156, 0.75);
+}
+
+.show {
+  display: block;
+}
+
+.btn-letter {
+  border: none;
+  outline: none;
+  margin: 10px;
+  /* background: #f1f1f1; */
+  background-color: transparent;
+  font-size: 20px;
+  font-family: "Caslon540", sans-serif;
   cursor: pointer;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.list-designers-luxe .list-item-luxe .link-designer:hover,
-.list-designers-createur .list-item-createur .link-designer-createur:hover {
-  color: #90111c !important;
+.btn-letter:first-child {
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-letter:not(:first-child):hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  font-weight: bold;
+  color: #90111c;
 }
 
 *,
@@ -2626,8 +2571,8 @@ a {
 }
 
 @media screen and (min-width: 1110px) {
-  .contenus {
-    width: 50%;
+  .designers-letters {
+    min-height: 90vh;
   }
 }
 
@@ -2655,88 +2600,35 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-  .container-principal {
-    width: 550px;
-    height: 590px;
+  .titre-principal-designer {
+    margin: 50px 0px 50px 20px;
   }
-  .contenus {
-    width: 91%;
-  }
-  .container-onglets {
-    height: 20%;
-  }
-  .onglets {
-    font-size: 18px;
-  }
-  .list-designers-luxe,
-  .list-designers-createur {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-row-gap: 10px;
-    margin: 0;
+  .designers-letters {
+    min-height: 120vh;
   }
 }
 
 @media screen and (max-width: 590px) {
-  .container-principal {
-    width: 500px;
-    height: 590px;
-  }
-  .contenus {
-    width: 87%;
-  }
-  .container-onglets {
-    height: 18%;
-  }
-  .onglets {
-    font-size: 17px;
+  .designers-letters {
+    min-height: 150vh;
   }
 }
 
 @media screen and (max-width: 475px) {
-  .titre-principal-designer {
-    margin: 50px 0px 50px 50px;
+  .designers-letters {
+    min-height: 200vh;
   }
-  .container-principal {
-    width: 350px;
-    height: 560px;
+  .titre-principal-designer {
+    margin: 50px 0px 50px 10px;
   }
   .titre-principal-designer h2 {
     font-size: 30px;
   }
-  .contenus {
-    width: 85%;
-  }
-  .container-onglets {
-    height: 13%;
-  }
-  .onglets {
-    font-size: 13px;
-    font-weight: 600;
-  }
-  .list-designers-luxe,
-  .list-designers-createur {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 390px) {
-  .container-principal {
-    width: 310px;
-    height: 650px;
-  }
-  .contenus h3,
-  .contenus {
-    padding: 10px;
-  }
-  .container-onglets {
-    height: 10%;
-  }
-  .onglets {
-    font-size: 16px;
-    font-weight: 500;
+  .designers-letters {
+    min-height: 210vh;
   }
 }
 

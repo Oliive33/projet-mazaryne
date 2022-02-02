@@ -254,7 +254,7 @@ h1 {
 }
 .login-form-container {
   position: fixed;
-  top: -120%;
+  top: -130%;
   left: 0;
   z-index: 10000;
   min-height: 100vh;
@@ -517,7 +517,7 @@ li::marker {
   text-decoration: none;
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
-  font-size: 16px;
+  font-size: 15px;
   color: $color-tertiary;
   font-family: $font-tertiary;
   font-weight: 500;
@@ -552,11 +552,11 @@ li::marker {
 }
 .btn-all-brands {
   background: #90111c;
-  padding: 10px 38px;
+  padding: 10px 40px;
   border: none;
   outline: none;
   color: #fff;
-  font-size: $font-secondary;
+  font-family: $font-secondary;
   font-weight: 600;
   text-align: center;
 }
@@ -793,6 +793,10 @@ li::marker {
   .nav-btn-link {
     display: flex;
     justify-content: center;
+  }
+  .btn-all-brands {
+    margin: 10px -18px 5px 4px;
+    padding: 10px 62px;
   }
 }
 //****************************** mega-menu end**********************************//
