@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0.1rem 0 0.1rem;
+  min-height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+// Section mdp oublié
+
+.titre-principal-mdp {
+  margin: 50px 0px 50px 50px;
+}
+.titre-principal-mdp h2 {
+  font-family: $font-primary;
+  font-size: 40px;
+}
+.titres-secondaire-mdp {
+  margin-top: 20px;
+  font-family: $font-tertiary;
+}
+// Section items-mdp
+.items-mdp {
+  margin: 50px 0px 0px 50px;
+  padding: 15px 0 40px 20px;
+  background: $color-quaternary;
+  border-radius: 2px;
+  width: 80%;
+  font-family: $font-tertiary;
+  font-size: 17px;
+}
+.items-mdp strong {
+  font-weight: bolder;
+  font-family: $font-secondary;
+  text-transform: uppercase;
+}
+.saisie-email {
+  margin-top: 20px;
+}
+.saisie-email h4 {
+  font-family: $font-secondary;
+  margin-bottom: 10px;
+}
+.form-mdp-email input {
+  padding: 14px 10px 14px 10px;
+  width: 80%;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  background-color: #f2f2f2;
+}
+.form-mdp-email input::placeholder {
+  color: #000;
+}
+.btn-saisie-email {
+  display: inline-block;
+  margin-top: 10px;
+}
+.btn-saisie-email .btn-send {
+  padding: 13px 25px;
+  font-size: 17px;
+  font-family: $font-secondary;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+// =================Responsive style==================//
+@media screen and (max-width: 891px) {
+  .items-mdp {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .titre-principal-mdp {
+    margin: 50px 0px 50px 25px;
+  }
+  .items-mdp {
+    width: 90%;
+    font-size: 16px;
+  }
+  .items-mdp {
+    margin: 50px 0px 0px 25px;
+    padding: 15px 0 40px 15px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .titre-principal-mdp h2 {
+    font-size: 35px;
+  }
+  .items-mdp p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .titre-principal-mdp {
+    margin: 50px 0px 50px 15px;
+  }
+  .titre-principal-mdp h2 {
+    font-size: 25px;
+  }
+  .titres-secondaire-mdp {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .items-mdp {
+    margin: 30px 0px 0px 10px;
+    padding: 15px 3px 40px 12px;
+    font-size: 16px;
+    width: 95%;
+  }
+}
