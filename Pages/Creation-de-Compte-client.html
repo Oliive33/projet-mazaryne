@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Pièces d'exception- Mazaryne est un plateforme marketplace mise en relation acheteurs et vendeurs de chaussures tendances, de luxe, homme et femme. Mazaryne s'exprimer avec style."
+      content="Création compte client- Mazaryne est un plateforme marketplace mise en relation acheteurs et vendeurs de chaussures tendances, de luxe, homme et femme. Mazaryne s'exprimer avec style."
     />
     <meta property="og:title" content="" />
     <meta property="og:type" content="site" />
@@ -13,7 +13,8 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
     <title>
-      Pièces d'exception- Mazaryne site marketplace chaussures femme et homme
+      Création compte client - Mazaryne site marketplace chaussures femme et
+      homme
     </title>
     <!-- Favicon -->
     <link
@@ -139,10 +140,12 @@
           </ul>
         </nav>
       </div>
+
+      <!-- login form container  -->
       <div class="login-form-container">
         <i class="fas fa-times" id="form-close"></i>
 
-        <form>
+        <form action="">
           <h3>Connexion</h3>
           <input type="email" class="box" placeholder="entrer votre email" />
           <input
@@ -155,19 +158,13 @@
           <input type="checkbox" id="remember" />
           <label for="remember">Se souvenir de moi</label>
 
+          <p>Mot de passe oublié? <a href="#">cliquer ici</a></p>
           <p>
-            Mot de passe oublié?
-            <a href="./Mot-de-passe-oublie.html">cliquer ici</a>
-          </p>
-          <p>
-            Vous n'avez pas encore de compte?
-            <a href="./Creation-de-Compte-client.html">S'inscrire ici</a>
+            Vous n'avez pas encore de compte? <a href="#">S'inscrire ici</a>
           </p>
         </form>
       </div>
     </header>
-    <!-- login form container  -->
-
     <div class="header">
       <div class="container">
         <div class="row v-center">
@@ -286,7 +283,7 @@
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item text-center">
-                      <a href="#product1">
+                      <a href="#">
                         <img
                           src="../ressources/images/p1.jpg"
                           alt="new Product"
@@ -295,7 +292,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#product2">
+                      <a href="#">
                         <img
                           src="../ressources/images/p2.jpg"
                           alt="new Product"
@@ -304,7 +301,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#product3">
+                      <a href="#">
                         <img
                           src="../ressources/images/p3.jpg"
                           alt="new Product"
@@ -313,7 +310,7 @@
                       </a>
                     </div>
                     <div class="list-item text-center">
-                      <a href="#product4">
+                      <a href="#">
                         <img
                           src="../ressources/images/p4.jpg"
                           alt="new Product"
@@ -394,7 +391,7 @@
                   </div>
                 </li>
                 <li id="button" class="btn">
-                  <a id="btn" class="nav-btn-link" href="#">
+                  <a class="nav-btn-link" href="#">
                     <span>Vendre un article</span></a
                   >
                 </li>
@@ -412,47 +409,92 @@
       </div>
     </div>
     <main>
-      <!-- Section main picture -->
-      <section class="container-picture" id="container-picture">
-        <div class="container-title">
-          <h2 class="title-picture">
-            Pièces en édition limitées ou pièces rares
-          </h2>
-          <a href="#products" class="btn-scroll btn-scroll-down">
-            Voir plus-bas <i class="fas fa-arrow-down"></i>
-          </a>
-        </div>
+      <section class="titre-principal-compte">
+        <h2>Créer un compte</h2>
       </section>
-      <!-- Section produits d'exception -->
-      <section class="produits-rares" id="products">
-        <h3 class="titles-products">
-          Découvrez notre sélection de pièces rares
-        </h3>
-        <div class="card d-grid" id="">
-          <img
-            src="../ressources/images/p1.jpg"
-            alt="image"
-            class="card-image img1"
-            id="product1"
-          />
-          <img
-            src="../ressources/images/p2.jpg"
-            alt="image"
-            class="card-image img2"
-            id="product2"
-          />
-          <img
-            src="../ressources/images/p3.jpg"
-            alt="image"
-            class="card-image img3"
-            id="product3"
-          />
-          <img
-            src="../ressources/images/p4.jpg"
-            alt="image"
-            class="card-image img4"
-            id="product4"
-          />
+      <section>
+        <div class="super-container super-container-bg">
+          <div class="container-compte">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <h3 class="title">Compte</h3>
+
+                  <div class="flex-compte">
+                    <div class="flex-compte-items">
+                      <input type="radio" />
+                    </div>
+                    <span>Particulier </span>
+                    <div class="flex-compte-items">
+                      <input type="radio" />
+                    </div>
+                    <span>Professionnel </span>
+                  </div>
+                  <div class="inputBox">
+                    <span>Votre adresse mail*</span>
+                    <input type="email" placeholder="votre email" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Mot de passe*</span>
+                    <input type="password" placeholder="Votre mot de passe" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Pseudo*</span>
+                    <input type="text" placeholder="Votre pseudo" />
+                  </div>
+                  <h3 class="title title-civil">Civilité *</h3>
+                  <div class="flex-compte">
+                    <div class="flex-compte-items">
+                      <input type="radio" />
+                    </div>
+                    <span>Mme </span>
+                    <div class="flex-compte-items">
+                      <input type="radio" />
+                    </div>
+                    <span>Mr </span>
+                  </div>
+                  <div class="inputBox">
+                    <span>Votre nom*</span>
+                    <input type="text" placeholder="votre nom" />
+                  </div>
+                  <div class="inputBox">
+                    <span>Votre prénom*</span>
+                    <input type="text" placeholder="Votre prénom" />
+                  </div>
+                  <div class="flex-compte flex-compte-conditions">
+                    <div class="flex-compte-items">
+                      <input type="checkbox" />
+                    </div>
+                    <span class="conditions-generales"
+                      >J'accepte les conditions générales*</span
+                    >
+                  </div>
+                  <input
+                    type="submit"
+                    value="Créer mon compte"
+                    class="submit-btn-client"
+                  />
+                  <!-- <div class="flex">
+                    <div class="inputBox">
+                      <form action="">
+                        <span>Pays</span>
+                        <label type="" placeholder="" />
+                        <select name="" id="">
+                          <option value="pays">France</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </form>
+            <div class="container-image-compte">
+              <img
+                src="../ressources/images/creation-compte-client/image-compte.jpg"
+                alt="image compte"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -567,13 +609,6 @@
       <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="../js/swiper-bundle.min.js"></script>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="../js/scrollreveal.min.js"></script>
-
-    <script src="../js/pieces-exception.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>
