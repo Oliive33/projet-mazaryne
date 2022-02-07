@@ -150,7 +150,7 @@
   width: 280px;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 4px 4px 10px rgba(44, 44, 44, 0.35);
+  box-shadow: 2px 2px 4px rgba(44, 44, 44, 0.15);
   padding: 0px 5px;
 }
 .search form {
@@ -550,6 +550,9 @@ li::marker {
 .mobile-menu-trigger {
   display: none;
 }
+.title-blog {
+  color: #333;
+}
 .btn-all-brands {
   background: #90111c;
   padding: 10px 40px;
@@ -797,6 +800,9 @@ li::marker {
   .btn-all-brands {
     margin: 10px -18px 5px 4px;
     padding: 10px 62px;
+  }
+  .title-blog {
+    margin-bottom: 10px;
   }
 }
 //****************************** mega-menu end**********************************//
