@@ -11,78 +11,85 @@ html {
 body {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 0.1rem 0 0.1rem;
   min-height: 100vh;
 }
 a {
   text-decoration: none;
 }
 
-//****************************Section Achetez-Vendez*************************//
-// .achetez-vendez {
-//   padding-top: 18rem;
-// }
+//****************************Section pictures designers & we love*************************//
 
 .main-pictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 30px;
 }
 .main-pictures img {
   width: 100%;
 }
-.achetez {
-  text-align: center;
-  color: white;
-  position: relative;
-  top: -20rem;
-  left: 50%;
-  font-size: 33px;
-  font-weight: 700;
-  font-family: $font-tertiary;
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
-}
-.paragraphe-achetez {
-  text-align: center;
-  color: white;
-  position: relative;
-  top: -17rem;
-  left: -50%;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: $font-tertiary;
-  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
-}
 
-.btn-acheter-vendre {
+.btn-designer-we-love {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: -7rem;
+  margin-top: -5rem;
 }
-.btn-acheter-vendre .link-acheter-vendre {
-  border-radius: 3px;
+.btn-designer-we-love .link-designer,
+.btn-designer-we-love .link-we-love {
   border: none;
   outline: none;
   padding: 10px 45px;
-  text-decoration: none;
-  color: #fff;
-  background: rgba(180, 180, 180, 0.779);
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
   font-family: $font-tertiary;
+  text-transform: uppercase;
+  font-weight: bolder;
   font-size: 20px;
-  font-weight: 600;
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out;
 }
-.btn-acheter-vendre .link-acheter-vendre:hover {
+// .btn-designer-we-love .link-designer {
+//   margin-left: 280px;
+// }
+// .btn-designer-we-love .link-we-love {
+//   margin-right: 280px;
+// }
+.btn-designer-we-love .link-designer:hover,
+.btn-designer-we-love .link-we-love:hover {
+  color: #000;
   transform: scale(0.95);
-  background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
 }
 //****************************Section Produits-Vedettes*************************//
+.vedette {
+  margin: 50px auto 50px;
+  background: rgba(248, 248, 248, 0.89);
+  padding-bottom: 50px;
+}
+.titles-vedette {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-secondaire-vedette {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: $font-tertiary;
+}
+.title-principal-vedette {
+  font-size: 40px;
+  font-family: $font-primary;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
 
 /*=============== NEW ===============*/
 .container-swiper {
-  max-width: 920px;
+  max-width: 1060px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -97,9 +104,7 @@ a {
     margin-right: auto;
   }
 }
-.hearts,
-.messages,
-.vues {
+.hearts {
   display: flex;
   justify-content: flex-end;
 }
@@ -128,21 +133,6 @@ a {
   color: #333;
 }
 
-.messages .fa-envelope {
-  position: relative;
-  top: 2rem;
-  right: 1rem;
-  font-size: x-large;
-  color: #333;
-}
-.vues .fa-eye {
-  position: relative;
-  top: 3rem;
-  right: 1rem;
-  font-size: x-large;
-  color: #333;
-}
-
 .items-card {
   text-align: left;
   margin-left: 10px;
@@ -150,7 +140,8 @@ a {
 }
 .items-price-and-type {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
   margin: 10px;
 }
 .items-card-price {
@@ -160,43 +151,15 @@ a {
 
 .new__card {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 100%;
-  background-color: rgb(250, 250, 250);
-  box-shadow: 0 4px 5px hsla(355, 25%, 15%, 0.2);
+  background-color: #fff;
+  box-shadow: 0 3px 4px hsla(355, 25%, 15%, 0.1);
   padding: 2px;
   border-radius: 4px;
   text-align: center;
   margin-bottom: 4.4rem;
   overflow: hidden;
-}
-
-.btn-card-link {
-  margin-top: -2.5rem;
-
-  .items-card-link {
-    border: none;
-    padding: 15px 15px;
-    margin: 0 auto;
-    color: #cb333b;
-    width: 60%;
-    border-radius: 4px;
-    font-family: "GrouchBT";
-    box-shadow: 1px 3px 5px rgba(139, 139, 139, 0.6);
-    transition: all 0.2s ease-in;
-  }
-  .items-card-link:hover {
-    transform: scale(0.95);
-    background-color: rgba(243, 61, 85, 0.952);
-  }
-  .items-link {
-    text-decoration: none;
-    color: #000000;
-    transition: all 0.2s ease-in;
-  }
-  .items-link:hover {
-    font-weight: 500;
-  }
 }
 
 .new__img {
@@ -208,8 +171,8 @@ a {
   transform: scale(1.05);
 }
 .zoom-img {
-  width: 200px;
-  height: 250px;
+  width: 230px;
+  height: 300px;
   cursor: pointer;
   object-fit: cover;
   object-position: center center;
@@ -274,13 +237,12 @@ a {
   margin: 0 auto;
   padding: 15px 10px;
   text-align: center;
-  background: linear-gradient(62deg, #cb333b 0%, #e44b55 80%);
-  color: rgb(17, 17, 17);
-  font-family: $font-secondary;
+  background: rgb(196, 45, 57);
+  color: #000;
+  font-family: $font-primary;
   font-size: 25px;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 3px;
-  border: 1px solid $color-quaternary;
   outline: none;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
@@ -295,45 +257,76 @@ a {
   text-decoration: none;
   color: #333;
 }
-.parallax-vedette {
-  background: url(../ressources/images/parallax-vedette.jpg) no-repeat top /
-    cover fixed;
-  @include parallax;
+
+//****************************Section femme & homme*************************//
+.produits-femme-homme {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
 }
-.parallax-vedette .txt-par,
-.parallax-femme .txt-par,
-.parallax-homme .txt-par {
-  @include title-parallax;
+.items-produits-femme,
+.items-produits-homme {
+  margin: 20px;
+}
+.items-produits-femme .items-h-f,
+.items-produits-homme .items-h-f {
+  margin: 10px;
+}
+.item-link-home {
+  margin-top: 30px;
+}
+.item-title-products {
   font-size: 30px;
-  transition: all 0.2s ease-in-out;
-}
-.parallax-vedette .txt-par:hover,
-.parallax-femme .txt-par:hover,
-.parallax-homme .txt-par:hover {
   font-weight: 600;
-  transform: scale(1.02);
-  background-color: $color-header;
-  color: #fff;
+  font-family: $font-primary;
+  letter-spacing: 1px;
 }
-.txt-vedette {
-  @include txt-produits-parallax;
-}
-//****************************Section Produits-femme*************************//
-.parallax-femme {
-  background: url(../ressources/images/parallax-femme.jpg) no-repeat top / cover
-    fixed;
-  @include parallax;
+.item-selection {
+  font-family: $font-tertiary;
+  font-size: 18px;
 }
 
-.txt-femme {
-  @include txt-produits-parallax;
+.items-produits-femme .btn-découvrir,
+.items-produits-homme .btn-découvrir {
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 8px 25px;
+  color: #000;
+  font-family: $font-secondary;
+  font-size: 20px;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
 }
-//****************************Section Produits-homme*************************//
-.parallax-homme {
-  background: url(../ressources/images/parallax-homme.jpg) no-repeat top / cover
-    fixed;
-  @include parallax;
+.items-produits-femme .btn-découvrir:hover,
+.items-produits-homme .btn-découvrir:hover {
+  background-color: #000;
+  color: #fff;
 }
-.txt-homme {
-  @include txt-produits-parallax;
+
+//****************************Section home designers*************************//
+.home-designers {
+  margin: 30px auto 50px;
+  background: rgba(248, 248, 248, 0.89);
+  padding-bottom: 50px;
+}
+.titles-designers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-secondaire-designer {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: $font-tertiary;
+}
+.title-principal-designer {
+  font-size: 40px;
+  font-family: $font-primary;
+  font-weight: 500;
+  letter-spacing: 2px;
 }

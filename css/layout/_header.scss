@@ -124,11 +124,14 @@
 // bandeau & phrases slide end
 .nav-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: #fff;
   padding: 75px 5px 45px 5px;
   transition: all 0.2s ease-in-out;
+}
+.nav-top .ghost {
+  visibility: hidden;
 }
 
 .search-box {
@@ -147,10 +150,8 @@
   font-size: 16px;
 }
 .search {
-  width: 280px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px rgba(44, 44, 44, 0.15);
+  width: 180px;
+  background: transparent;
   padding: 0px 5px;
 }
 .search form {
@@ -171,19 +172,14 @@ h1 {
   font-size: 75px;
   font-weight: 400;
   color: #000;
-  margin-left: -35px;
+  margin-left: 65px;
 }
-.nav-links {
-  display: flex;
-  margin: 15px;
-  list-style-type: none;
-}
-.item-nav {
-  margin: 15px;
+.icons-home .item-nav {
+  margin: 10px;
 }
 .icon-nav {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   color: white;
 }
 
@@ -195,8 +191,7 @@ h1 {
 .nav-below-link:hover {
   color: $color-secondary;
 }
-.nav-below-link,
-.nav-btn-link span {
+.nav-below-link {
   text-decoration: none;
   color: #333;
   font-family: $font-secondary;
@@ -210,14 +205,12 @@ h1 {
 #button {
   position: relative;
   overflow: hidden;
-  background: #ffffff;
-  padding: 0px 10px;
-  font-family: $font-secondary;
-  font-weight: 600;
-  color: rgb(34, 34, 34);
+  background: #000;
+  height: 40px;
+  line-height: 36px;
+  padding: 0px 15px;
   cursor: pointer;
   border-radius: 2px;
-  border: 2px solid $color-header;
   outline: none;
 
   transition: all 0.2s ease-in-out;
@@ -232,8 +225,13 @@ h1 {
   font-weight: bolder;
 }
 .nav-btn-link {
-  text-transform: none !important;
+  font-family: $font-tertiary;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff !important;
+  letter-spacing: 2px;
 }
+
 //****************************Popup user start*************************//
 .btn {
   display: inline-block;
@@ -394,7 +392,7 @@ h1 {
 
 //****************************** mega-menu start**************************//
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: auto;
 }
 .v-center {
@@ -419,23 +417,20 @@ h1 {
 .header .menu > ul > li {
   display: inline-block;
   line-height: 50px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 .header .menu > ul > li > a {
   font-size: 18px;
   font-weight: 500;
   color: #000000;
   position: relative;
-  text-transform: capitalize;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .menu-main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   width: 95%;
   margin: 5px auto;
 }
@@ -581,6 +576,7 @@ li::marker {
     display: flex;
     height: 30px;
     width: 30px;
+    margin-top: -110px;
     margin-left: 15px;
     cursor: pointer;
     align-items: center;
@@ -793,16 +789,15 @@ li::marker {
     visibility: visible;
     opacity: 1;
   }
-  .nav-btn-link {
-    display: flex;
-    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .header .mobile-menu-trigger {
+    margin-top: -120px;
   }
-  .btn-all-brands {
-    margin: 10px -18px 5px 4px;
-    padding: 10px 62px;
-  }
-  .title-blog {
-    margin-bottom: 10px;
+}
+@media screen and (max-width: 475px) {
+  .header .mobile-menu-trigger {
+    margin-top: -100px;
   }
 }
 //****************************** mega-menu end**********************************//

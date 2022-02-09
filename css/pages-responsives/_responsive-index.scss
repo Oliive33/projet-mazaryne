@@ -1,11 +1,7 @@
-//****************************Section Achetez-Vendez*************************//
 @media screen and (max-width: 1100px) {
-  .nav-top {
-    flex-direction: column-reverse;
-  }
   h1 {
     font-size: 55px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     margin-left: 0;
   }
   .icon-nav {
@@ -15,6 +11,25 @@
 }
 
 @media screen and (max-width: 991px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .nav-top {
+    padding: 85px 5px 30px 5px;
+  }
+  .nav-btn-link {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-all-brands {
+    margin: 10px -18px 5px 4px;
+    padding: 10px 62px;
+  }
+  .title-blog {
+    margin-bottom: 10px;
+  }
   .language-container {
     margin-left: 8px;
   }
@@ -32,20 +47,7 @@
   .main-pictures img:nth-child(2) {
     display: none;
   }
-  .achetez {
-    text-align: center;
-    color: white;
-    position: relative;
-    top: -18rem;
-    left: 0;
-    font-size: 30px;
-  }
-  .paragraphe-achetez {
-    top: -17rem;
-    left: 0%;
-    font-size: 30px;
-  }
-  .btn-acheter-vendre {
+  .btn-designer-we-love {
     margin-top: -10rem;
   }
   .parallax-vedette {
@@ -57,6 +59,15 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .nav-top {
+    padding: 70px 5px 45px 5px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .icons-home {
+    margin-top: 20px;
+  }
   .form-connection {
     width: 280px;
     top: 60%;
@@ -71,20 +82,7 @@
   form input {
     font-size: 12px;
   }
-  .achetez {
-    text-align: center;
-    color: white;
-    position: relative;
-    top: -13rem;
-    left: 0;
-    font-size: 26px;
-  }
-  .paragraphe-achetez {
-    top: -13rem;
-    left: 0%;
-    font-size: 26px;
-  }
-  .btn-acheter-vendre {
+  .btn-designer-we-love {
     font-size: 18px;
   }
   .btn-produits {
@@ -93,20 +91,19 @@
   }
 }
 @media screen and (max-width: 575px) {
-  .achetez {
-    top: -11rem;
-    font-size: 24px;
+  .nav-top {
+    flex-direction: column;
+    padding: 70px 5px 31px 5px;
   }
-  .paragraphe-achetez {
-    top: -11rem;
-    left: 0%;
-    font-size: 24px;
+  h1 {
+    font-size: 40px;
   }
-  .btn-acheter-vendre {
+  .btn-designer-we-love {
     font-size: 17px;
     margin-top: -9rem;
   }
-  .btn-acheter-vendre .link-acheter-vendre {
+  .btn-designer-we-love .link-designer,
+  .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
   }
   .parallax-vedette .txt-par,
@@ -123,19 +120,12 @@
   .carousel .changeHidden .element {
     font-size: 16px;
   }
-  .achetez {
-    top: -10rem;
-    font-size: 24px;
-  }
-  .paragraphe-achetez {
-    top: -10rem;
-    font-size: 24px;
-  }
-  .btn-acheter-vendre {
+  .btn-designer-we-love {
     font-size: 16px;
     margin-top: -9rem;
   }
-  .btn-acheter-vendre .link-acheter-vendre {
+  .btn-designer-we-love .link-designer,
+  .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
   }
   .txt-vedette,
@@ -149,22 +139,15 @@
   .carousel .changeHidden .element {
     font-size: 14px;
   }
-  .achetez {
-    top: -10rem;
-    font-size: 20px;
-  }
-  .paragraphe-achetez {
-    top: -10rem;
-    font-size: 20px;
-  }
-  .btn-acheter-vendre {
+  .btn-designer-we-love {
     font-size: 14px;
     margin-top: -8rem;
   }
   .main-pictures img {
     height: 285px;
   }
-  .btn-acheter-vendre .link-acheter-vendre {
+  .btn-designer-we-love .link-designer,
+  .btn-designer-we-love .link-we-love {
     padding: 5px 35px;
   }
 }
