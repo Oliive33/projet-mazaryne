@@ -8,6 +8,9 @@
     width: 30px;
     height: 30px;
   }
+  .certifications {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -44,18 +47,42 @@
     grid-template-columns: 1fr;
     margin-top: 0;
   }
-  .main-pictures img:nth-child(2) {
+  .main-pictures img:nth-child(1) {
     display: none;
+  }
+  .titles-vedette {
+    margin-top: 130px;
+    margin-bottom: 50px;
   }
   .btn-designer-we-love {
     margin-top: -10rem;
   }
-  .parallax-vedette {
-    margin: 70px auto 50px;
-  }
   .btn-produits {
     width: 50%;
     font-size: 23px;
+  }
+  .produits-femme-homme {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .produits-femme img,
+  .produits-homme img {
+    width: 90%;
+  }
+  .journal .img-journal {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .new__card {
+    width: 230px;
+  }
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+  .mail-journal input {
+    width: 35%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -84,10 +111,21 @@
   }
   .btn-designer-we-love {
     font-size: 18px;
+    margin-top: 0rem;
+  }
+  .title-secondaire-vedette {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+  .title-principal-vedette {
+    font-size: 25px;
   }
   .btn-produits {
     width: 60%;
     font-size: 22px;
+  }
+  .garantie {
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -133,6 +171,30 @@
   .txt-homme {
     margin: 30px;
     font-size: 18px;
+  }
+  .title-secondaire-designer {
+    font-size: 22px;
+  }
+  .title-principal-designer {
+    font-size: 30px;
+  }
+  .new__card {
+    width: 300px;
+  }
+  .titles-journal h3 {
+    font-size: 30px;
+  }
+  .Authentic p {
+    width: 70%;
+  }
+  .selection p {
+    width: 60%;
+  }
+  .certifie p {
+    width: 54%;
+  }
+  .mail-journal input {
+    width: 50%;
   }
 }
 @media screen and (max-width: 375px) {

@@ -9,7 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
 }
@@ -49,7 +48,7 @@ a {
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out;
 }
-// .btn-designer-we-love .link-designer {
+// .btn-designer-we-love .link-designer:hover {
 //   margin-left: 280px;
 // }
 // .btn-designer-we-love .link-we-love {
@@ -57,13 +56,14 @@ a {
 // }
 .btn-designer-we-love .link-designer:hover,
 .btn-designer-we-love .link-we-love:hover {
-  color: #000;
+  color: #fff;
+  background-color: #000;
   transform: scale(0.95);
 }
 //****************************Section Produits-Vedettes*************************//
 .vedette {
   margin: 50px auto 50px;
-  background: rgba(248, 248, 248, 0.89);
+  background: $background-body;
   padding-bottom: 50px;
 }
 .titles-vedette {
@@ -82,8 +82,8 @@ a {
 }
 .title-principal-vedette {
   font-size: 40px;
-  font-family: $font-primary;
-  font-weight: 500;
+  font-family: $font-tertiary;
+  font-weight: 800;
   letter-spacing: 2px;
 }
 
@@ -233,29 +233,27 @@ a {
 .btn-produits {
   position: relative;
   overflow: hidden;
-  width: 30%;
+  width: 25%;
   margin: 0 auto;
   padding: 15px 10px;
   text-align: center;
-  background: rgb(196, 45, 57);
-  color: #000;
-  font-family: $font-primary;
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 3px;
-  outline: none;
-  border: none;
+  background: #fff;
+  border: 2px solid black;
+  font-family: $font-tertiary;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 .btn-produits:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
-.btn-voir-produits {
+.btn-produits a {
   text-decoration: none;
-  color: #333;
+  color: #000;
 }
 
 //****************************Section femme & homme*************************//
@@ -306,8 +304,8 @@ a {
 
 //****************************Section home designers*************************//
 .home-designers {
-  margin: 30px auto 50px;
-  background: rgba(248, 248, 248, 0.89);
+  margin: 30px auto 1px;
+  background: $background-body;
   padding-bottom: 50px;
 }
 .titles-designers {
@@ -321,12 +319,156 @@ a {
 .title-secondaire-designer {
   margin-top: 50px;
   margin-bottom: 15px;
+  font-weight: 800;
   font-size: 30px;
   font-family: $font-tertiary;
 }
 .title-principal-designer {
   font-size: 40px;
+  font-family: $font-tertiary;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+//****************************Section le journal*************************//
+.home-journal {
+  background: $background-body;
+}
+.journal {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.journal .home-title-journal {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: $font-tertiary;
+  font-size: 40px;
+  font-weight: bold;
+}
+.journal .img-journal {
+  border-radius: 2px;
+}
+.titles-journal h3,
+.titles-journal h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.titles-journal h3 {
   font-family: $font-primary;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.titles-journal h4 {
+  font-family: $font-tertiary;
+  font-size: 16px;
+  font-weight: 400;
+}
+.home-journal {
+  position: relative;
+  bottom: 20px;
+}
+.home-journal .link-home-journal {
+  position: absolute;
+  bottom: -0.2rem;
+  transform: translate(-50%, -50%);
+  color: black;
+  background: #fff;
+  padding: 5px 15px;
+  font-family: $font-tertiary;
+  font-weight: 900;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.home-journal .link-home-journal:hover {
+  background-color: #000;
+  color: #fff;
+}
+.link-journal {
+  margin-top: 50px;
+}
+.mail-journal input {
+  width: 18%;
+  padding: 15px 10px 15px 10px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-size: 15px;
+  font-family: $font-secondary;
+  font-weight: 400;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.mail-journal input::placeholder {
+  text-align: center;
+}
+.mail-journal button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  top: 2px;
+  right: 18px;
+}
+
+.mail-journal button img {
+  width: 15px;
+  height: 15px;
+}
+// Section certifications
+.garanties {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.titles-garanties h4 {
+  font-size: 30px;
+  font-family: $font-tertiary;
+  font-weight: 800;
+}
+.titles-garanties p {
+  font-size: 16px;
+  font-family: $font-tertiary;
+}
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  justify-content: center;
+}
+.garantie img {
+  width: 200px;
+  height: 170px;
+  background-color: transparent;
+}
+.selection img {
+  width: 50px;
+}
+.garantie h5 {
+  font-size: 20px;
+  font-family: $font-tertiary;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.Authentic p {
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
+  width: 63%;
+}
+.selection p {
+  width: 55%;
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
+}
+
+.certifie p {
+  width: 50%;
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
 }
