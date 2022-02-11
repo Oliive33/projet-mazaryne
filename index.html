@@ -12,29 +12,32 @@
     <meta property="og:description" content="" />
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
-    <title>Accueil- Mazaryne site marketplace chaussures femme et homme</title>
+    <title>Accueil - Mazaryne site marketplace chaussures femme et homme</title>
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./ressources/images/icones/apple-touch-icon.png"
+      href="./ressources/images/icones/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./ressources/images/icones/favicon-32x32.png"
+      href="./ressources/images/icones/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./ressources/images/icones/favicon-16x16.png"
+      href="./ressources/images/icones/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./ressources/images/icones/site.webmanifest" />
+    <link
+      rel="manifest"
+      href="./ressources/images/icones/favicon/site.webmanifest"
+    />
     <link
       rel="mask-icon"
-      href="./ressources/images/icones/safari-pinned-tab.svg"
+      href="./ressources/images/icones/favicon/safari-pinned-tab.svg"
       color="#e44b55"
     />
     <meta name="msapplication-TileColor" content="#e44b55" />
@@ -68,7 +71,13 @@
                       "Rejoingnez notre communauté de Fashion Activists!"
                     </div>
                     <div class="element">"S'exprimer avec style !"</div>
-                    <div class="element">"Des produits de luxe"</div>
+                    <div class="element">
+                      Sélection de pièces de style pré-aimées
+                      <img
+                        src="./ressources/images/icones/heart-solid.svg"
+                        alt="heart"
+                      />
+                    </div>
                     <div class="element">
                       "Appuyez-vous sur une grande communauté."
                     </div>
@@ -509,9 +518,7 @@
               <div class="swiper-pagination"></div>
             </div>
             <div class="btn-produits">
-              <a href="#" class="btn-voir-produits"
-                ><span>Voir tout les Produits</span></a
-              >
+              <a href="#" class="btn-voir-produits">Voir tout les Produits</a>
             </div>
           </div>
         </div>
@@ -638,9 +645,87 @@
               <div class="swiper-pagination"></div>
             </div>
             <div class="btn-produits">
-              <a href="#" class="btn-voir-produits"
-                ><span>Voir tout les Produits</span></a
-              >
+              <a href="#" class="btn-voir-produits">Voir tout les Produits</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section le journal -->
+      <section class="home-journal">
+        <div class="journal">
+          <h3 class="home-title-journal">Le journal</h3>
+          <img
+            src="./ressources/images/home-page/homepage-blog.jpg"
+            alt="image journal"
+            class="img-journal"
+          />
+          <div class="home-journal">
+            <a class="link-home-journal" href="./Pages/Blog.html">découvrir</a>
+          </div>
+          <!-- section certifications -->
+          <div class="garanties">
+            <div class="titles-garanties">
+              <h4>Nos Garanties</h4>
+              <p>Mises en place pour vous garantir la meilleure expérience.</p>
+            </div>
+            <div class="certifications">
+              <div class="Authentic garantie">
+                <img
+                  src="./ressources/images/home-page/authentic.svg"
+                  alt="logo authenticité"
+                />
+                <h5>Garantie Authenticité</h5>
+                <p>
+                  Nous avons formé nos équipes et développé un algorithme
+                  permettant de lutter contre la contrefaçon et de bloquer la
+                  mise en ligne de toute pièce non conforme à nos conditions.
+                </p>
+              </div>
+              <div class="selection garantie">
+                <img
+                  src="./ressources/images/icones/heart-solid.svg"
+                  alt="logo coeur"
+                  class="heart-home"
+                />
+                <h5>Sélection de style</h5>
+                <p>
+                  Notre équipe de style sélectionne avec soin les pièces mises
+                  en ligne. Nous proposons uniquement des produits tendances.
+                </p>
+              </div>
+              <div class="certifie garantie">
+                <img
+                  src="./ressources/images/home-page/certified.svg"
+                  alt="logo certifie"
+                />
+                <h5>Vendeurs Certifiés</h5>
+                <p>
+                  Devenez vendeur certifié en vendant plus et en proposant des
+                  articles tendances et en parfait état.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="titles-journal">
+            <h3>Lire des mots doux</h3>
+            <h4>Votre dose d'amour hebdomadaire</h4>
+          </div>
+          <div class="link-journal">
+            <div class="mail-journal">
+              <input
+                type="mail"
+                name="email"
+                id="mail"
+                placeholder="adresse mail"
+              />
+              <button type="submit">
+                <img
+                  src="./ressources/images/icones/caret-right-solid.svg"
+                  alt="arrow icone"
+                />
+              </button>
             </div>
           </div>
         </div>
@@ -650,100 +735,106 @@
     <footer>
       <section class="footer">
         <div class="footer-items">
-          <div class="footer-title">
-            <h4>Mazaryne</h4>
-            <span>S'exprimer avec Style!</span>
-          </div>
-          <div class="conditions">
-            <div class="delivery icone-conditions">
-              <img
-                src="./ressources/images/icones/box.svg"
-                alt="logo box"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Livraison Offerte</h5>
-              <p class="condition-para condition-delivery">
-                À partir de 250€ en France via Colissimo<br />
-                Point retrait de Domicile avec ou sans signature
-              </p>
-            </div>
-            <div class="payment icone-conditions">
-              <img
-                src="./ressources/images/icones/credit-card.svg"
-                alt="logo credit card"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Paiement Sécurisé</h5>
-              <p class="condition-para">
-                Carte bleue, Visa, Mastercard, Amex, Paypal
-              </p>
-            </div>
-            <div class="return icone-conditions">
-              <img
-                src="./ressources/images/icones/return.svg"
-                alt="logo retours"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Retours</h5>
-              <p class="condition-para condition-return">
-                Vous disposez de 15jours<br />
-                pour changer d'avis
-              </p>
-            </div>
-          </div>
-          <div class="reseaux-items">
-            <div class="follow">
-              <h6>Suivez-nous</h6>
-              <div class="reseaux">
+          <div class="sale">
+            <h4>VENDRE</h4>
+            <ul>
+              <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <img
-                    class="logo-reseaux"
-                    src="./ressources/images/icones/facebook.png"
-                    alt="logo facebook"
-                  />
+                  Vendez sur Mazaryne
                 </a>
-                <a href="#">
-                  <img
-                    class="logo-reseaux"
-                    src="./ressources/images/icones/instagram.png"
-                    alt="logo instagram"
-                  />
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Comment vendre
                 </a>
-
-                <a href="#">
-                  <img
-                    class="logo-reseaux"
-                    src="./ressources/images/icones/pinterest.png"
-                    alt="logo pinterest"
-                  />
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Nos conseils photo
                 </a>
-              </div>
-            </div>
-            <div class="items-footer">
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Guide des tailles
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="help">
+            <h4>BESOIN D'AIDE</h4>
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Suivre ma commande
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Informations de livraison
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Faire un retour
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Contactez-nous
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="about">
+            <h4>À PROPOS</h4>
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"> CGV </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Politique de confidentialité
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Mentions légales
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"> FAQ </a>
+              </li>
+            </ul>
+          </div>
+          <div class="follows">
+            <h4>SUIVEZ NOUS</h4>
+            <div class="reseaux">
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    CGV
+                  <a
+                    href="https://www.instagram.com/mazaryneofficiel/?utm_medium=copy_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    CGU
+                  <a
+                    href="https://www.facebook.com/mazaryneparis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    À Propos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Centre d'aides
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Contact
+                  <a
+                    href="https://www.pinterest.fr/mazaryne_/_saved/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pinterest
                   </a>
                 </li>
               </ul>

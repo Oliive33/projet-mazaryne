@@ -19,24 +19,24 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="../ressources/images/icones/apple-touch-icon.png"
+      href="../ressources/images/icones/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../ressources/images/icones/favicon-32x32.png"
+      href="../ressources/images/icones/favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../ressources/images/icones/favicon-16x16.png"
+      href="../ressources/images/icones/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="../ressources/images/icones/site.webmanifest" />
+    <link rel="manifest" href="../ressources/images/icones/favicon/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="../ressources/images/icones/safari-pinned-tab.svg"
+      href="../ressources/images/icones/favicon/safari-pinned-tab.svg"
       color="#e44b55"
     />
     <meta name="msapplication-TileColor" content="#e44b55" />
@@ -57,7 +57,7 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <!-- Bandeau & phrase slide -->
       <div id="bandeau-slide">
         <div class="phraseSlide" id="nav-elements">
@@ -70,7 +70,13 @@
                       "Rejoingnez notre communauté de Fashion Activists!"
                     </div>
                     <div class="element">"S'exprimer avec style !"</div>
-                    <div class="element">"Des produits de luxe"</div>
+                    <div class="element">
+                      Sélection de pièces de style pré-aimées
+                      <img
+                        src="../ressources/images/icones/heart-solid.svg"
+                        alt="heart"
+                      />
+                    </div>
                     <div class="element">
                       "Appuyez-vous sur une grande communauté."
                     </div>
@@ -84,78 +90,67 @@
           </div>
         </div>
       </div>
-      <div class="nav-top">
-        <div class="search-box">
-          <div class="search">
-            <form class="form-input">
-              <i class="fas fa-search"></i>
-              <input
-                type="text"
-                id="search-item"
-                placeholder="Rechercher par marque, article..."
-                class="search-item"
-              />
-            </form>
-          </div>
-        </div>
+      <div class="nav-top" id="nav-top">
+        <div class="ghost">Marazyne</div>
         <a href="../index.html">
           <h1>Mazaryne</h1>
         </a>
-        <nav>
-          <ul class="nav-links">
-            <li class="item-nav">
-              <a href="#" class="user-connection" title="Gérer mon compte"   id="login-btn">
-                <img
-                  src="../ressources/images/icones/users.svg"
-                  alt="logo user"
-                  class="icon-nav"
-                />
-              </a>
-            </li>
-            <li class="item-nav">
-              <a href="#">
-                <img
-                  src="../ressources/images/icones/like.svg"
-                  alt="logo likes"
-                  class="icon-nav"
-                />
-              </a>
-            </li>
-
-            <li class="item-nav">
-              <a href="#" title="Mon Panier">
-                <img
-                  src="../ressources/images/icones/logo-shopping-bag.svg"
-                  alt="logo panier"
-                  class="icon-nav"
-                />
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="icons-home">
+          <a
+            href="#"
+            class="user-connection nav-links item-nav"
+            title="Gérer mon compte"
+            id="login-btn"
+          >
+            <img
+              src="../ressources/images/icones/users.svg"
+              alt="logo user"
+              class="icon-nav"
+            />
+          </a>
+          <a class="item-nav" href="#">
+            <img
+              src="../ressources/images/icones/like.svg"
+              alt="logo likes"
+              class="icon-nav"
+            />
+          </a>
+          <a class="item-nav" href="#" title="Mon Panier">
+            <img
+              src="../ressources/images/icones/logo-shopping-bag.svg"
+              alt="logo panier"
+              class="icon-nav"
+            />
+          </a>
+        </div>
       </div>
-      
       <!-- login form container  -->
-              <div class="login-form-container">
-              <i class="fas fa-times" id="form-close"></i>
-        
-              <form action="">
-                <h3>Connexion</h3>
-                <input type="email" class="box" placeholder="entrer votre email" />
-                <input
-                  type="password"
-                  class="box"
-                  placeholder="entrer votre mot de passe"
-                />
-                <input type="submit" value="Se connecter maintenant" class="btn" />
-        
-                <input type="checkbox" id="remember" />
-                <label for="remember">Se souvenir de moi</label>
-        
-                <p>Mot de passe oublié? <a href="./Mot-de-passe-oublie.html">cliquer ici</a></p>
-                <p>Vous n'avez pas encore de compte? <a href="./Creation-de-Compte-client.html">S'inscrire ici</a></p>
-              </form>
-            </div> 
+
+      <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form>
+          <h3>Connexion</h3>
+          <input type="email" class="box" placeholder="entrer votre email" />
+          <input
+            type="password"
+            class="box"
+            placeholder="entrer votre mot de passe"
+          />
+          <input type="submit" value="Se connecter maintenant" class="btn" />
+
+          <input type="checkbox" id="remember" />
+          <label for="remember">Se souvenir de moi</label>
+
+          <p>
+            Mot de passe oublié?
+            <a href="./Mot-de-passe-oublie.html">cliquer ici</a>
+          </p>
+          <p>
+            Vous n'avez pas encore de compte?
+            <a href="./Creation-de-Compte-client.html">S'inscrire ici</a>
+          </p>
+        </form>
+      </div>
     </header>
     <div class="header">
       <div class="container">
@@ -170,112 +165,21 @@
                 <div class="mobile-menu-close">&times;</div>
               </div>
               <ul class="menu-main">
-                <label class="language-container" for="language-selector">
-                  <select
-                    class="menu-language-selector"
-                    name="language-selector"
-                    id="language-selector"
-                    aria-label="language-selector"
-                  >
-                    <option value="">FR</option>
-                    <option value="">EN</option>
-                    <option value="">ES</option>
-                  </select>
-                </label>
-                <li class="menu-item-has-children">
-                  <a href="./Produits-Femme.html" class="nav-below-link"
-                    >Femme<i class="fa fa-angle-down"></i
-                  ></a>
-                  <div class="sub-menu mega-menu mega-menu-column-4">
-                    <div class="list-item">
-                      <h4 class="title">Nos Chaussures Femmes</h4>
-                      <ul>
-                        <li><a href="#">BOTTES</a></li>
-                        <li><a href="#">BOOTS à TALONS</a></li>
-                        <li><a href="#">BOOTS PLATES</a></li>
-                        <li><a href="#">BOOTS à LACETS</a></li>
-                      </ul>
-
-                      <h4 class="title">Fashion</h4>
-                      <ul>
-                        <li><a href="#">ESCARPINS</a></li>
-                        <li><a href="#">DERBIES & RICHELIEUX</a></li>
-                        <li><a href="#">MOCASSINS</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title">Tendances</h4>
-                      <ul>
-                        <li><a href="#">BALLERINES & BABIES</a></li>
-                        <li><a href="#">SANDALES</a></li>
-                        <li><a href="#">MULES</a></li>
-                        <li><a href="#">SNEAKERS</a></li>
-                      </ul>
-                      <h4 class="title">Fashion, Glamour, Tendance</h4>
-                      <ul>
-                        <li><a href="#">TOUS LES SOULIERS</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="list-item">
-                      <img
-                        src="../ressources/images/accueil-1.png"
-                        alt="shop"
-                      />
-                      <img src="../ressources/images/women-3.jpg" alt="shop" />
-                    </div>
-                    <div class="list-item">
-                      <img src="../ressources/images/women-1.jpg" alt="shop" />
-                      <img src="../ressources/images/women-2.jpg" alt="shop" />
-                    </div>
+                <div class="search-box">
+                  <div class="search">
+                    <form class="form-input">
+                      <i class="fas fa-search"></i>
+                      <input type="text" id="search-item" class="search-item" />
+                    </form>
                   </div>
-                </li>
+                </div>
                 <li class="menu-item-has-children">
-                  <a href="./Produits-Homme.html" class="nav-below-link"
-                    >Homme<i class="fa fa-angle-down"></i
-                  ></a>
-                  <div class="sub-menu mega-menu mega-menu-column-4">
-                    <div class="list-item">
-                      <h4 class="title">Luxe</h4>
-                      <ul>
-                        <li><a href="#">BOTTES</a></li>
-                        <li><a href="#">BOTTINES</a></li>
-                        <li><a href="#">BOTTINES à LACETS</a></li>
-                      </ul>
-                      <h4 class="title">Designers de Luxe</h4>
-                      <ul>
-                        <li><a href="#">DERBIES & RICHELIEUX </a></li>
-                        <li><a href="#">MOCASSINS</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <h4 class="title">Tendance</h4>
-                      <ul>
-                        <li><a href="#">SNEAKERS </a></li>
-                        <li><a href="#">SANDALES</a></li>
-                      </ul>
-                      <h4 class="title">Les Nouveautés</h4>
-                      <ul>
-                        <li><a href="#">TOUS LES SOULIERS</a></li>
-                      </ul>
-                    </div>
-                    <div class="list-item">
-                      <img src="../ressources/images/men-1.jpg" alt="shop" />
-                      <img src="../ressources/images/men-2.jpg" alt="shop" />
-                    </div>
-                    <div class="list-item">
-                      <img src="../ressources/images/men-3.jpg" alt="shop" />
-                      <img src="../ressources/images/men-4.jpg" alt="shop" />
-                    </div>
-                  </div>
-                </li>
-                <li class="menu-item-has-children">
-                  <a href="./pieces-exception.html" class="nav-below-link"
-                    >Pièces d'Exception<i class="fa fa-angle-down"></i
+                  <a class="nav-below-link"
+                    >Pièces d'exception<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item text-center">
-                      <a href="#">
+                      <a href="./pieces-exception.html">
                         <img
                           src="../ressources/images/p1.jpg"
                           alt="new Product"
@@ -313,12 +217,14 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="./Designers.html" class="nav-below-link"
+                  <a class="nav-below-link"
                     >Designers<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item">
-                      <h4 class="title">Designers Luxe</h4>
+                      <a href="./Designers.html">
+                        <h4 class="title">Designers Luxe</h4>
+                      </a>
                       <ul>
                         <li><a href="#">Balenciaga</a></li>
                         <li><a href="#">Bottega Veneta</a></li>
@@ -347,7 +253,9 @@
                     </div>
                     <span class="separation-designers"></span>
                     <div class="list-item">
-                      <h4 class="title">Designers Créateurs</h4>
+                      <a href="./Designers.html">
+                        <h4 class="title">Designers Créateurs</h4>
+                      </a>
                       <ul>
                         <li><a href="#">Ralph Lauren</a></li>
                         <li><a href="#">Salvatore ferragamo</a></li>
@@ -371,21 +279,113 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a href="./Blog.html" class="nav-below-link"
-                    >Blog<i class="fa fa-angle-down"></i
+                  <a class="nav-below-link"
+                    >Femme<i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <a href="./Produits-Femme.html">
+                        <h4 class="title">Voir nos Chaussures Femmes</h4>
+                      </a>
+                      <ul>
+                        <li>
+                          <a href="./Produits-Femme.html">BOTTES</a>
+                        </li>
+                        <li><a href="#">BOOTS à TALONS</a></li>
+                        <li><a href="#">BOOTS PLATES</a></li>
+                        <li><a href="#">BOOTS à LACETS</a></li>
+                      </ul>
+                      <h4 class="title">Fashion</h4>
+                      <ul>
+                        <li><a href="#">ESCARPINS</a></li>
+                        <li><a href="#">DERBIES & RICHELIEUX</a></li>
+                        <li><a href="#">MOCASSINS</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Tendances</h4>
+                      <ul>
+                        <li><a href="#">BALLERINES & BABIES</a></li>
+                        <li><a href="#">SANDALES</a></li>
+                        <li><a href="#">MULES</a></li>
+                        <li><a href="#">SNEAKERS</a></li>
+                      </ul>
+                      <h4 class="title">Fashion, Glamour, Tendance</h4>
+                      <ul>
+                        <li><a href="#">TOUS LES SOULIERS</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img src="../ressources/images/accueil-1.png" alt="shop" />
+                      <img src="../ressources/images/women-3.jpg" alt="shop" />.
+                    </div>
+                    <div class="list-item">
+                      <img src="../ressources/images/women-1.jpg" alt="shop" />
+                      <img src="../ressources/images/women-2.jpg" alt="shop" />
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a class="nav-below-link"
+                    >Homme<i class="fa fa-angle-down"></i
+                  ></a>
+                  <div class="sub-menu mega-menu mega-menu-column-4">
+                    <div class="list-item">
+                      <a href="./Produits-Homme.html">
+                        <h4 class="title">Voir nos Chaussures Hommes</h4>
+                      </a>
+                      <h4 class="title">Luxe</h4>
+                      <ul>
+                        <li><a href="#">BOTTES</a></li>
+                        <li><a href="#">BOTTINES</a></li>
+                        <li><a href="#">BOTTINES à LACETS</a></li>
+                      </ul>
+                      <h4 class="title">Designers de Luxe</h4>
+                      <ul>
+                        <li><a href="#">DERBIES & RICHELIEUX </a></li>
+                        <li><a href="#">MOCASSINS</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <h4 class="title">Tendance</h4>
+                      <ul>
+                        <li><a href="#">SNEAKERS </a></li>
+                        <li><a href="#">SANDALES</a></li>
+                      </ul>
+                      <h4 class="title">Les Nouveautés</h4>
+                      <ul>
+                        <li><a href="#">TOUS LES SOULIERS</a></li>
+                      </ul>
+                    </div>
+                    <div class="list-item">
+                      <img src="../ressources/images/men-1.jpg" alt="shop" />
+                      <img src="../ressources/images/men-2.jpg" alt="shop" />
+                    </div>
+                    <div class="list-item">
+                      <img src="../ressources/images/men-3.jpg" alt="shop" />
+                      <img src="../ressources/images/men-4.jpg" alt="shop" />
+                    </div>
+                  </div>
+                </li>
+                <li class="menu-item-has-children">
+                  <a class="nav-below-link"
+                    >Le Journal<i class="fa fa-angle-down"></i
                   ></a>
                   <div class="sub-menu single-column-menu">
+                    <a href="./Blog.html">
+                      <h4 class="title-blog">Découvrez notre Blog</h4>
+                    </a>
                     <ul>
-                      <li><a href="#">Jan22 - Notre collection Tendance</a></li>
+                      <li>
+                        <a href="#">Jan22 - Notre collection Tendance</a>
+                      </li>
                       <li><a href="#">Feb22 - Nos Nouveautés</a></li>
                       <li><a href="#">Mar22 - Les Designers de demain</a></li>
                     </ul>
                   </div>
                 </li>
                 <li id="button" class="btn">
-                  <a class="nav-btn-link" href="#">
-                    <span>Vendre un article</span></a
-                  >
+                  <a class="nav-btn-link" href="#">VENDRE</a>
                 </li>
               </ul>
             </nav>
@@ -411,100 +411,106 @@
     <footer>
       <section class="footer">
         <div class="footer-items">
-          <div class="footer-title">
-            <h4>Mazaryne</h4>
-            <span>S'exprimer avec Style!</span>
-          </div>
-          <div class="conditions">
-            <div class="delivery icone-conditions">
-              <img
-                src="../ressources/images/icones/box.svg"
-                alt="logo box"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Livraison Offerte</h5>
-              <p class="condition-para condition-delivery">
-                À partir de 250€ en France via Colissimo<br />
-                Point retrait de Domicile avec ou sans signature
-              </p>
-            </div>
-            <div class="payment icone-conditions">
-              <img
-                src="../ressources/images/icones/credit-card.svg"
-                alt="logo credit card"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Paiement Sécurisé</h5>
-              <p class="condition-para">
-                Carte bleue, Visa, Mastercard, Amex, Paypal
-              </p>
-            </div>
-            <div class="return icone-conditions">
-              <img
-                src="../ressources/images/icones/return.svg"
-                alt="logo retours"
-                class="img-conditions"
-              />
-              <h5 class="conditions-title">Retours</h5>
-              <p class="condition-para condition-return">
-                Vous disposez de 15jours<br />
-                pour changer d'avis
-              </p>
-            </div>
-          </div>
-          <div class="reseaux-items">
-            <div class="follow">
-              <h6>Suivez-nous</h6>
-              <div class="reseaux">
+          <div class="sale">
+            <h4>VENDRE</h4>
+            <ul>
+              <li>
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <img
-                    class="logo-reseaux"
-                    src="../ressources/images/icones/facebook.png"
-                    alt="logo facebook"
-                  />
+                  Vendez sur Mazaryne
                 </a>
-                <a href="#">
-                  <img
-                    class="logo-reseaux"
-                    src="../ressources/images/icones/instagram.png"
-                    alt="logo instagram"
-                  />
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Comment vendre
                 </a>
-
-                <a href="#">
-                  <img
-                    class="logo-reseaux"
-                    src="../ressources/images/icones/pinterest.png"
-                    alt="logo pinterest"
-                  />
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Nos conseils photo
                 </a>
-              </div>
-            </div>
-            <div class="items-footer">
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Guide des tailles
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="help">
+            <h4>BESOIN D'AIDE</h4>
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Suivre ma commande
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Informations de livraison
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Faire un retour
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Contactez-nous
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="about">
+            <h4>À PROPOS</h4>
+            <ul>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"> CGV </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Politique de confidentialité
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Mentions légales
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer"> FAQ </a>
+              </li>
+            </ul>
+          </div>
+          <div class="follows">
+            <h4>SUIVEZ NOUS</h4>
+            <div class="reseaux">
               <ul>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    CGV
+                  <a
+                    href="https://www.instagram.com/mazaryneofficiel/?utm_medium=copy_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    CGU
+                  <a
+                    href="https://www.facebook.com/mazaryneparis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    À Propos
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Centre d'aides
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Contact
+                  <a
+                    href="https://www.pinterest.fr/mazaryne_/_saved/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pinterest
                   </a>
                 </li>
               </ul>
