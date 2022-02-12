@@ -213,7 +213,6 @@ h1 {
   position: relative;
   overflow: hidden;
   background: #000;
-  height: 40px;
   line-height: 36px;
   padding: 0px 15px;
   cursor: pointer;
@@ -250,7 +249,7 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: $font-secondary;
   transition: all 0.2s ease-in-out;
 }
@@ -279,11 +278,11 @@ h1 {
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: #fff;
-  width: 35rem;
+  width: 30rem;
 }
 
 .login-form-container form h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: $font-secondary;
   color: #444;
   text-transform: uppercase;
@@ -293,8 +292,8 @@ h1 {
 
 .login-form-container form .box {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 16px;
   font-family: $font-tertiary;
   color: #333;
   margin: 0.6rem 0;
@@ -322,7 +321,7 @@ h1 {
 
 .login-form-container form p {
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   font-family: $font-tertiary;
 }
@@ -354,17 +353,13 @@ h1 {
   }
   .login-form-container form .box {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
+    padding: 9px;
+    font-size: 15px;
     font-family: $font-tertiary;
     color: #333;
     margin: 0.6rem 0;
     border: 0.1rem solid rgba(0, 0, 0, 0.3);
     text-transform: none;
-  }
-  .login-form-container form .box {
-    padding: 12px;
-    font-size: 16px;
   }
   .btn {
     padding: 0.8rem 2rem;
@@ -383,7 +378,7 @@ h1 {
     font-size: 19px;
   }
   .login-form-container form .box {
-    font-size: 15px;
+    font-size: 14px;
   }
   .btn {
     font-size: 1.2rem;

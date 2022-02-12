@@ -51,11 +51,7 @@
     display: none;
   }
   .titles-vedette {
-    margin-top: 130px;
     margin-bottom: 50px;
-  }
-  .btn-designer-we-love {
-    margin-top: -10rem;
   }
   .btn-produits {
     width: 50%;
@@ -111,7 +107,6 @@
   }
   .btn-designer-we-love {
     font-size: 18px;
-    margin-top: 0rem;
   }
   .title-secondaire-vedette {
     margin-top: 40px;
@@ -138,7 +133,6 @@
   }
   .btn-designer-we-love {
     font-size: 17px;
-    margin-top: -9rem;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
@@ -160,7 +154,6 @@
   }
   .btn-designer-we-love {
     font-size: 16px;
-    margin-top: -9rem;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
@@ -171,6 +164,9 @@
   .txt-homme {
     margin: 30px;
     font-size: 18px;
+  }
+  .produits-femme-homme {
+    grid-gap: 20px;
   }
   .title-secondaire-designer {
     font-size: 22px;
@@ -203,7 +199,6 @@
   }
   .btn-designer-we-love {
     font-size: 14px;
-    margin-top: -8rem;
   }
   .main-pictures img {
     height: 285px;
@@ -211,5 +206,22 @@
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
     padding: 5px 35px;
+    font-size: 16px;
+  }
+  .btn-produits {
+    font-size: 18px;
+  }
+  .journal .home-title-journal {
+    font-size: 30px;
+  }
+  .titles-garanties p {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .selection p {
+    width: 63%;
+  }
+  .certifie p {
+    width: 57%;
   }
 }

@@ -316,7 +316,6 @@ h1 {
   position: relative;
   overflow: hidden;
   background: #000;
-  height: 40px;
   line-height: 36px;
   padding: 0px 15px;
   cursor: pointer;
@@ -358,7 +357,7 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: "Caslon540", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -397,11 +396,11 @@ h1 {
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: #fff;
-  width: 35rem;
+  width: 30rem;
 }
 
 .login-form-container form h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Caslon540", sans-serif;
   color: #444;
   text-transform: uppercase;
@@ -411,8 +410,8 @@ h1 {
 
 .login-form-container form .box {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
+  padding: 10px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #333;
   margin: 0.6rem 0;
@@ -440,7 +439,7 @@ h1 {
 
 .login-form-container form p {
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 15px;
   color: #666;
   font-family: "Poppins", sans-serif;
 }
@@ -473,17 +472,13 @@ h1 {
   }
   .login-form-container form .box {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
+    padding: 9px;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     color: #333;
     margin: 0.6rem 0;
     border: 0.1rem solid rgba(0, 0, 0, 0.3);
     text-transform: none;
-  }
-  .login-form-container form .box {
-    padding: 12px;
-    font-size: 16px;
   }
   .btn {
     padding: 0.8rem 2rem;
@@ -503,7 +498,7 @@ h1 {
     font-size: 19px;
   }
   .login-form-container form .box {
-    font-size: 15px;
+    font-size: 14px;
   }
   .btn {
     font-size: 1.2rem;
@@ -2693,7 +2688,7 @@ a {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 70px;
   width: 100%;
   min-height: 300px;
   text-align: center;
@@ -2753,8 +2748,13 @@ a {
   .footer-items {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 0.6fr 0.5fr;
+        grid-template-columns: 0.6fr 0.5fr;
+    margin: 0 auto;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-items: start;
     padding-left: 10px;
   }
 }
@@ -2764,24 +2764,23 @@ a {
     margin-top: 50px;
     width: 100%;
   }
-  .footer-items {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 0.6fr 0.5fr;
-        grid-template-columns: 0.6fr 0.5fr;
-    margin: 0 auto;
-    text-align: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    justify-items: start;
+  .footer-items h4 {
+    margin-bottom: 5px;
   }
 }
 
 @media screen and (max-width: 475px) {
   .footer {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
-    line-height: 2.2;
+    line-height: 2;
+  }
+  .footer-items {
+    -ms-grid-columns: 1.5fr;
+        grid-template-columns: 1.5fr;
+  }
+  .footer-items h4 {
+    margin-bottom: 2px;
   }
   .items-footer ul {
     -ms-flex-wrap: wrap;
@@ -2857,11 +2856,7 @@ a {
     display: none;
   }
   .titles-vedette {
-    margin-top: 130px;
     margin-bottom: 50px;
-  }
-  .btn-designer-we-love {
-    margin-top: -10rem;
   }
   .btn-produits {
     width: 50%;
@@ -2922,7 +2917,6 @@ a {
   }
   .btn-designer-we-love {
     font-size: 18px;
-    margin-top: 0rem;
   }
   .title-secondaire-vedette {
     margin-top: 40px;
@@ -2953,7 +2947,6 @@ a {
   }
   .btn-designer-we-love {
     font-size: 17px;
-    margin-top: -9rem;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
@@ -2976,7 +2969,6 @@ a {
   }
   .btn-designer-we-love {
     font-size: 16px;
-    margin-top: -9rem;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
@@ -2987,6 +2979,9 @@ a {
   .txt-homme {
     margin: 30px;
     font-size: 18px;
+  }
+  .produits-femme-homme {
+    grid-gap: 20px;
   }
   .title-secondaire-designer {
     font-size: 22px;
@@ -3020,7 +3015,6 @@ a {
   }
   .btn-designer-we-love {
     font-size: 14px;
-    margin-top: -8rem;
   }
   .main-pictures img {
     height: 285px;
@@ -3028,6 +3022,23 @@ a {
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
     padding: 5px 35px;
+    font-size: 16px;
+  }
+  .btn-produits {
+    font-size: 18px;
+  }
+  .journal .home-title-journal {
+    font-size: 30px;
+  }
+  .titles-garanties p {
+    font-size: 14px;
+    padding: 5px;
+  }
+  .selection p {
+    width: 63%;
+  }
+  .certifie p {
+    width: 57%;
   }
 }
 
