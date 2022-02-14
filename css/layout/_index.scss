@@ -98,20 +98,27 @@ a {
   padding: 20px 0;
   font-size: 35px;
 }
+.top-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.top-card span {
+  font-family: $font-tertiary;
+  font-weight: 800;
+  background-color: #fdece5;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+}
 @media screen and (min-width: 992px) {
   .container-swiper {
     margin-left: auto;
     margin-right: auto;
   }
 }
-.hearts {
-  display: flex;
-  justify-content: flex-end;
-}
 .heart {
-  position: relative;
-  top: 1rem;
-  right: 1rem;
   font-size: x-large;
 }
 .heart::before {

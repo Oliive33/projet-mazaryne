@@ -19,7 +19,7 @@ a {
 // ===================Section produits femme==================//
 
 .titre-produits-femme {
-  margin: 80px;
+  margin: 80px 0 40px 70px;
 }
 .titre-produits-femme h2 {
   font-family: $font-primary;
@@ -27,58 +27,66 @@ a {
 }
 .filters-container {
   margin: 0px 0px 0px 70px;
-
-  .filter-row {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    margin: 10px;
-  }
+}
+.filter-row {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 50px 70px;
 }
 .filter-toggle {
   display: inline-flex;
-  padding: 10px 15px;
+  align-items: center;
+  padding: 5px 15px;
   border: none;
   outline: none;
-  box-shadow: 4px 4px 5px -1px rgba(92, 92, 92, 0.75);
+  box-shadow: 1px 1px 3px -1px rgba(146, 146, 146, 0.35);
   border-radius: 2px;
-  transition: border 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
+  background: rgb(248, 248, 248);
+  cursor: pointer;
 }
 .filter-toggle:hover {
-  border: 2px solid $color-header;
+  background-color: #000;
+  color: #fff;
 }
 .filter-toggle .filter-references {
   font-family: $font-tertiary;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px;
 }
 // Products
+.produits-main {
+  display: flex;
+}
 .products .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 1440px;
   margin: 50px;
-  padding: 2rem;
 }
 .products .box-container .box {
   flex: 1 1 17rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0.4rem 0.6rem rgba(59, 59, 59, 0.35);
   border-radius: 4px;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .products .box-container .box .new {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  padding: 0.7rem 1rem;
+  padding: 8px 12px;
   font-size: 1rem;
   font-family: $font-secondary;
-  color: $color-primary;
-  background: rgba(255, 51, 153, 0.1);
+  font-weight: 800;
+  color: #fff;
+  background: $color-quaternary;
   z-index: 1;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 .products .box-container .box .image {
   position: relative;
@@ -109,12 +117,10 @@ a {
   line-height: 3rem;
   font-size: 1rem;
   width: 50%;
-  background: $color-tertiary;
+  background: $color-header;
   color: #fff;
 }
 .products .box-container .box .image .icons .cart-btn {
-  border-left: 0.1rem solid #fff7;
-  border-right: 0.1rem solid #fff7;
   width: 100%;
   font-family: $font-secondary;
 }
@@ -142,4 +148,90 @@ a {
   color: #999;
   font-weight: lighter;
   text-decoration: line-through;
+}
+.nav {
+  width: 440px;
+  padding: 8px 20px;
+}
+.nav label {
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  display: block;
+  cursor: pointer;
+}
+.button span {
+  float: right;
+  line-height: 35px;
+}
+.nav ul {
+  background: white;
+  list-style-type: none;
+  width: 100%;
+  border-radius: 5px;
+  display: none;
+}
+[id^="btn"]:checked + ul {
+  display: block;
+}
+.nav ul li {
+  line-height: 20px;
+  padding: 8px 2px;
+  cursor: pointer;
+}
+.nav ul li label {
+  font-size: 18px;
+}
+.nav ul li .product-category-link {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: all 0.1s ease-in-out;
+}
+.nav ul li .product-category-link:hover,
+.nav ul li label .product-category-link:hover {
+  color: #90111c;
+}
+.nav ul ul {
+  position: static;
+}
+.nav ul ul li {
+  line-height: 30px;
+  padding-left: 30px;
+  border-bottom: none;
+}
+.nav ul ul li a {
+  color: black;
+  font-size: 17px;
+}
+.nav ul li span {
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.input {
+  display: none;
+}
+// Pagination
+.produits-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  overflow-x: hidden;
+}
+.produits-pagination .page {
+  color: #212121;
+  border: 2px solid transparent;
+  font-family: $font-tertiary;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 5px;
+}
+.produits-pagination .active {
+  background: #b93843;
+  border-radius: 50%;
+  padding: 0px 10px;
 }
