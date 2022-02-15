@@ -1,4 +1,3 @@
-// Scroll up
 /*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
@@ -94,20 +93,4 @@ LangBtn.addEventListener("click", () => {
 
 formLangClose.addEventListener("click", () => {
   loginLang.classList.remove("active");
-});
-
-// change height bandeau
-navbar = document.getElementById("bandeau-slide");
-navElements = document.getElementById("nav-elements");
-
-window.addEventListener("scroll", function () {
-  const scroll = this.document.documentElement.scrollTop;
-
-  if (scroll > 200) {
-    navbar.style.height = "50px";
-    navElements.style.height = "50px";
-  } else {
-    navbar.style.height = "60px";
-    navElements.style.height = "60px";
-  }
 });

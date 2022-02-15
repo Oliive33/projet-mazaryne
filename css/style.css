@@ -63,7 +63,7 @@
   bottom: 60px;
 }
 
-#bandeau-slide {
+#nav-fix {
   width: 100%;
   position: fixed;
   top: 0;
@@ -71,6 +71,7 @@
   z-index: 1000;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  background-color: #fff;
 }
 
 .phraseSlide {
@@ -212,8 +213,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
-  padding: 75px 5px 45px 5px;
+  padding: 10px 5px 0px 5px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -246,7 +246,6 @@
 
 .search {
   width: 180px;
-  background: transparent;
   padding: 0px 5px;
 }
 
@@ -267,6 +266,7 @@
   border: none;
   outline: none;
   width: 100%;
+  background: transparent;
   font-size: 14px;
   font-weight: 600;
   padding: 15px 5px;
@@ -274,7 +274,7 @@
 
 h1 {
   font-family: "GrouchBT", sans-serif;
-  font-size: 75px;
+  font-size: 65px;
   font-weight: 400;
   color: #000;
   margin-left: 65px;
@@ -291,19 +291,16 @@ h1 {
 }
 
 .nav-below-link {
+  text-decoration: none;
+  color: #333;
+  font-family: "Caslon540", sans-serif;
+  font-size: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 .nav-below-link:hover {
   color: #cb333b;
-}
-
-.nav-below-link {
-  text-decoration: none;
-  color: #333;
-  font-family: "Caslon540", sans-serif;
-  font-size: 20px;
 }
 
 .btn,
@@ -1025,9 +1022,15 @@ li::marker {
   }
 }
 
+@media screen and (max-width: 850px) {
+  .header .mobile-menu-trigger {
+    margin-top: -55px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header .mobile-menu-trigger {
-    margin-top: -120px;
+    margin-top: -55px;
   }
 }
 
@@ -1064,6 +1067,7 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  margin-top: 55px;
 }
 
 .main-pictures img {
@@ -2084,9 +2088,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 0.1rem 0 0.1rem;
   min-height: 100vh;
 }
 
@@ -3194,6 +3196,7 @@ a {
     font-size: 50px;
     margin-bottom: 0;
     padding-top: 0;
+    margin-left: 100px;
   }
   .nav-top {
     padding: 85px 5px 30px 5px;
@@ -3270,13 +3273,14 @@ a {
 
 @media screen and (max-width: 768px) {
   .nav-top {
-    padding: 70px 5px 45px 5px;
+    padding: 70px 5px 30px 5px;
   }
   h1 {
     font-size: 45px;
+    margin-left: 0px;
   }
   .icons-home {
-    margin-top: 20px;
+    margin-top: 13px;
   }
   .form-connection {
     width: 280px;
@@ -3317,7 +3321,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 70px 5px 31px 5px;
+    padding: 55px 5px 31px 5px;
   }
   h1 {
     font-size: 40px;

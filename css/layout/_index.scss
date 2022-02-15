@@ -21,6 +21,7 @@ a {
 .main-pictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 55px;
 }
 .main-pictures img {
   width: 100%;
