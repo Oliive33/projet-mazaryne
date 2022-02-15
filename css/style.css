@@ -3062,6 +3062,7 @@ a {
   color: black;
   text-transform: capitalize;
   text-align: left;
+  margin-bottom: 30px;
 }
 
 .login-lang-container .form-lang .box {
