@@ -80,6 +80,21 @@ formBtn.addEventListener("click", () => {
 formClose.addEventListener("click", () => {
   loginForm.classList.remove("active");
 });
+//Apparition Pop up lang
+let LangBtn = document.querySelector("#langues-btn");
+let loginLang = document.querySelector(".login-lang-container");
+let formLangClose = document.querySelector("#form-lang-close");
+
+window.onscroll = () => {
+  loginLang.classList.remove("active");
+};
+LangBtn.addEventListener("click", () => {
+  loginLang.classList.add("active");
+});
+
+formLangClose.addEventListener("click", () => {
+  loginLang.classList.remove("active");
+});
 
 // change height bandeau
 navbar = document.getElementById("bandeau-slide");

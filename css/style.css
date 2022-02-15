@@ -1856,10 +1856,11 @@ a {
 
 .nav label {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   display: block;
   cursor: pointer;
+  font-family: "Caslon540", sans-serif;
 }
 
 .button span {
@@ -2811,11 +2812,11 @@ a {
 }
 
 .footer {
-  margin-top: 70px;
+  margin-top: 50px;
   width: 100%;
   min-height: 300px;
   text-align: center;
-  line-height: 2.5;
+  line-height: 1;
 }
 
 .footer-items {
@@ -2875,6 +2876,7 @@ a {
         grid-template-columns: 0.6fr 0.5fr;
     margin: 0 auto;
     text-align: center;
+    grid-gap: 15px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     justify-items: start;
@@ -2884,7 +2886,7 @@ a {
 
 @media screen and (max-width: 600px) {
   .footer {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 100%;
   }
   .footer-items h4 {
@@ -2917,6 +2919,257 @@ a {
 @media screen and (max-width: 395px) {
   .reseaux {
     width: 70%;
+  }
+}
+
+/****************************Popup lang start*************************/
+.langues-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+.langues-btn select {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.langues-btn select option {
+  display: none;
+  visibility: hidden;
+}
+
+.btn-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn-lang {
+  display: inline-block;
+  margin-top: 3rem;
+  background: #131313;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-lang:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.choix-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.choix select {
+  padding: 5px 40px 5px 2px;
+  font-weight: 500;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  outline: 1px solid #e6e4e4;
+}
+
+.choix select option {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.choix .titles-form {
+  font-family: "Poppins", sans-serif;
+  color: #bfbfbf;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.login-lang-container {
+  position: fixed;
+  top: -130%;
+  left: 0;
+  z-index: 10000;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-lang-container.active {
+  top: 0;
+}
+
+.login-lang-container .form-lang {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 30rem;
+}
+
+.login-lang-container .form-lang h3 {
+  font-size: 30px;
+  font-family: "GrouchBT", sans-serif;
+  color: black;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.login-lang-container .form-lang .box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  margin: 0.6rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  text-transform: none;
+}
+
+.login-lang-container .form-lang .btn-lang {
+  display: block;
+  width: auto;
+  color: #fff;
+}
+
+.login-lang-container #form-lang-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 901px) {
+  .langues-btn {
+    margin-left: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .langues-btn {
+    margin-left: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .langues-btn {
+    margin-left: 0.8rem;
+  }
+  .login-lang-container .form-lang h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .langues-btn {
+    margin-left: 0.5rem;
+  }
+  .choix select {
+    padding: 5px 4px 5px 2px;
+    margin: 5px;
+  }
+  .login-lang-container .form-lang {
+    padding: 1rem 1.5rem;
+    width: 27rem;
+  }
+  .login-lang-container .form-lang h3 {
+    font-size: 20px;
+  }
+  .login-lang-container .form-lang .box {
+    width: 100%;
+    padding: 9px;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    margin: 0.6rem 0;
+    border: 0.1rem solid rgba(0, 0, 0, 0.3);
+    text-transform: none;
+  }
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .login-lang-container .form-lang {
+    width: 21rem;
+    padding: 1rem 1.2rem;
+  }
+  .login-lang-container .form-lang h3 {
+    font-size: 18px;
+  }
+  .login-lang-container.form-lang .box {
+    font-size: 14px;
+  }
+  .btn-lang {
+    font-size: 0.7rem;
+  }
+  .login-lang-container #form-lang-close {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .login-lang-container .form-lang {
+    width: 19rem;
+    padding: 1rem 1rem;
+  }
+  .choix select {
+    padding: 5px 0px 5px 2px;
+    margin: 2px;
   }
 }
 
@@ -3125,7 +3378,7 @@ a {
     width: 60%;
   }
   .certifie p {
-    width: 54%;
+    width: 57%;
   }
   .mail-journal input {
     width: 50%;
@@ -3158,10 +3411,10 @@ a {
     padding: 5px;
   }
   .selection p {
-    width: 63%;
+    width: 68%;
   }
   .certifie p {
-    width: 57%;
+    width: 65%;
   }
 }
 

@@ -16,7 +16,7 @@ a {
   text-decoration: none;
 }
 
-// ===================Section produits femme==================//
+// ===================Section produits==================//
 
 .titre-produits-femme {
   margin: 80px 0 40px 70px;
@@ -149,16 +149,18 @@ a {
   font-weight: lighter;
   text-decoration: line-through;
 }
+// Section menu left
 .nav {
   width: 440px;
   padding: 8px 20px;
 }
 .nav label {
   color: black;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   display: block;
   cursor: pointer;
+  font-family: $font-secondary;
 }
 .button span {
   float: right;
