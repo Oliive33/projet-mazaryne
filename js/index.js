@@ -14,6 +14,10 @@ let newSwiper = new Swiper(".new-swiper", {
       spaceBetween: 80,
     },
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 /*=============== Zoom img swiper ===============*/
 const lightboxBg = document.createElement("div");
