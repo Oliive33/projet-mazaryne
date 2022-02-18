@@ -65,25 +65,31 @@ typeBtn.forEach((btn) => {
     btn.classList.add("active");
   };
 });
-// ==================Price range===================//
-// const rangeInput = document.querySelectorAll(".range-input input"),
-//   priceInput = document.querySelectorAll(".price-input input"),
-//   range = document.querySelector(".slider .progress");
-// let priceGap = 1;
+// ===================accordeon menu left====================//
+const acc_btns = document.querySelectorAll(".accordion-header");
+const acc_contents = document.querySelectorAll(".accordion-body");
 
-// priceInput.forEach((input) => {
-//   input.addEventListener("input", (e) => {
-//     let minPrice = parseInt(priceInput[0].value),
-//       maxPrice = parseInt(priceInput[1].value);
+acc_btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    acc_contents.forEach((acc) => {
+      if (
+        e.target.nextElementSibling !== acc &&
+        acc.classList.contains("active")
+      ) {
+        acc.classList.remove("active");
+        acc_btns.forEach((btn) => btn.classList.remove("active"));
+      }
+    });
 
-//     if (maxPrice - minPrice >= priceGap && maxPrice <= rangeInput[1].max) {
-//       if (e.target.className === "input-min") {
-//         rangeInput[0].value = minPrice;
-//         range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-//       } else {
-//         rangeInput[1].value = maxPrice;
-//         range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-//       }
-//     }
-//   });
-// });
+    const panel = btn.nextElementSibling;
+    panel.classList.toggle("active");
+    btn.classList.toggle("active");
+  });
+});
+
+window.onclick = (e) => {
+  if (!e.target.matches(".accordion-header")) {
+    acc_btns.forEach((btn) => btn.classList.remove("active"));
+    acc_contents.forEach((acc) => acc.classList.remove("active"));
+  }
+};
