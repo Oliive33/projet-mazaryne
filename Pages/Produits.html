@@ -441,12 +441,13 @@
               <span class="fas fa-caret-down"></span>
             </button>
             <button class="filter-toggle">
-              <span class="filter-references">Talons</span>
+              <label class="filter-references">Prix</label>
               <span class="fas fa-caret-down"></span>
             </button>
             <button class="filter-toggle">
-              <label class="filter-references">Prix</label>
-              <span class="fas fa-caret-down"></span>
+              <label class="filter-references"
+                >Réinitialiser tous les filtres</label
+              >
             </button>
           </div>
         </div>
@@ -458,131 +459,139 @@
       </div>
       <div class="side-bar">
         <div class="box">
-          <h3 class="title">trier par :</h3>
-          <div class="category">
-            <div class="btn-categorie active" data-category="all">
+          <button class="accordion-header">
+            <h3 class="title">trier par :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="category accordion-body">
+            <div class="btn-categorie active" data-category="text">
               les articles plus populaires
             </div>
-            <div class="btn-categorie" data-category="animal">
+            <div class="btn-categorie" data-category="text">
               par prix décroissant
             </div>
-            <div class="btn-categorie" data-category="food">
+            <div class="btn-categorie" data-category="text">
               par prix croissant
             </div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">catégories :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="all">Femme</div>
-            <div class="btn-categorie" data-type="jpg">Homme</div>
+          <button class="accordion-header">
+            <h3 class="title">catégories :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">Femme</div>
+            <div class="btn-categorie" data-type="text">Homme</div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">designers :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="all">
+          <button class="accordion-header">
+            <h3 class="title">designers :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">
               Toutes les marques
             </div>
-            <div class="btn-categorie" data-type="jpg">luxe</div>
-            <div class="btn-categorie" data-type="jpg">créateur</div>
-            <div class="btn-categorie" data-type="jpg">tendance</div>
+            <div class="btn-categorie" data-type="text">luxe</div>
+            <div class="btn-categorie" data-type="text">créateur</div>
+            <div class="btn-categorie" data-type="text">tendance</div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">pointures :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="all">femmes :</div>
-            <div class="btn-categorie" data-type="jpg">35</div>
-            <div class="btn-categorie" data-type="jpg">36</div>
-            <div class="btn-categorie" data-type="jpg">37</div>
-            <div class="btn-categorie" data-type="jpg">38</div>
-            <div class="btn-categorie" data-type="jpg">39</div>
-            <div class="btn-categorie" data-type="jpg">40</div>
-            <div class="btn-categorie" data-type="jpg">41</div>
-            <div class="btn-categorie" data-type="jpg">42</div>
-            <div class="btn-categorie" data-type="jpg">43</div>
-            <div class="btn-categorie" data-type="jpg">44</div>
-            <div class="btn-categorie" data-type="jpg">45</div>
-            <div class="btn-categorie active" data-type="all">hommes:</div>
-            <div class="btn-categorie" data-type="jpg">38</div>
-            <div class="btn-categorie" data-type="jpg">39</div>
-            <div class="btn-categorie" data-type="jpg">40</div>
-            <div class="btn-categorie" data-type="jpg">41</div>
-            <div class="btn-categorie" data-type="jpg">42</div>
-            <div class="btn-categorie" data-type="jpg">43</div>
-            <div class="btn-categorie" data-type="jpg">44</div>
-            <div class="btn-categorie" data-type="jpg">45</div>
-            <div class="btn-categorie" data-type="jpg">46</div>
-            <div class="btn-categorie" data-type="jpg">47</div>
-            <div class="btn-categorie" data-type="jpg">48</div>
+          <button class="accordion-header">
+            <h3 class="title">pointures :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">35</div>
+            <div class="btn-categorie" data-type="text">36</div>
+            <div class="btn-categorie" data-type="text">37</div>
+            <div class="btn-categorie" data-type="text">38</div>
+            <div class="btn-categorie" data-type="text">39</div>
+            <div class="btn-categorie" data-type="text">40</div>
+            <div class="btn-categorie" data-type="text">41</div>
+            <div class="btn-categorie" data-type="text">42</div>
+            <div class="btn-categorie" data-type="text">43</div>
+            <div class="btn-categorie" data-type="text">44</div>
+            <div class="btn-categorie" data-type="text">45</div>
+            <div class="btn-categorie" data-type="text">45</div>
+            <div class="btn-categorie" data-type="text">46</div>
+            <div class="btn-categorie" data-type="text">47</div>
+            <div class="btn-categorie" data-type="text">48</div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">couleurs :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="all">
+          <button class="accordion-header">
+            <h3 class="title">couleurs :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">
               Toutes les couleurs
             </div>
-            <div class="btn-categorie noir" data-type="jpg">Noir</div>
-            <div class="btn-categorie marine" data-type="jpg">Marine</div>
-            <div class="btn-categorie gris" data-type="jpg">Gris</div>
-            <div class="btn-categorie bleu" data-type="jpg">Bleu</div>
-            <div class="btn-categorie violet" data-type="jpg">Violet</div>
-            <div class="btn-categorie bordeaux" data-type="jpg">Bordeaux</div>
-            <div class="btn-categorie rouge" data-type="jpg">Rouge</div>
-            <div class="btn-categorie rose" data-type="jpg">Rose</div>
-            <div class="btn-categorie vert" data-type="jpg">Vert</div>
-            <div class="btn-categorie marron" data-type="jpg">Marron</div>
-            <div class="btn-categorie kaki" data-type="jpg">Kaki</div>
-            <div class="btn-categorie camel" data-type="jpg">Camel</div>
-            <div class="btn-categorie jaune" data-type="jpg">Jaune</div>
-            <div class="btn-categorie beige" data-type="jpg">Beige</div>
-            <div class="btn-categorie argente" data-type="jpg">Argenté</div>
-            <div class="btn-categorie dore" data-type="jpg">Doré</div>
-            <div class="btn-categorie cuivre" data-type="jpg">Cuivré</div>
-            <div class="btn-categorie other-colors" data-type="jpg">
+            <div class="btn-categorie noir" data-type="text">Noir</div>
+            <div class="btn-categorie marine" data-type="text">Marine</div>
+            <div class="btn-categorie gris" data-type="text">Gris</div>
+            <div class="btn-categorie bleu" data-type="text">Bleu</div>
+            <div class="btn-categorie violet" data-type="text">Violet</div>
+            <div class="btn-categorie bordeaux" data-type="text">Bordeaux</div>
+            <div class="btn-categorie rouge" data-type="text">Rouge</div>
+            <div class="btn-categorie rose" data-type="text">Rose</div>
+            <div class="btn-categorie vert" data-type="text">Vert</div>
+            <div class="btn-categorie marron" data-type="text">Marron</div>
+            <div class="btn-categorie kaki" data-type="text">Kaki</div>
+            <div class="btn-categorie camel" data-type="text">Camel</div>
+            <div class="btn-categorie jaune" data-type="text">Jaune</div>
+            <div class="btn-categorie beige" data-type="text">Beige</div>
+            <div class="btn-categorie argente" data-type="text">Argenté</div>
+            <div class="btn-categorie dore" data-type="text">Doré</div>
+            <div class="btn-categorie cuivre" data-type="text">Cuivré</div>
+            <div class="btn-categorie other-colors" data-type="text">
               Autres Couleurs
             </div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">matières :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="jpg">Caoutchouc</div>
-            <div class="btn-categorie" data-type="jpg">Cuir</div>
-            <div class="btn-categorie" data-type="jpg">Cuir vernis</div>
-            <div class="btn-categorie" data-type="jpg">Cuir synthétique</div>
-            <div class="btn-categorie" data-type="jpg">Fourrure</div>
-            <div class="btn-categorie" data-type="jpg">Nubuck</div>
-            <div class="btn-categorie" data-type="jpg">Toile</div>
-            <div class="btn-categorie" data-type="jpg">Tweed</div>
-            <div class="btn-categorie" data-type="jpg">Velours</div>
-            <div class="btn-categorie" data-type="jpg">à Paillettes</div>
-            <div class="btn-categorie" data-type="jpg">Autres matières</div>
+          <button class="accordion-header">
+            <h3 class="title">matières :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">Caoutchouc</div>
+            <div class="btn-categorie" data-type="text">Cuir</div>
+            <div class="btn-categorie" data-type="text">Cuir vernis</div>
+            <div class="btn-categorie" data-type="text">Cuir synthétique</div>
+            <div class="btn-categorie" data-type="text">Fourrure</div>
+            <div class="btn-categorie" data-type="text">Nubuck</div>
+            <div class="btn-categorie" data-type="text">Toile</div>
+            <div class="btn-categorie" data-type="text">Tweed</div>
+            <div class="btn-categorie" data-type="text">Velours</div>
+            <div class="btn-categorie" data-type="text">à Paillettes</div>
+            <div class="btn-categorie" data-type="text">Autres matières</div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">état :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="jpg">
+          <button class="accordion-header">
+            <h3 class="title">état :</h3>
+            <i class="fas fa-angle-down"></i>
+          </button>
+          <div class="type accordion-body">
+            <div class="btn-categorie active" data-type="text">
               Neuf avec étiquette
             </div>
-            <div class="btn-categorie" data-type="jpg">Neuf sans étiquette</div>
-            <div class="btn-categorie" data-type="jpg">Très bon état</div>
-            <div class="btn-categorie" data-type="jpg">Bon état</div>
+            <div class="btn-categorie" data-type="text">
+              Neuf sans étiquette
+            </div>
+            <div class="btn-categorie" data-type="text">Très bon état</div>
+            <div class="btn-categorie" data-type="text">Bon état</div>
           </div>
         </div>
         <div class="box">
-          <h3 class="title">talons :</h3>
-          <div class="type">
-            <div class="btn-categorie active" data-type="jpg">Haut (> 7cm)</div>
-            <div class="btn-categorie" data-type="jpg">moyen (3 à 7cm)</div>
-            <div class="btn-categorie" data-type="jpg">petit (< 3cm)</div>
-          </div>
-        </div>
-        <div class="box">
-          <h3 class="title">prix :</h3>
+          <button class="accordion-header">
+            <h3 class="title">prix :</h3>
+          </button>
           <div class="type">
             <div class="price-input">
               <div class="field">

@@ -2197,11 +2197,54 @@ input[type="range"]::-moz-range-thumb {
   color: var(--black);
   cursor: pointer;
   font-size: 16px;
-  z-index: 1100;
+  z-index: 1001;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   border: var(--border);
   display: none;
+}
+
+.accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #000;
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.accordion-header.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.accordion-header.active i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-body {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-body.active {
+  max-height: 40rem;
+  padding: 1rem;
 }
 
 .price-input {
@@ -3868,6 +3911,12 @@ a {
   }
   .certifie p {
     width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filter-row {
+    display: none;
   }
 }
 

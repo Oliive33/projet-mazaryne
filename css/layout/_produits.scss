@@ -279,7 +279,7 @@ input[type="range"]::-moz-range-thumb {
   font-weight: lighter;
   text-decoration: line-through;
 }
-// Section tablet & phone categories
+// ==================== Section tablet & phone categories============================//
 :root {
   --crimson: crimson;
   --black: #333;
@@ -411,11 +411,47 @@ input[type="range"]::-moz-range-thumb {
   color: var(--black);
   cursor: pointer;
   font-size: 16px;
-  z-index: 1100;
+  z-index: 1001;
   box-shadow: var(--box-shadow);
   border: var(--border);
   display: none;
 }
+//================accordeon menu left===================//
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #000;
+  background: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: $font-tertiary;
+}
+.accordion-header.active {
+  background-color: #000;
+  color: #fff;
+}
+.accordion-header.active i {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-body {
+  padding: 0 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-body.active {
+  max-height: 40rem;
+  padding: 1rem;
+}
+
+// ==============Range input menu left=================//
 .price-input {
   width: 100%;
   display: flex;
