@@ -87,7 +87,7 @@ acc_btns.forEach((btn) => {
   });
 });
 
-window.onclick = (e) => {
+document.onclick = (e) => {
   if (!e.target.matches(".accordion-header")) {
     acc_btns.forEach((btn) => btn.classList.remove("active"));
     acc_contents.forEach((acc) => acc.classList.remove("active"));
