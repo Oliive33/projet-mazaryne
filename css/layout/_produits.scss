@@ -282,7 +282,6 @@ input[type="range"]::-moz-range-thumb {
 // ==================== Section tablet & phone categories============================//
 :root {
   --crimson: crimson;
-  --black: #333;
   --white: #fff;
   --light-black: #666;
   --light-bg: #eee;
@@ -299,8 +298,6 @@ input[type="range"]::-moz-range-thumb {
   z-index: 1000;
   background-color: var(--white);
   padding: 20px;
-  border-right: var(--border);
-  overflow-y: scroll;
   display: none;
   font-family: $font-tertiary;
 }
@@ -317,10 +314,12 @@ input[type="range"]::-moz-range-thumb {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  font-size: 14px;
-  background-color: var(--light-bg);
-  color: var(--black);
+  background-color: white;
+  color: #000;
+  border: 1px solid black;
   text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
   transition: all 0.2s ease-in-out;
 }

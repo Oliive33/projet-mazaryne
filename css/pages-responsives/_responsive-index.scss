@@ -155,11 +155,17 @@
     font-size: 16px;
   }
   .btn-designer-we-love {
-    font-size: 16px;
+    display: none;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
+  }
+  .vedette {
+    margin: 0px auto 50px;
+  }
+  .titles-vedette {
+    margin-top: 0;
   }
   .txt-vedette,
   .txt-femme,
@@ -199,17 +205,14 @@
   .carousel .changeHidden .element {
     font-size: 14px;
   }
-  .btn-designer-we-love {
-    font-size: 14px;
-  }
-  .main-pictures img {
-    height: 285px;
-  }
-  .btn-designer-we-love .link-designer,
-  .btn-designer-we-love .link-we-love {
-    padding: 5px 35px;
-    font-size: 16px;
-  }
+  // .btn-designer-we-love {
+  //   font-size: 14px;
+  // }
+  // .btn-designer-we-love .link-designer,
+  // .btn-designer-we-love .link-we-love {
+  //   padding: 5px 35px;
+  //   font-size: 16px;
+  // }
   .btn-produits {
     font-size: 18px;
   }

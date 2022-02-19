@@ -755,7 +755,7 @@ li::marker {
     display: flex;
     height: 30px;
     width: 30px;
-    margin-top: -110px;
+    margin-top: -60px;
     margin-left: 15px;
     cursor: pointer;
     -webkit-box-align: center;
@@ -1267,42 +1267,6 @@ a {
 .new__card:hover .new__img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-.zoom-img {
-  width: 230px;
-  height: 300px;
-  cursor: pointer;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center center;
-     object-position: center center;
-}
-
-#lightboxBg {
-  position: fixed;
-  z-index: 150;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(241, 241, 241, 0.99);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  display: none;
-}
-
-#lightboxBg.active {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-#lightboxImg {
-  max-width: 80%;
-  max-height: 80%;
-  border: 4px solid white;
-  -webkit-box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.6);
-          box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.6);
 }
 
 /*Class Swiper*/
@@ -2047,7 +2011,6 @@ input[type="range"]::-moz-range-thumb {
 
 :root {
   --crimson: crimson;
-  --black: #333;
   --white: #fff;
   --light-black: #666;
   --light-bg: #eee;
@@ -2065,8 +2028,6 @@ input[type="range"]::-moz-range-thumb {
   z-index: 1000;
   background-color: var(--white);
   padding: 20px;
-  border-right: var(--border);
-  overflow-y: scroll;
   display: none;
   font-family: "Poppins", sans-serif;
 }
@@ -2084,10 +2045,12 @@ input[type="range"]::-moz-range-thumb {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  font-size: 14px;
-  background-color: var(--light-bg);
-  color: var(--black);
+  background-color: white;
+  color: #000;
+  border: 1px solid black;
   text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
   text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2472,6 +2435,267 @@ body {
   min-height: 100vh;
 }
 
+.card-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-mono-produit,
+.shoe-img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.img-showcase img {
+  min-width: 100%;
+  border-radius: 2px;
+}
+
+.img-display {
+  overflow: hidden;
+}
+
+.img-showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.img-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-item {
+  margin: 0.3rem;
+  cursor: pointer;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.img-item:hover {
+  opacity: 0.8;
+}
+
+.product-content {
+  padding: 0.7rem 1rem;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #12263a;
+  margin: 1rem 0;
+  font-family: "GrouchBT", sans-serif;
+}
+
+.product-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 80px;
+  border-radius: 5px;
+  background: #eabeb0;
+}
+
+.product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  background: #90111c;
+  color: #fff;
+  padding: 5px 0.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.product-link:hover {
+  opacity: 0.9;
+}
+
+.btn-vendeur .btn-vendeurs {
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  border: none;
+  outline: 0;
+  margin: 1.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-vendeur {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  margin: 1.5rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-vendeur:hover {
+  background-color: black;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-vendeur .btn-vendeurs {
+  background: black;
+  color: #fff;
+}
+
+.product-detail h2 {
+  text-transform: capitalize;
+  color: #12263a;
+  padding-bottom: 0.6rem;
+  font-family: "Caslon540", sans-serif;
+}
+
+.product-detail p {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  opacity: 0.8;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-detail ul {
+  margin: 1rem 0;
+  font-size: 0.7rem;
+}
+
+.product-detail ul .detail {
+  margin: 0;
+  list-style: none;
+  background: url(../ressources/images/page-mono-produit/checked.png) left center no-repeat;
+  background-size: 18px;
+  padding-left: 1.7rem;
+  margin: 0.4rem 0;
+  font-weight: 600;
+  opacity: 0.9;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-detail ul li span {
+  font-weight: 400;
+}
+
+.purchase-info {
+  margin: 1.5rem 0;
+}
+
+.purchase-info .btn-cart {
+  border-radius: 25px;
+  text-align: center;
+  padding: 0.45rem 0.8rem;
+  border: none;
+  outline: 0;
+  margin-right: 0.2rem;
+  margin-bottom: 1rem;
+  background: #90111c;
+}
+
+.purchase-info .btn-cart {
+  cursor: pointer;
+  color: #fff;
+}
+
+.purchase-info .btn {
+  background: #90111c;
+  font-weight: 700;
+}
+
+.purchase-info .btn:hover {
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .card-wrapper {
+    margin-top: 70px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-imgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .btn-vendeur .btn-vendeurs {
+    margin: 0.8rem 0 0.3rem 0;
+  }
+  .contact-vendeur {
+    margin: 0.8rem 0;
+  }
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
 .container-picture {
   background: url("../ressources/images/images-pieces-exception/main-shoes.jpg");
   background-repeat: no-repeat;
@@ -2549,7 +2773,7 @@ body {
   gap: 2rem;
 }
 
-.card img {
+.card .card-image {
   width: 80%;
   border-radius: 4px;
   margin: 0 auto;
@@ -2559,7 +2783,7 @@ body {
   transition: all 0.1s ease-in-out;
 }
 
-.card img:hover {
+.card .card-image {
   border: 2px solid #eabeb0;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -3840,11 +4064,17 @@ a {
     font-size: 16px;
   }
   .btn-designer-we-love {
-    font-size: 16px;
+    display: none;
   }
   .btn-designer-we-love .link-designer,
   .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
+  }
+  .vedette {
+    margin: 0px auto 50px;
+  }
+  .titles-vedette {
+    margin-top: 0;
   }
   .txt-vedette,
   .txt-femme,
@@ -3884,17 +4114,6 @@ a {
 @media screen and (max-width: 375px) {
   .carousel .changeHidden .element {
     font-size: 14px;
-  }
-  .btn-designer-we-love {
-    font-size: 14px;
-  }
-  .main-pictures img {
-    height: 285px;
-  }
-  .btn-designer-we-love .link-designer,
-  .btn-designer-we-love .link-we-love {
-    padding: 5px 35px;
-    font-size: 16px;
   }
   .btn-produits {
     font-size: 18px;
@@ -4039,7 +4258,7 @@ a {
   .btn-scroll {
     font-size: 17px;
   }
-  .card img {
+  .card .card-image {
     width: 90%;
   }
 }

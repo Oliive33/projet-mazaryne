@@ -73,14 +73,14 @@ body {
 .card {
   gap: 2rem;
 }
-.card img {
+.card .card-image {
   width: 80%;
   border-radius: 4px;
   margin: 0 auto;
   box-shadow: $shadow-image;
   transition: all 0.1s ease-in-out;
 }
-.card img:hover {
+.card .card-image {
   border: 2px solid $color-quaternary;
   transform: scale(1.1);
 }
