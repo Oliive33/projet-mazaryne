@@ -19,27 +19,6 @@ let newSwiper = new Swiper(".new-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-/*=============== Zoom img swiper ===============*/
-// const lightboxBg = document.createElement("div");
-// lightboxBg.id = "lightboxBg";
-// document.body.appendChild(lightboxBg);
-
-// const images = document.querySelectorAll(".zoom-img");
-// images.forEach((images) => {
-//   images.addEventListener("click", (e) => {
-//     lightboxBg.classList.add("active");
-//     const lightboxImg = document.createElement("img");
-//     lightboxImg.src = images.src;
-//     lightboxImg.id = "lightboxImg";
-//     while (lightboxBg.firstChild) {
-//       lightboxBg.removeChild(lightboxBg.firstChild);
-//     }
-//     lightboxBg.appendChild(lightboxImg);
-//   });
-// });
-// lightboxBg.addEventListener("click", (e) => {
-//   lightboxBg.classList.remove("active");
-// });
 // change height header homepage
 navbar = document.getElementById("nav-fix");
 navElements = document.getElementById("nav-top");
