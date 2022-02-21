@@ -806,4 +806,9 @@ li::marker {
     margin-top: -100px;
   }
 }
+@media screen and (max-width: 390px) {
+  .header .mobile-menu-trigger {
+    margin-top: -90px;
+  }
+}
 //****************************** mega-menu end**********************************//

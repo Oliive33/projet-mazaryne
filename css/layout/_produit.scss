@@ -158,7 +158,7 @@ body {
 .purchase-info .btn-cart {
   border-radius: 25px;
   text-align: center;
-  padding: 0.45rem 0.8rem;
+  padding: 0.75rem 0.8rem;
   border: none;
   outline: 0;
   margin-right: 0.2rem;
@@ -194,9 +194,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
   }
   .product-content {
     padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-top-produit {
+    padding: 5px 5px 5px 5px;
+  }
+
+  .product-imgs {
+    margin: 20px;
+  }
+  .purchase-info .btn-cart {
+    padding: 0.9rem 1.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .product-imgs {
+    margin: 30px;
   }
 }
 @media screen and (max-width: 350px) {
