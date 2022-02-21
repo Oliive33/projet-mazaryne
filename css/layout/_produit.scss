@@ -201,10 +201,6 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .nav-top-produit {
-    padding: 5px 5px 5px 5px;
-  }
-
   .product-imgs {
     margin: 20px;
   }
@@ -213,6 +209,9 @@ body {
   }
 }
 @media screen and (max-width: 450px) {
+  .nav-top-produit {
+    padding: 5px 5px 5px 5px !important;
+  }
   .product-imgs {
     margin: 30px;
   }

@@ -1030,7 +1030,7 @@ li::marker {
 
 @media screen and (max-width: 768px) {
   .header .mobile-menu-trigger {
-    margin-top: -55px;
+    margin-top: -90px;
   }
 }
 
@@ -1654,10 +1654,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.nav-top-produits {
-  padding: 5px 5px 31px 5px !important;
 }
 
 .titre-produits-femme {
@@ -2636,7 +2632,7 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
   }
   #side-menu.fa-times {
-    top: 10%;
+    top: 8%;
     left: 323px;
   }
   .btn-categorie {
@@ -2931,9 +2927,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .nav-top-produit {
-    padding: 5px 5px 5px 5px;
-  }
   .product-imgs {
     margin: 20px;
   }
@@ -2943,6 +2936,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .nav-top-produit {
+    padding: 5px 5px 5px 5px !important;
+  }
   .product-imgs {
     margin: 30px;
   }
@@ -4339,9 +4335,6 @@ a {
 }
 
 @media screen and (max-width: 475px) {
-  .nav-top {
-    padding: 5px 5px 31px 5px;
-  }
   .carousel .changeHidden .element {
     font-size: 16px;
   }
@@ -4418,6 +4411,12 @@ a {
 @media screen and (max-width: 768px) {
   .filter-row {
     display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .nav-top-produits {
+    padding: 5px 5px 31px 5px !important;
   }
 }
 
