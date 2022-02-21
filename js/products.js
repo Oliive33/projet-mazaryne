@@ -1,7 +1,6 @@
 // Section categories filter desktop
 const btns = document.querySelectorAll(".btn-categories-desktop");
 const dropMenus = document.querySelectorAll(".dropdown");
-const container = document.querySelector(".container");
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -16,11 +15,11 @@ const removeActive = () => {
   dropMenus.forEach((dropmenu) => dropmenu.classList.remove("active"));
 };
 
-window.onclick = (e) => {
-  if (e.target.matches(".container")) {
-    removeActive();
-  }
-};
+// window.onclick = (e) => {
+//   if (e.target.matches(".btn-categories-desktop")) {
+//     removeActive();
+//   }
+// };
 // ==========================Input range desktop============================//
 const rangeInputDesktop = document.querySelectorAll(
     ".range-input-desktop input"
