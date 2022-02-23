@@ -39,6 +39,7 @@ window.addEventListener("scroll", function () {
 
   if (scroll > 200) {
     navbar.style.top = "0px";
+
     navTitle.style.color = "black";
     navLink.style.color = "black";
     navLinks.style.color = "black";
@@ -46,6 +47,7 @@ window.addEventListener("scroll", function () {
     navHomme.style.color = "black";
     navJournal.style.color = "black";
     navbar.style.background = "white";
+    navbar.style.boxShadow = "0px 3px 9px 0px rgba(143, 143, 143, 0.45)";
     navHeader.style.background = "white";
     navIcons.style.visibility = "visible";
     navBtn.style.visibility = "visible";
@@ -62,6 +64,7 @@ window.addEventListener("scroll", function () {
     navHomme.style.color = "white";
     navJournal.style.color = "white";
     navbar.style.background = "transparent";
+    navbar.style.boxShadow = "none";
     navHeader.style.background = "transparent";
     navIcons.style.visibility = "hidden";
     navBtn.style.visibility = "hidden";

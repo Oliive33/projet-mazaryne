@@ -49,7 +49,7 @@
 }
 
 .scrollup:hover {
-  background: #eabeb0;
+  background: #f3eee8;
   opacity: 1;
 }
 
@@ -591,7 +591,7 @@ h1 {
 }
 
 li::marker {
-  color: #eabeb0;
+  color: #f3eee8;
 }
 
 @media (min-width: 992px) {
@@ -1183,12 +1183,24 @@ a {
   padding: 10px;
 }
 
+.top-card .top-card-certification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-card .top-card-certification img {
+  width: 35px;
+  height: 40px;
+}
+
 .top-card span {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  background-color: #fdece5;
-  padding: 5px 12px;
-  border-radius: 5px;
+  font-weight: 500;
+  padding: 5px 4px;
   font-size: 14px;
 }
 
@@ -1228,7 +1240,6 @@ a {
 .items-card {
   text-align: left;
   margin-left: 10px;
-  margin-top: -50px;
 }
 
 .items-price-and-type {
@@ -1243,9 +1254,28 @@ a {
   margin: 10px;
 }
 
-.items-card-price {
+.items-card-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.items-card-prices .items-card-price {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  text-decoration: line-through;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+.items-card-prices .items-new-card-price {
+  color: #d6001c;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .new__card {
@@ -1265,7 +1295,7 @@ a {
 .new__img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
+  width: 70%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1321,36 +1351,6 @@ a {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   font-size: 2rem;
-}
-
-.btn-produits {
-  position: relative;
-  overflow: hidden;
-  width: 25%;
-  margin: 0 auto;
-  padding: 15px 10px;
-  text-align: center;
-  background: #fff;
-  border: 2px solid black;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 2px;
-  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.btn-produits:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
-
-.btn-produits a {
-  text-decoration: none;
-  color: #000;
 }
 
 .produits-femme-homme {
@@ -1719,8 +1719,8 @@ a {
 }
 
 .btn-categories-desktop.active {
-  -webkit-box-shadow: 0 0 0 0.125rem #eabeb0;
-          box-shadow: 0 0 0 0.125rem #eabeb0;
+  -webkit-box-shadow: 0 0 0 0.125rem #f3eee8;
+          box-shadow: 0 0 0 0.125rem #f3eee8;
 }
 
 .drop-wrapper {
@@ -2150,7 +2150,7 @@ input[type="range"]::-moz-range-thumb {
   font-family: "Caslon540", sans-serif;
   font-weight: 800;
   color: #fff;
-  background: #eabeb0;
+  background: #f3eee8;
   z-index: 1;
   border-radius: 5px;
 }
@@ -2766,7 +2766,7 @@ body {
   height: 2px;
   width: 80px;
   border-radius: 5px;
-  background: #eabeb0;
+  background: #f3eee8;
 }
 
 .product-link {
@@ -3059,7 +3059,7 @@ body {
 }
 
 .card .card-image {
-  border: 2px solid #eabeb0;
+  border: 2px solid #f3eee8;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -3239,8 +3239,8 @@ a {
   font-size: 19px;
   letter-spacing: 1px;
   position: absolute;
-  background: #eabeb0;
-  border: 2px solid #eabeb0;
+  background: #f3eee8;
+  border: 2px solid #f3eee8;
   top: 10%;
   left: 15%;
   -webkit-transform: translate(-50%, -50%);
@@ -3280,7 +3280,7 @@ a {
   font-size: 19px;
   letter-spacing: 1px;
   border-radius: 3px;
-  background: #eabeb0;
+  background: #f3eee8;
   font-family: "Caslon540", sans-serif;
   font-weight: bolder;
   text-align: center;
@@ -3322,7 +3322,7 @@ a {
 }
 
 .swiper-pagination-bullet-active {
-  background: #eabeb0;
+  background: #f3eee8;
 }
 
 @media screen and (max-width: 500px) {
@@ -3380,7 +3380,7 @@ a {
 .items-mdp {
   margin: 50px 0px 0px 50px;
   padding: 15px 0 40px 20px;
-  background: #eabeb0;
+  background: #f3eee8;
   border-radius: 2px;
   width: 80%;
   font-family: "Poppins", sans-serif;
@@ -3694,7 +3694,7 @@ a {
   width: 100%;
   padding: 12px;
   font-size: 17px;
-  background: #eabeb0;
+  background: #f3eee8;
   font-weight: bold;
   color: #fff;
   margin-top: 5px;
@@ -3707,7 +3707,7 @@ a {
   width: 50%;
   padding: 12px;
   font-size: 17px;
-  background: #eabeb0;
+  background: #f3eee8;
   outline: none;
   border: none;
   font-weight: bold;
@@ -4267,7 +4267,6 @@ a {
   }
   h1 {
     font-size: 45px;
-    margin-left: 0px;
   }
   .icons-home {
     margin-top: 13px;
@@ -4315,6 +4314,7 @@ a {
   }
   h1 {
     font-size: 40px;
+    margin-left: 0;
   }
   .btn-designer-we-love {
     font-size: 17px;
