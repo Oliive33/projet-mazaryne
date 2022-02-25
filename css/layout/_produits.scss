@@ -755,6 +755,9 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 @media (max-width: 768px) {
+  .titre-produits-femme {
+    margin: 50px 0 10px 70px;
+  }
   #side-menu {
     display: block;
   }
@@ -775,14 +778,18 @@ input[type="range"]::-moz-range-thumb {
   .btn-resultats {
     width: 100%;
   }
+  .nav {
+    display: none;
+  }
 }
+
 @media (max-width: 450px) {
   .side-bar {
     width: 100%;
   }
   #side-menu.fa-times {
-    top: 8%;
-    left: 323px;
+    top: 6%;
+    left: 271px;
   }
   .btn-categorie {
     padding: 5px 15px;
