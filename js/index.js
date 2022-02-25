@@ -28,7 +28,7 @@ navBtn = document.querySelector(".btn-vendre");
 navSearch = document.querySelector(".search-box");
 navHeader = document.querySelector(".header");
 navTrigger = document.querySelector(".header .mobile-menu-trigger");
-navLink = document.querySelector(".nav-below-link");
+navLink = document.querySelector(".exception-link");
 navLinks = document.querySelector(".design-link");
 navFemme = document.querySelector(".femme-link");
 navHomme = document.querySelector(".homme-link");
@@ -39,7 +39,6 @@ window.addEventListener("scroll", function () {
 
   if (scroll > 200) {
     navbar.style.top = "0px";
-
     navTitle.style.color = "black";
     navLink.style.color = "black";
     navLinks.style.color = "black";
@@ -47,14 +46,20 @@ window.addEventListener("scroll", function () {
     navHomme.style.color = "black";
     navJournal.style.color = "black";
     navbar.style.background = "white";
+    navLink.style.textShadow = "none";
+    navLinks.style.textShadow = "none";
+    navFemme.style.textShadow = "none";
+    navHomme.style.textShadow = "none";
+    navJournal.style.textShadow = "none";
     navbar.style.boxShadow = "0px 3px 9px 0px rgba(143, 143, 143, 0.45)";
     navHeader.style.background = "white";
     navIcons.style.visibility = "visible";
     navBtn.style.visibility = "visible";
     navSearch.style.visibility = "visible";
     navTrigger.style.visibility = "visible";
-    navbar.style.height = "190px";
-    navElements.style.height = "90px";
+    navbar.style.height = "160px";
+    navElements.style.height = "70px";
+    navbar.style.transition = "all 0.1s ease";
   } else {
     navbar.style.top = "0px";
     navTitle.style.color = "white";
@@ -63,6 +68,11 @@ window.addEventListener("scroll", function () {
     navFemme.style.color = "white";
     navHomme.style.color = "white";
     navJournal.style.color = "white";
+    navLink.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
+    navLinks.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
+    navFemme.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
+    navHomme.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
+    navJournal.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
     navbar.style.background = "transparent";
     navbar.style.boxShadow = "none";
     navHeader.style.background = "transparent";
@@ -70,7 +80,8 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "hidden";
     navSearch.style.visibility = "hidden";
     navTrigger.style.visibility = "hidden";
-    navbar.style.height = "150px";
-    navElements.style.height = "150px";
+    navbar.style.height = "140px";
+    navElements.style.height = "140px";
+    navbar.style.transition = "all 0.1s ease";
   }
 });
