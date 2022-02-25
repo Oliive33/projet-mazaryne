@@ -22,8 +22,9 @@ a {
   margin: 80px 0 40px 70px;
 }
 .titre-produits-femme h2 {
-  font-family: $font-primary;
-  font-size: 30px;
+  font-family: $font-tertiary;
+  font-size: 27px;
+  font-weight: 800;
 }
 .filter-row {
   max-width: 900px;
@@ -378,8 +379,8 @@ input[type="range"]::-moz-range-thumb {
   margin: 50px;
 }
 .products .box-container .box {
-  flex: 1 1 15rem;
-  box-shadow: 0 0.4rem 0.6rem rgba(59, 59, 59, 0.35);
+  flex: 1 1 12rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(59, 59, 59, 0.15);
   border-radius: 4px;
   position: relative;
 }
@@ -387,12 +388,10 @@ input[type="range"]::-moz-range-thumb {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  padding: 8px 12px;
-  font-size: 1rem;
-  font-family: $font-secondary;
+  font-size: 14.7px;
+  font-family: $font-tertiary;
   font-weight: 800;
-  color: #fff;
-  background: $color-quaternary;
+  color: #333;
   z-index: 1;
   border-radius: 5px;
 }
@@ -403,7 +402,7 @@ input[type="range"]::-moz-range-thumb {
   overflow: hidden;
 }
 .products .box-container .box .image img {
-  height: 15rem;
+  height: 10rem;
   transition: transform 0.1s ease-in-out;
 }
 .products .box-container .box:hover .image img {
@@ -421,9 +420,9 @@ input[type="range"]::-moz-range-thumb {
   bottom: 0;
 }
 .products .box-container .box .image .icons a {
-  height: 3rem;
-  line-height: 3rem;
-  font-size: 0.9rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 14.4px;
   width: 50%;
   background: $color-header;
   color: #fff;
@@ -436,8 +435,7 @@ input[type="range"]::-moz-range-thumb {
   background: #333;
 }
 .products .box-container .box .content {
-  padding: 1rem;
-  text-align: center;
+  padding: 0px 0px 0px 6px;
 }
 .products .box-container .box .content h3 {
   font-family: $font-secondary;

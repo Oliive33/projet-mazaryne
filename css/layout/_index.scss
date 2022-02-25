@@ -29,7 +29,7 @@ a {
 
 .btn-designer-we-love {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: -5rem;
 }
@@ -37,11 +37,12 @@ a {
 .btn-designer-we-love .link-we-love {
   border: none;
   outline: none;
-  padding: 10px 45px;
+  padding: 8px 30px;
   font-family: $font-tertiary;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 20px;
+  margin: 50px;
   text-decoration: none;
   color: rgb(43, 43, 43);
   background: #fff;
@@ -72,27 +73,28 @@ a {
 .title-secondaire-vedette {
   margin-top: 50px;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 17.7px;
+  font-weight: 500;
   font-family: $font-tertiary;
 }
 .title-principal-vedette {
-  font-size: 40px;
+  font-size: 20.7px;
   font-family: $font-tertiary;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 2px;
 }
 
 /*=============== NEW ===============*/
 .container-swiper {
-  max-width: 1060px;
+  max-width: 1350px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-.section__title {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 35px;
-}
+// .section__title {
+//   text-align: center;
+//   padding: 20px 0;
+//   font-size: 35px;
+// }
 .top-card {
   display: flex;
   align-items: center;
@@ -104,14 +106,14 @@ a {
   align-items: center;
 }
 .top-card .top-card-certification img {
-  width: 35px;
-  height: 40px;
+  width: 30px;
+  height: 35px;
 }
 .top-card span {
   font-family: $font-tertiary;
   font-weight: 500;
-  padding: 5px 4px;
-  font-size: 14px;
+  padding: 5px 2px;
+  font-size: 13.7px;
 }
 @media screen and (min-width: 992px) {
   .container-swiper {
@@ -120,7 +122,7 @@ a {
   }
 }
 .heart {
-  font-size: x-large;
+  font-size: large;
 }
 .heart::before {
   content: "";
@@ -157,7 +159,7 @@ a {
 }
 .items-card-prices .items-card-price {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17.7px;
   text-decoration: line-through;
   letter-spacing: 1px;
   margin-right: 10px;
@@ -171,7 +173,7 @@ a {
 
 .new__card {
   position: relative;
-  width: 250px;
+  width: 200px;
   height: 100%;
   background-color: #fff;
   box-shadow: 0 3px 4px hsla(355, 25%, 15%, 0.1);
@@ -181,10 +183,12 @@ a {
   margin-bottom: 4.4rem;
   overflow: hidden;
 }
-
+.swiper-slide {
+  margin-right: 65px !important;
+}
 .new__img {
   object-fit: cover;
-  width: 70%;
+  width: 60%;
   transition: 0.3s;
 }
 .new__card:hover .new__img {
@@ -202,11 +206,7 @@ a {
 .swiper-pagination-bullet-active {
   background: $color-secondary;
 }
-@media screen and (max-width: 1300px) {
-  .container-swiper {
-    padding-left: 0px;
-  }
-}
+
 @media screen and (max-width: 500px) {
   .overlay .para-swiper {
     font-size: 16px;
@@ -214,6 +214,7 @@ a {
 }
 @media screen and (max-width: 400px) {
   .container-swiper {
+    max-width: 992px;
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -221,21 +222,10 @@ a {
     width: 70%;
   }
 }
-// .swiper-button-next {
-//   top: 90%;
-//   right: 2rem;
-// }
-
-// .swiper-button-prev {
-//   top: 90%;
-//   right: 8rem;
-//   left: auto;
-// }
-
 .swiper-button-next,
 .swiper-button-prev {
-  height: 2rem;
-  width: 2rem;
+  height: 1.7rem;
+  width: 1.7rem;
   background: transparent;
   color: black;
 }
@@ -263,14 +253,15 @@ a {
   margin-top: 30px;
 }
 .item-title-products {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: $font-primary;
+  font-size: 20.7px;
+  font-weight: 900;
+  font-family: $font-tertiary;
   letter-spacing: 1px;
 }
 .item-selection {
   font-family: $font-tertiary;
-  font-size: 18px;
+  font-size: 17.7px;
+  font-weight: 300;
 }
 
 .items-produits-femme .btn-découvrir,
@@ -308,14 +299,14 @@ a {
 .title-secondaire-designer {
   margin-top: 50px;
   margin-bottom: 15px;
-  font-weight: 800;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 17.7px;
   font-family: $font-tertiary;
 }
 .title-principal-designer {
-  font-size: 40px;
+  font-size: 20.7px;
   font-family: $font-tertiary;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 //****************************Section le journal*************************//
@@ -325,34 +316,18 @@ a {
 .journal {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 100px;
 }
 .journal .home-title-journal {
   margin-top: 30px;
   margin-bottom: 50px;
   font-family: $font-tertiary;
-  font-size: 40px;
+  font-size: 27.7px;
   font-weight: bold;
 }
 .journal .img-journal {
   border-radius: 2px;
 }
-.titles-journal h3,
-.titles-journal h4 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.titles-journal h3 {
-  font-family: $font-primary;
-  font-size: 35px;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-.titles-journal h4 {
-  font-family: $font-tertiary;
-  font-size: 16px;
-  font-weight: 400;
-}
+
 .home-journal {
   position: relative;
   bottom: 20px;
@@ -372,6 +347,87 @@ a {
 .home-journal .link-home-journal:hover {
   background-color: #000;
   color: #fff;
+}
+
+// Section certifications
+.garanties {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.titles-garanties h4 {
+  font-size: 20.7px;
+  font-family: $font-tertiary;
+  font-weight: 800;
+}
+.titles-garanties p {
+  font-size: 16px;
+  font-family: $font-tertiary;
+}
+.certifications {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  justify-content: center;
+}
+.garantie img {
+  width: 200px;
+  height: 170px;
+  background-color: transparent;
+}
+.selection img {
+  width: 50px;
+}
+.garantie h5 {
+  font-size: 17.7px;
+  font-family: $font-tertiary;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.Authentic p {
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
+  width: 52%;
+  font-size: 14.7px;
+}
+.selection p {
+  width: 47%;
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
+  font-size: 14.7px;
+}
+
+.certifie p {
+  width: 44%;
+  font-family: $font-tertiary;
+  text-align: justify;
+  display: flex;
+  margin: 0 auto;
+  font-size: 14.7px;
+}
+// newsletter
+.newsletter {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  background: $background-page;
+}
+.newsletter .titles-journal h3,
+.newsletter .titles-journal h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.newsletter .titles-journal h3 {
+  font-family: $font-secondary;
+  font-size: 27px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.newsletter .titles-journal h4 {
+  font-family: $font-tertiary;
+  font-size: 14.7px;
+  font-weight: 400;
 }
 .link-journal {
   margin-top: 50px;
@@ -405,59 +461,4 @@ a {
 .mail-journal button img {
   width: 15px;
   height: 15px;
-}
-// Section certifications
-.garanties {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.titles-garanties h4 {
-  font-size: 30px;
-  font-family: $font-tertiary;
-  font-weight: 800;
-}
-.titles-garanties p {
-  font-size: 16px;
-  font-family: $font-tertiary;
-}
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  justify-content: center;
-}
-.garantie img {
-  width: 200px;
-  height: 170px;
-  background-color: transparent;
-}
-.selection img {
-  width: 50px;
-}
-.garantie h5 {
-  font-size: 20px;
-  font-family: $font-tertiary;
-  font-weight: bolder;
-  margin-bottom: 10px;
-}
-.Authentic p {
-  font-family: $font-tertiary;
-  text-align: justify;
-  display: flex;
-  margin: 0 auto;
-  width: 63%;
-}
-.selection p {
-  width: 55%;
-  font-family: $font-tertiary;
-  text-align: justify;
-  display: flex;
-  margin: 0 auto;
-}
-
-.certifie p {
-  width: 50%;
-  font-family: $font-tertiary;
-  text-align: justify;
-  display: flex;
-  margin: 0 auto;
 }

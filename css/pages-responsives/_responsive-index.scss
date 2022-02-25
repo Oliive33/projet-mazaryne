@@ -1,13 +1,4 @@
 @media screen and (max-width: 1100px) {
-  h1 {
-    font-size: 55px;
-    // margin-bottom: 40px;
-    margin-left: 0;
-  }
-  .icon-nav {
-    width: 30px;
-    height: 30px;
-  }
   .certifications {
     grid-template-columns: repeat(2, 0.5fr);
   }
@@ -15,13 +6,12 @@
 
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 50px;
     margin-bottom: 0;
     padding-top: 0;
     margin-left: 100px;
   }
   .nav-top {
-    padding: 85px 5px 30px 5px;
+    padding: 60px 5px 30px 5px;
   }
   .nav-btn-link {
     display: flex;
@@ -86,9 +76,6 @@
   .nav-top {
     padding: 70px 5px 30px 5px;
   }
-  h1 {
-    font-size: 45px;
-  }
   .icons-home {
     margin-top: 13px;
   }
@@ -130,7 +117,6 @@
     padding: 55px 5px 31px 5px;
   }
   h1 {
-    font-size: 40px;
     margin-left: 0;
   }
   .btn-designer-we-love {
