@@ -1418,7 +1418,7 @@ a {
 
 .new__card {
   position: relative;
-  width: 200px;
+  width: 230px;
   height: 100%;
   background-color: #fff;
   -webkit-box-shadow: 0 3px 4px rgba(48, 29, 30, 0.1);
@@ -1428,10 +1428,6 @@ a {
   text-align: center;
   margin-bottom: 4.4rem;
   overflow: hidden;
-}
-
-.swiper-slide {
-  margin-right: 65px !important;
 }
 
 .new__img {
