@@ -76,7 +76,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/61764a972f.js"
       crossorigin="anonymous"
@@ -146,6 +150,7 @@
               src="../ressources/images/icones/logo-shopping-bag.svg"
               alt="logo panier"
               class="icon-nav"
+              id="cart-shop"
             />
           </a>
         </div>
@@ -179,6 +184,112 @@
         </form>
       </div>
     </header>
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">Mon Panier</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette1.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette2.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette2.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 articles</span>
+        <span class="cart__prices-total">1260€</span>
+      </div>
+    </div>
     <div class="header">
       <div class="container">
         <div class="row v-center">
