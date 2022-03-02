@@ -94,3 +94,21 @@ LangBtn.addEventListener("click", () => {
 formLangClose.addEventListener("click", () => {
   loginLang.classList.remove("active");
 });
+/*=============== SHOW CART ===============*/
+const cart = document.getElementById("cart"),
+  cartShop = document.getElementById("cart-shop"),
+  cartClose = document.getElementById("cart-close");
+
+/*===== CART SHOW =====*/
+if (cartShop) {
+  cartShop.addEventListener("click", () => {
+    cart.classList.add("show-cart");
+  });
+}
+
+/*===== CART HIDDEN =====*/
+if (cartClose) {
+  cartClose.addEventListener("click", () => {
+    cart.classList.remove("show-cart");
+  });
+}
