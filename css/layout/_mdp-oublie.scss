@@ -18,25 +18,26 @@ a {
 // Section mdp oublié
 
 .titre-principal-mdp {
-  margin: 50px 0px 50px 50px;
+  margin: 50px 0px 30px 50px;
 }
 .titre-principal-mdp h2 {
-  font-family: $font-primary;
-  font-size: 40px;
+  font-family: $font-tertiary;
+  font-size: 32px;
 }
 .titres-secondaire-mdp {
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: $font-tertiary;
 }
 // Section items-mdp
 .items-mdp {
-  margin: 50px 0px 0px 50px;
+  margin: 20px 0px 0px 50px;
   padding: 15px 0 40px 20px;
-  background: $color-quaternary;
+  background: #000;
+  color: #fff;
   border-radius: 2px;
   width: 80%;
   font-family: $font-tertiary;
-  font-size: 17px;
+  font-size: 14px;
 }
 .items-mdp strong {
   font-weight: bolder;
@@ -51,13 +52,13 @@ a {
   margin-bottom: 10px;
 }
 .form-mdp-email input {
-  padding: 14px 10px 14px 10px;
+  padding: 12px 10px 12px 10px;
   width: 80%;
   color: black;
   border: none;
   outline: none;
   border-radius: 2px;
-  font-size: 15px;
+  font-size: 14px;
   font-family: $font-secondary;
   font-weight: 400;
   background-color: #f2f2f2;
@@ -70,8 +71,8 @@ a {
   margin-top: 10px;
 }
 .btn-saisie-email .btn-send {
-  padding: 13px 25px;
-  font-size: 17px;
+  padding: 8px 25px;
+  font-size: 15px;
   font-family: $font-secondary;
   font-weight: 600;
   border: none;
