@@ -155,35 +155,171 @@
           </a>
         </div>
       </div>
-      <!-- login form container  -->
-
-      <div class="login-form-container">
-        <i class="fas fa-times" id="form-close"></i>
-
-        <form>
-          <h3>Connexion</h3>
-          <input type="email" class="box" placeholder="entrer votre email" />
-          <input
-            type="password"
-            class="box"
-            placeholder="entrer votre mot de passe"
-          />
-          <input type="submit" value="Se connecter maintenant" class="btn" />
-
-          <input type="checkbox" id="remember" />
-          <label for="remember">Se souvenir de moi</label>
-
-          <p>
-            Mot de passe oublié?
-            <a href="./Mot-de-passe-oublie.html">cliquer ici</a>
-          </p>
-          <p>
-            Vous n'avez pas encore de compte?
-            <a href="./Creation-de-Compte-client.html">S'inscrire ici</a>
-          </p>
-        </form>
-      </div>
     </header>
+    <!-- login form container  -->
+    <div class="login-form-container">
+      <div class="container-form">
+        <i class="fas fa-times" id="form-close"></i>
+        <div class="logos-connexion">
+          <div class="facebook">
+            <a href="#">
+              <img
+                src="../ressources/images/icones/facebook.png"
+                alt="logo facebook"
+              />
+              Facebook
+            </a>
+          </div>
+          <div class="google">
+            <a href="#">
+              <img
+                src="../ressources/images/icones/google.png"
+                alt="logo google"
+              />
+              <span> Google </span>
+            </a>
+          </div>
+        </div>
+        <div class="signin-signup">
+          <form class="sign-in-form">
+            <div class="input-field-form">
+              <div class="wrapper-form">
+                <div class="input-data">
+                  <input class="input-sign" type="text" required />
+                  <div class="underline"></div>
+                  <label class="label-form">Email*</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-field-form">
+              <div class="wrapper-form">
+                <div class="input-data">
+                  <input class="input-sign" type="text" required />
+                  <div class="underline"></div>
+                  <label class="label-form">Mot de passe*</label>
+                </div>
+              </div>
+              <div class="remember">
+                <div class="check-souvenir">
+                  <input class="checkbox" type="checkbox" id="remember" />
+                  <label class="souvenir" for="remember"
+                    >Se souvenir de moi</label
+                  >
+                </div>
+                <a href="./Mot-de-passe-oublie.html"> Mot de passe oublié </a>
+              </div>
+            </div>
+            <input type="submit" value="Se connecter" class="btn-sign-in" />
+            <span class="champs">Champs obligatoire *</span>
+            <p class="social-text">
+              Vous n'avez pas encore de compte s'inscrire ici ➟
+            </p>
+            <p class="account-text">
+              Pas encore de compte?
+              <a href="#" id="sign-up-btn2">S'inscrire</a>
+            </p>
+          </form>
+          <form class="form sign-up-form">
+            <h2 class="title">Inscrivez-vous</h2>
+            <div class="logos-inscription">
+              <div class="facebook">
+                <a href="#">
+                  <img
+                    src="../ressources/images/icones/facebook.png"
+                    alt="logo facebook"
+                  />
+                  Facebook
+                </a>
+              </div>
+              <div class="google">
+                <a href="#">
+                  <img
+                    src="../ressources/images/icones/google.png"
+                    alt="logo google"
+                  />
+                  <span> Google </span>
+                </a>
+              </div>
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Votre nom*</label>
+              <input class="input-forms" type="text" placeholder="Votre nom" />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Votre prénom*</label>
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre prénom"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text"
+                >Votre adresse mail*</label
+              >
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre email"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Mot de passe*</label>
+              <input
+                class="input-forms"
+                type="password"
+                placeholder="Votre Mot de Passe"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Pseudo*</label>
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre pseudo"
+              />
+            </div>
+            <input type="submit" value="S'inscrire" class="btn-sign" />
+            <p class="social-text">
+              Vous avez déjà un compte client? Se connecter
+            </p>
+            <p class="account-text">
+              Vous avez déjà un compte?
+              <a href="#" id="sign-in-btn2">Connexion</a>
+            </p>
+          </form>
+        </div>
+        <div class="panels-container">
+          <div class="panel left-panel">
+            <div class="content">
+              <h3>Vous êtes déjà membre?</h3>
+              <button type="submit" class="btn-sign" id="sign-in-btn">
+                Se Connecter
+              </button>
+            </div>
+            <img
+              src="../ressources/images/icones/signin.svg"
+              alt="image"
+              class="image"
+            />
+          </div>
+          <div class="panel right-panel">
+            <div class="content">
+              <h3>Vous n'avez pas encore de compte?</h3>
+
+              <button type="submit" class="btn-sign" id="sign-up-btn">
+                S'inscrire
+              </button>
+            </div>
+            <img
+              src="../ressources/images/icones/signup.svg"
+              alt="image"
+              class="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <!--==================== CART ====================-->
     <div class="cart" id="cart">
       <i class="bx bx-x cart__close" id="cart-close"></i>
@@ -360,7 +496,7 @@
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item">
-                      <a href="./Pages/Designers.html">
+                      <a href="./Designers.html">
                         <h4 class="title">Designers Luxe</h4>
                       </a>
                       <ul>
@@ -391,7 +527,7 @@
                     </div>
                     <span class="separation-designers"></span>
                     <div class="list-item">
-                      <a href="./Pages/Designers.html">
+                      <a href="./Designers.html">
                         <h4 class="title">Designers Créateurs</h4>
                       </a>
                       <ul>
@@ -472,7 +608,7 @@
                   ></a>
                   <div class="sub-menu mega-menu mega-menu-column-4">
                     <div class="list-item">
-                      <a href="./Produits-Homme.html">
+                      <a href="./Produits.html">
                         <h4 class="title">Voir nos Chaussures Hommes</h4>
                       </a>
                       <h4 class="title">Luxe</h4>

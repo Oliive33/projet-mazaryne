@@ -123,38 +123,282 @@
               src="../ressources/images/icones/logo-shopping-bag.svg"
               alt="logo panier"
               class="icon-nav"
+              id="cart-shop"
             />
           </a>
         </div>
       </div>
-      <!-- login form container  -->
-
-      <div class="login-form-container">
-        <i class="fas fa-times" id="form-close"></i>
-        <form>
-          <h3>Connexion</h3>
-          <input type="email" class="box" placeholder="entrer votre email" />
-          <input
-            type="password"
-            class="box"
-            placeholder="entrer votre mot de passe"
-          />
-          <input type="submit" value="Se connecter maintenant" class="btn" />
-
-          <input type="checkbox" id="remember" />
-          <label for="remember">Se souvenir de moi</label>
-
-          <p>
-            Mot de passe oublié?
-            <a href="./Mot-de-passe-oublie.html">cliquer ici</a>
-          </p>
-          <p>
-            Vous n'avez pas encore de compte?
-            <a href="./Creation-de-Compte-client.html">S'inscrire ici</a>
-          </p>
-        </form>
-      </div>
     </header>
+    <!-- login form container  -->
+    <div class="login-form-container">
+      <div class="container-form">
+        <i class="fas fa-times" id="form-close"></i>
+        <div class="logos-connexion">
+          <div class="facebook">
+            <a href="#">
+              <img
+                src="../ressources/images/icones/facebook.png"
+                alt="logo facebook"
+              />
+              Facebook
+            </a>
+          </div>
+          <div class="google">
+            <a href="#">
+              <img
+                src="../ressources/images/icones/google.png"
+                alt="logo google"
+              />
+              <span> Google </span>
+            </a>
+          </div>
+        </div>
+        <div class="signin-signup">
+          <form class="sign-in-form">
+            <div class="input-field-form">
+              <div class="wrapper-form">
+                <div class="input-data">
+                  <input class="input-sign" type="text" required />
+                  <div class="underline"></div>
+                  <label class="label-form">Email*</label>
+                </div>
+              </div>
+            </div>
+            <div class="input-field-form">
+              <div class="wrapper-form">
+                <div class="input-data">
+                  <input class="input-sign" type="text" required />
+                  <div class="underline"></div>
+                  <label class="label-form">Mot de passe*</label>
+                </div>
+              </div>
+              <div class="remember">
+                <div class="check-souvenir">
+                  <input class="checkbox" type="checkbox" id="remember" />
+                  <label class="souvenir" for="remember"
+                    >Se souvenir de moi</label
+                  >
+                </div>
+                <a href="./Mot-de-passe-oublie.html"> Mot de passe oublié </a>
+              </div>
+            </div>
+            <input type="submit" value="Se connecter" class="btn-sign-in" />
+            <span class="champs">Champs obligatoire *</span>
+            <p class="social-text">
+              Vous n'avez pas encore de compte s'inscrire ici ➟
+            </p>
+            <p class="account-text">
+              Pas encore de compte?
+              <a href="#" id="sign-up-btn2">S'inscrire</a>
+            </p>
+          </form>
+          <form class="form sign-up-form">
+            <h2 class="title">Inscrivez-vous</h2>
+            <div class="logos-inscription">
+              <div class="facebook">
+                <a href="#">
+                  <img
+                    src="../ressources/images/icones/facebook.png"
+                    alt="logo facebook"
+                  />
+                  Facebook
+                </a>
+              </div>
+              <div class="google">
+                <a href="#">
+                  <img
+                    src="../ressources/images/icones/google.png"
+                    alt="logo google"
+                  />
+                  <span> Google </span>
+                </a>
+              </div>
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Votre nom*</label>
+              <input class="input-forms" type="text" placeholder="Votre nom" />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Votre prénom*</label>
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre prénom"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text"
+                >Votre adresse mail*</label
+              >
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre email"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Mot de passe*</label>
+              <input
+                class="input-forms"
+                type="password"
+                placeholder="Votre Mot de Passe"
+              />
+            </div>
+            <div class="input-field-form">
+              <label class="label-inscription" for="text">Pseudo*</label>
+              <input
+                class="input-forms"
+                type="text"
+                placeholder="Votre pseudo"
+              />
+            </div>
+            <input type="submit" value="S'inscrire" class="btn-sign" />
+            <p class="social-text">
+              Vous avez déjà un compte client? Se connecter
+            </p>
+            <p class="account-text">
+              Vous avez déjà un compte?
+              <a href="#" id="sign-in-btn2">Connexion</a>
+            </p>
+          </form>
+        </div>
+        <div class="panels-container">
+          <div class="panel left-panel">
+            <div class="content">
+              <h3>Vous êtes déjà membre?</h3>
+              <button type="submit" class="btn-sign" id="sign-in-btn">
+                Se Connecter
+              </button>
+            </div>
+            <img
+              src="../ressources/images/icones/signin.svg"
+              alt="image"
+              class="image"
+            />
+          </div>
+          <div class="panel right-panel">
+            <div class="content">
+              <h3>Vous n'avez pas encore de compte?</h3>
+
+              <button type="submit" class="btn-sign" id="sign-up-btn">
+                S'inscrire
+              </button>
+            </div>
+            <img
+              src="../ressources/images/icones/signup.svg"
+              alt="image"
+              class="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">Mon Panier</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette1.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette2.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="../ressources/images/image-vedette2.png"
+              alt="image montre"
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Cesare Piaciotti</h3>
+            <span class="cart__price">420€</span>
+
+            <div class="cart__amount">
+              <div class="cart__amount-content">
+                <span class="cart__amount-box">
+                  <i class="bx bx-minus"></i>
+                </span>
+
+                <span class="cart__amount-number">1</span>
+
+                <span class="cart__amount-box">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+
+              <i class="bx bx-trash-alt cart__amount-trash"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cart__prices">
+        <span class="cart__prices-item">3 articles</span>
+        <span class="cart__prices-total">1260€</span>
+      </div>
+    </div>
     <div class="header">
       <div class="container">
         <div class="row v-center">
@@ -411,44 +655,8 @@
       <section class="container-picture" id="container-picture">
         <div class="container-title">
           <h2 class="title-picture">
-            Pièces en édition limitées ou pièces rares
+          Découvrez nos Pièces en édition limitées ou pièces rares
           </h2>
-          <a href="#products" class="btn-scroll btn-scroll-down">
-            Voir plus-bas <i class="fas fa-arrow-down"></i>
-          </a>
-        </div>
-      </section>
-      <!-- Section produits d'exception -->
-      <section class="produits-rares" id="products">
-        <h3 class="titles-products">
-          Découvrez notre sélection de pièces rares
-        </h3>
-        <div class="card d-grid" id="">
-          <img
-            src="../ressources/images/p1.jpg"
-            alt="image"
-            class="card-image img1"
-            id="product1"
-          />
-          <img
-            src="../ressources/images/p2.jpg"
-            alt="image"
-            class="card-image img2"
-            id="product2"
-          />
-          <img
-            src="../ressources/images/p3.jpg"
-            alt="image"
-            class="card-image img3"
-            id="product3"
-          />
-          <img
-            src="../ressources/images/p4.jpg"
-            alt="image"
-            class="card-image img4"
-            id="product4"
-          />
-        </div>
       </section>
     </main>
     <!-- Section Footer -->
