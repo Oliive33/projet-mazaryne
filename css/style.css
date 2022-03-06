@@ -489,7 +489,7 @@ h1 {
   position: fixed;
   top: -130%;
   left: 0;
-  z-index: 1001;
+  z-index: 1002;
   min-height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -926,7 +926,6 @@ a {
   content: "";
   height: 100%;
   width: 100%;
-  background: #90111c;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: center;
@@ -1029,7 +1028,7 @@ a {
     display: none;
   }
   .input-field-form {
-    margin: 5px;
+    margin: 12px;
   }
   form {
     width: 80%;
@@ -1073,6 +1072,10 @@ a {
 }
 
 @media screen and (max-width: 435px) {
+  .login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 0rem;
+  }
   .logos-connexion .facebook,
   .logos-connexion .google {
     margin: 10px 5px;
@@ -1087,13 +1090,17 @@ a {
     font-size: 12px;
     margin: 25px auto 0;
   }
+  .btn-sign-in {
+    height: 35px;
+    margin: 50px auto 15px;
+  }
   .wrapper-form .input-data .input {
     font-size: 14px;
   }
   .input-data .input-sign:focus ~ .label-form,
   .input-data .input-sign:valid ~ .label-form {
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
+    -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
     font-size: 12px;
   }
   .social-text {
@@ -2713,7 +2720,7 @@ input[type="range"]::-moz-range-thumb {
   left: 0;
   z-index: 1000;
   background-color: var(--white);
-  padding: 25px;
+  padding: 40px 20px 0 20px;
   display: none;
   font-family: "Poppins", sans-serif;
 }
@@ -3098,8 +3105,8 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
   }
   #side-menu.fa-times {
-    top: 6%;
-    left: 271px;
+    top: 10%;
+    left: 300px;
   }
   .btn-categorie {
     padding: 5px 15px;
@@ -3652,14 +3659,14 @@ a {
 }
 
 .blog-title-principal {
-  font-family: "GrouchBT", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 32.7px;
-  margin: 100px 0 100px 0;
+  margin: 80px 0 50px 0;
 }
 
 /*=============== NEW ===============*/
 .container-swiper-blog {
-  max-width: 920px;
+  max-width: 1120px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -3673,7 +3680,7 @@ a {
 
 .new__card-blog {
   position: relative;
-  width: 300px;
+  width: 270px;
   height: 320px;
   background-color: whitesmoke;
   -webkit-box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
@@ -3700,7 +3707,7 @@ a {
 }
 
 .overlay span {
-  color: white;
+  color: #000;
   font-size: 19px;
   letter-spacing: 1px;
   position: absolute;
@@ -3722,7 +3729,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Caslon540", sans-serif;
   letter-spacing: 1px;
   font-weight: bolder;
@@ -3741,8 +3748,8 @@ a {
   width: 70%;
   margin: 0 auto;
   padding: 10px 15px;
-  color: white;
-  font-size: 19px;
+  color: black;
+  font-size: 17px;
   letter-spacing: 1px;
   border-radius: 3px;
   background: #f3eee8;
@@ -3752,11 +3759,6 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.overlay a:hover {
-  color: #333;
-  background-color: #fff;
 }
 
 .swiper-blog:hover .overlay {
@@ -3775,6 +3777,10 @@ a {
 .new__card-blog:hover .img-blog {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.journal {
+  text-align: center;
 }
 
 /*Class Swiper*/
@@ -4458,7 +4464,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 55px 5px 31px 5px;
+    padding: 35px 5px 31px 5px;
   }
   h1 {
     margin-left: 0;

@@ -358,7 +358,7 @@ h1 {
   position: fixed;
   top: -130%;
   left: 0;
-  z-index: 1001;
+  z-index: 1002;
   min-height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -682,7 +682,6 @@ a {
   content: "";
   height: 100%;
   width: 100%;
-  background: #90111c;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
@@ -715,6 +714,7 @@ a {
 }
 
 /* Responsive */
+
 @media screen and (max-width: 779px) {
   .container-form {
     width: 100vw;
@@ -752,6 +752,7 @@ a {
     margin-bottom: 5px;
   }
 }
+
 @media screen and (max-width: 635px) {
   .container-form::before {
     display: none;
@@ -767,7 +768,7 @@ a {
   }
 
   .input-field-form {
-    margin: 5px;
+    margin: 12px;
   }
   form {
     width: 80%;
@@ -810,6 +811,10 @@ a {
   }
 }
 @media screen and (max-width: 435px) {
+  .login-form-container form {
+    margin: 2rem;
+    padding: 1.5rem 0rem;
+  }
   .logos-connexion .facebook,
   .logos-connexion .google {
     margin: 10px 5px;
@@ -824,12 +829,16 @@ a {
     font-size: 12px;
     margin: 25px auto 0;
   }
+  .btn-sign-in {
+    height: 35px;
+    margin: 50px auto 15px;
+  }
   .wrapper-form .input-data .input {
     font-size: 14px;
   }
   .input-data .input-sign:focus ~ .label-form,
   .input-data .input-sign:valid ~ .label-form {
-    transform: translateY(-20px);
+    transform: translateY(-23px);
     font-size: 12px;
   }
   .social-text {

@@ -473,7 +473,7 @@ input[type="range"]::-moz-range-thumb {
   left: 0;
   z-index: 1000;
   background-color: var(--white);
-  padding: 25px;
+  padding: 40px 20px 0 20px;
   display: none;
   font-family: $font-tertiary;
 }
@@ -788,8 +788,8 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
   }
   #side-menu.fa-times {
-    top: 6%;
-    left: 271px;
+    top: 10%;
+    left: 300px;
   }
   .btn-categorie {
     padding: 5px 15px;

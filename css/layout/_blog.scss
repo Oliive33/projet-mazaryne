@@ -22,13 +22,13 @@ a {
 }
 
 .blog-title-principal {
-  font-family: $font-primary;
+  font-family: $font-tertiary;
   font-size: 32.7px;
-  margin: 100px 0 100px 0;
+  margin: 80px 0 50px 0;
 }
 /*=============== NEW ===============*/
 .container-swiper-blog {
-  max-width: 920px;
+  max-width: 1120px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -40,7 +40,7 @@ a {
 }
 .new__card-blog {
   position: relative;
-  width: 300px;
+  width: 270px;
   height: 320px;
   background-color: whitesmoke;
   box-shadow: 0 4px 16px hsla(355, 25%, 15%, 0.1);
@@ -64,7 +64,7 @@ a {
   transition: 0.8s;
 }
 .overlay span {
-  color: white;
+  color: #000;
   font-size: 19px;
   letter-spacing: 1px;
   position: absolute;
@@ -83,7 +83,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   font-family: $font-secondary;
   letter-spacing: 1px;
   font-weight: bolder;
@@ -100,8 +100,8 @@ a {
   width: 70%;
   margin: 0 auto;
   padding: 10px 15px;
-  color: white;
-  font-size: 19px;
+  color: black;
+  font-size: 17px;
   letter-spacing: 1px;
   border-radius: 3px;
   background: $color-quaternary;
@@ -110,10 +110,6 @@ a {
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
-}
-.overlay a:hover {
-  color: #333;
-  background-color: #fff;
 }
 .swiper-blog:hover .overlay {
   height: 100%;
@@ -127,6 +123,10 @@ a {
 }
 .new__card-blog:hover .img-blog {
   transform: scale(1.05);
+}
+// ======Newsletter=======//
+.journal {
+  text-align: center;
 }
 
 /*Class Swiper*/
