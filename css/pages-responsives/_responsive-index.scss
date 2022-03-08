@@ -44,10 +44,6 @@
   .titles-vedette {
     margin-bottom: 50px;
   }
-  .btn-produits {
-    width: 50%;
-    font-size: 23px;
-  }
   .produits-femme-homme {
     display: grid;
     grid-template-columns: 1fr;
@@ -70,6 +66,9 @@
   }
   .mail-journal input {
     width: 35%;
+  }
+  .btn-produits {
+    width: 15%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -104,8 +103,7 @@
     font-size: 25px;
   }
   .btn-produits {
-    width: 60%;
-    font-size: 22px;
+    width: 20%;
   }
   .garantie {
     width: 100%;
@@ -126,14 +124,13 @@
   .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
   }
-  .parallax-vedette .txt-par,
-  .parallax-femme .txt-par,
-  .parallax-homme .txt-par {
-    font-size: 30px;
-  }
+  // .parallax-vedette .txt-par,
+  // .parallax-femme .txt-par,
+  // .parallax-homme .txt-par {
+  //   font-size: 30px;
+  // }
   .btn-produits {
-    width: 70%;
-    font-size: 21px;
+    width: 25%;
   }
 }
 @media screen and (max-width: 475px) {
@@ -174,6 +171,9 @@
   .new__card {
     width: 300px;
   }
+  .btn-produits {
+    width: 25%;
+  }
   .titles-journal h3 {
     font-size: 30px;
   }
@@ -194,16 +194,8 @@
   .carousel .changeHidden .element {
     font-size: 14px;
   }
-  // .btn-designer-we-love {
-  //   font-size: 14px;
-  // }
-  // .btn-designer-we-love .link-designer,
-  // .btn-designer-we-love .link-we-love {
-  //   padding: 5px 35px;
-  //   font-size: 16px;
-  // }
   .btn-produits {
-    font-size: 18px;
+    width: 30%;
   }
   .journal .home-title-journal {
     font-size: 30px;

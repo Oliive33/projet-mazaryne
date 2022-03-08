@@ -1960,6 +1960,36 @@ a {
   font-size: 2rem;
 }
 
+.btn-produits {
+  position: relative;
+  overflow: hidden;
+  width: 10%;
+  margin: 0 auto;
+  padding: 5px 5px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid black;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 2px;
+  -webkit-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-produits:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.btn-produits a {
+  text-decoration: none;
+  color: #000;
+}
+
 .produits-femme-homme {
   display: -ms-grid;
   display: grid;
@@ -4023,7 +4053,35 @@ a {
 }
 
 .footer-items .follows {
-  padding-bottom: 25px;
+  padding-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-items .follows .reseaux ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-items .follows .reseaux ul li {
+  margin: 5px;
+}
+
+.social-footer {
+  width: 23px;
+  height: 23px;
 }
 
 @media screen and (max-width: 800px) {
@@ -4385,10 +4443,6 @@ a {
   .titles-vedette {
     margin-bottom: 50px;
   }
-  .btn-produits {
-    width: 50%;
-    font-size: 23px;
-  }
   .produits-femme-homme {
     display: -ms-grid;
     display: grid;
@@ -4415,6 +4469,9 @@ a {
   }
   .mail-journal input {
     width: 35%;
+  }
+  .btn-produits {
+    width: 15%;
   }
 }
 
@@ -4450,8 +4507,7 @@ a {
     font-size: 25px;
   }
   .btn-produits {
-    width: 60%;
-    font-size: 22px;
+    width: 20%;
   }
   .garantie {
     width: 100%;
@@ -4476,14 +4532,8 @@ a {
   .btn-designer-we-love .link-we-love {
     padding: 7px 40px;
   }
-  .parallax-vedette .txt-par,
-  .parallax-femme .txt-par,
-  .parallax-homme .txt-par {
-    font-size: 30px;
-  }
   .btn-produits {
-    width: 70%;
-    font-size: 21px;
+    width: 25%;
   }
 }
 
@@ -4522,6 +4572,9 @@ a {
   .new__card {
     width: 300px;
   }
+  .btn-produits {
+    width: 25%;
+  }
   .titles-journal h3 {
     font-size: 30px;
   }
@@ -4544,7 +4597,7 @@ a {
     font-size: 14px;
   }
   .btn-produits {
-    font-size: 18px;
+    width: 30%;
   }
   .journal .home-title-journal {
     font-size: 30px;
