@@ -49,7 +49,7 @@ navJournal = document.querySelector(".journal-link");
 window.addEventListener("scroll", function () {
   const scroll = this.document.documentElement.scrollTop;
 
-  if (scroll > 200) {
+  if (scroll > 0) {
     navbar.style.top = "0px";
     navTitle.style.color = "black";
     navLink.style.color = "black";
@@ -70,7 +70,7 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "visible";
     navSearch.style.visibility = "visible";
     navTrigger.style.visibility = "visible";
-    navbar.style.height = "120px";
+    navbar.style.height = "95px";
     navElements.style.height = "60px";
     navbar.style.transition = "all 0.2s ease-in-out";
   } else if (scroll < 200) {
@@ -94,8 +94,8 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "hidden";
     navSearch.style.visibility = "hidden";
     navTrigger.style.visibility = "hidden";
-    navbar.style.height = "50px";
-    navElements.style.height = "50px";
+    navbar.style.height = "110px";
+    navElements.style.height = "110px";
     navbar.style.transition = "all 0.2s ease-in-out";
   }
 });
