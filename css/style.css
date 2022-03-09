@@ -69,9 +69,13 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: transparent;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #fff;
+}
+
+#nav-fix:hover {
+  background: white;
 }
 
 .phraseSlide {
@@ -276,8 +280,9 @@ h1 {
   font-family: "GrouchBT", sans-serif;
   font-size: 32.7px;
   font-weight: 400;
-  color: #000;
   margin-left: 65px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .icons-home .item-nav {
@@ -433,15 +438,11 @@ h1 {
 
 .nav-below-link {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-family: "Caslon540", sans-serif;
   font-size: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-.nav-below-link:hover {
-  color: #cb333b;
 }
 
 .btn,

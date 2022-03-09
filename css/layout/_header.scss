@@ -46,9 +46,13 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  background-color: transparent;
   transition: all 0.2s ease-in-out;
-  background-color: #fff;
 }
+#nav-fix:hover {
+  background: white;
+}
+
 .phraseSlide {
   width: 100%;
   height: 50px;
@@ -136,7 +140,11 @@
   align-items: center;
   padding: 10px 5px 0px 5px;
   transition: all 0.2s ease-in-out;
+  // color: #fff !important;
 }
+// .nav-top:hover {
+//   color: #000;
+// }
 .nav-top .ghost {
   visibility: hidden;
 }
@@ -178,9 +186,10 @@ h1 {
   font-family: $font-primary;
   font-size: 32.7px;
   font-weight: 400;
-  color: #000;
   margin-left: 65px;
+  transition: all 0.2s ease-in-out;
 }
+
 .icons-home .item-nav {
   margin: 10px;
 }
@@ -312,14 +321,12 @@ h1 {
 
 .nav-below-link {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-family: $font-secondary;
   font-size: 20px;
   transition: all 0.2s ease-in-out;
 }
-.nav-below-link:hover {
-  color: $color-secondary;
-}
+
 .btn,
 .nav-below-link {
   margin-top: 10px;

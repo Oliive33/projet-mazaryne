@@ -19,9 +19,21 @@ let newSwiper = new Swiper(".new-swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//
+// let test = document.querySelector(".nav-fix");
+// let navTitle = document.querySelector(".nav-top h1");
+// let navIcons = document.querySelector(".icons-home");
+
+// test.addEventListener("mouseover", function (event) {
+//   test.style.backgroundColor = "white";
+//   navTitle.style.color = "black";
+// });
 // change height header homepage
+
 navbar = document.getElementById("nav-fix");
 navElements = document.getElementById("nav-top");
+navBandeau = document.getElementById("bandeau-slide");
 navTitle = document.querySelector(".nav-top h1");
 navIcons = document.querySelector(".icons-home");
 navBtn = document.querySelector(".btn-vendre");
@@ -45,6 +57,7 @@ window.addEventListener("scroll", function () {
     navFemme.style.color = "black";
     navHomme.style.color = "black";
     navJournal.style.color = "black";
+    navBandeau.style.display = "none";
     navbar.style.background = "white";
     navLink.style.textShadow = "none";
     navLinks.style.textShadow = "none";
@@ -57,10 +70,10 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "visible";
     navSearch.style.visibility = "visible";
     navTrigger.style.visibility = "visible";
-    navbar.style.height = "160px";
-    navElements.style.height = "70px";
-    navbar.style.transition = "all 0.1s ease";
-  } else {
+    navbar.style.height = "120px";
+    navElements.style.height = "60px";
+    navbar.style.transition = "all 0.2s ease-in-out";
+  } else if (scroll < 200) {
     navbar.style.top = "0px";
     navTitle.style.color = "white";
     navLink.style.color = "white";
@@ -73,6 +86,7 @@ window.addEventListener("scroll", function () {
     navFemme.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
     navHomme.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
     navJournal.style.textShadow = "1px 0px 3px rgba(0,0,0,0.4)";
+    navBandeau.style.display = "block";
     navbar.style.background = "transparent";
     navbar.style.boxShadow = "none";
     navHeader.style.background = "transparent";
@@ -80,8 +94,8 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "hidden";
     navSearch.style.visibility = "hidden";
     navTrigger.style.visibility = "hidden";
-    navbar.style.height = "140px";
-    navElements.style.height = "140px";
-    navbar.style.transition = "all 0.1s ease";
+    navbar.style.height = "50px";
+    navElements.style.height = "50px";
+    navbar.style.transition = "all 0.2s ease-in-out";
   }
 });
