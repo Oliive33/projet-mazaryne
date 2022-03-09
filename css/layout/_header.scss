@@ -1,14 +1,5 @@
-/*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background: rgba(234, 190, 176, 0.555);
-  border-radius: 10px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-::-webkit-scrollbar-thumb {
-  background: rgba(247, 212, 202, 0.911);
-  border-radius: 10px;
-}
 /* ==================Scroll up ==================*/
 .scrollup {
   position: fixed;
@@ -16,18 +7,13 @@
   bottom: -20%;
   display: flex;
   text-decoration: none;
-  background: $color-header;
+  background: #000;
   border-radius: 100px;
   padding: 0.49rem;
   opacity: 9;
   z-index: 10;
   transition: 0.4s;
 }
-.scrollup:hover {
-  background: $color-quaternary;
-  opacity: 1;
-}
-
 .scrollup .fa-chevron-up {
   color: whitesmoke;
   font-size: 0.9rem;
@@ -48,9 +34,6 @@
   z-index: 1000;
   background-color: transparent;
   transition: all 0.2s ease-in-out;
-}
-#nav-fix:hover {
-  background: white;
 }
 
 .phraseSlide {
@@ -87,8 +70,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin: auto;
-  height: 4rem;
-  line-height: 4rem;
+  height: 3rem;
+  line-height: 3rem;
   width: 100%;
   overflow: hidden;
 }
@@ -112,27 +95,27 @@
   width: 18px;
   height: 18px;
 }
-@keyframes carousel {
-  0%,
-  20% {
-    transform: translateY(0);
-  }
-  25%,
-  45% {
-    transform: translateY(-4rem);
-  }
-  50%,
-  70% {
-    transform: translateY(-8rem);
-  }
-  75%,
-  95% {
-    transform: translateY(-12rem);
-  }
-  100% {
-    transform: translateY(-16rem);
-  }
-}
+// @keyframes carousel {
+//   0%,
+//   20% {
+//     transform: translateY(0);
+//   }
+//   25%,
+//   45% {
+//     transform: translateY(-4rem);
+//   }
+//   50%,
+//   70% {
+//     transform: translateY(-8rem);
+//   }
+//   75%,
+//   95% {
+//     transform: translateY(-12rem);
+//   }
+//   100% {
+//     transform: translateY(-16rem);
+//   }
+// }
 // bandeau & phrases slide end
 .nav-top {
   display: flex;
@@ -351,6 +334,11 @@ h1 {
 }
 #button span:hover {
   font-weight: bolder;
+}
+.btn-vendre {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .nav-btn-link {
   font-family: $font-tertiary;
@@ -895,7 +883,7 @@ a {
 .header .menu > ul > li {
   display: inline-block;
   line-height: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 .header .menu > ul > li > a {
   font-size: 18px;
@@ -905,12 +893,15 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
 }
+.menu {
+  margin-top: 15px;
+}
 .menu-main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 95%;
-  margin: 5px auto;
+  margin: 0;
 }
 .header .menu > ul > li .sub-menu {
   position: absolute;
@@ -926,7 +917,7 @@ a {
 li::marker {
   color: $color-quaternary;
 }
-@media (min-width: 992px) {
+@media (min-width: 1065px) {
   .header .menu > ul > li.menu-item-has-children:hover .sub-menu {
     margin-top: 0;
     visibility: visible;
@@ -959,10 +950,11 @@ li::marker {
 .header .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
   padding: 10px 0;
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   color: #555555;
   transition: color 0.3s ease;
   text-decoration: none;
+  font-weight: 300;
 }
 .separation-designers {
   border: 1.4px solid $color-secondary;
@@ -990,10 +982,10 @@ li::marker {
   text-decoration: none;
 }
 .header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
-  font-size: 15px;
+  font-size: 14px;
   color: $color-tertiary;
   font-family: $font-tertiary;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1;
   padding: 10px 0;
 }
@@ -1038,7 +1030,7 @@ li::marker {
 }
 
 /*responsive*/
-@media (max-width: 991px) {
+@media (max-width: 1064px) {
   .header .item-center {
     order: 3;
     flex: 0 0 100%;

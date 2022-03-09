@@ -21,19 +21,11 @@ let newSwiper = new Swiper(".new-swiper", {
 });
 
 //
-// let test = document.querySelector(".nav-fix");
-// let navTitle = document.querySelector(".nav-top h1");
-// let navIcons = document.querySelector(".icons-home");
-
-// test.addEventListener("mouseover", function (event) {
-//   test.style.backgroundColor = "white";
-//   navTitle.style.color = "black";
-// });
 // change height header homepage
 
 navbar = document.getElementById("nav-fix");
 navElements = document.getElementById("nav-top");
-navBandeau = document.getElementById("bandeau-slide");
+navBandeau = document.getElementById("nav-elements");
 navTitle = document.querySelector(".nav-top h1");
 navIcons = document.querySelector(".icons-home");
 navBtn = document.querySelector(".btn-vendre");
@@ -49,7 +41,7 @@ navJournal = document.querySelector(".journal-link");
 window.addEventListener("scroll", function () {
   const scroll = this.document.documentElement.scrollTop;
 
-  if (scroll > 0) {
+  if (scroll > 40) {
     navbar.style.top = "0px";
     navTitle.style.color = "black";
     navLink.style.color = "black";
@@ -70,10 +62,10 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "visible";
     navSearch.style.visibility = "visible";
     navTrigger.style.visibility = "visible";
-    navbar.style.height = "95px";
+    navbar.style.height = "130px";
     navElements.style.height = "60px";
     navbar.style.transition = "all 0.2s ease-in-out";
-  } else if (scroll < 200) {
+  } else {
     navbar.style.top = "0px";
     navTitle.style.color = "white";
     navLink.style.color = "white";
@@ -94,8 +86,8 @@ window.addEventListener("scroll", function () {
     navBtn.style.visibility = "hidden";
     navSearch.style.visibility = "hidden";
     navTrigger.style.visibility = "hidden";
-    navbar.style.height = "110px";
-    navElements.style.height = "110px";
+    navbar.style.height = "120px";
+    navElements.style.height = "120px";
     navbar.style.transition = "all 0.2s ease-in-out";
   }
 });
